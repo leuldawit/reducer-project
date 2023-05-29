@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+  }
+  
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+
+
+}
+.page1{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    height: 90vh;
+    background-image:url('pics/plastic_shredding_recycling_web-2048x1227.webp');
+    background-size: cover;
+   
+}
+.navbar{
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-items ul{
+    padding-right: 1.5rem;
+}
+
+.nav-items ul li {
+    
+    list-style: none;
+   display: inline-block;
+    padding-right: 0;
+    font-weight: bolder;
+
+   
+}
+.nav-items ul li button {
+    text-decoration: none;
+    padding: 0.7rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    display: block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+   
+}
+.contact{
+    background-color: #f76c4e;
+    color: white;
+    transition:  background-color 0.5s;
+}
+.menu{
+    color: black;
+    background-color: white;
+    transition:  background-color 0.5s;
+}
+.menu:hover{
+    background-color: #d7d7d7;
+}
+
+.contact:hover{
+    background-color: #414141;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 10vh;
+    width: 50%;
+    background-color: #f3f2f2;
+    height: 20vh;
+
+}
+.links a{
+    color: gray;
+    text-decoration: none;
+    padding: 1rem;
+}
+.page2{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    text-align:justify;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    border-bottom: 1px solid rgb(227, 227, 227);
+   
+}
+.page2 h1{
+    position: relative;
+    top: -40px;
+}
+.page2 .content{
+    width: 50%;
+}
+.page2 .content button{
+    margin-top: 30px;
+    background-color: #414141;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 9px 20px 11px;
+    position: relative;
+    transition: all .3s;
+  
+    
+}
+.page2 .content button:hover{
+    background-color: #9b9b9b;
+}
+.page2 .imgcontainer{
+    margin-top: 60px;
+    width: 50%;
+    margin-bottom: 60px;
+
+}
+.page2 .imgcontainer img{
+    width: 100%;
+   
+}
+
+.page3{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    border-bottom: 1px solid rgb(227, 227, 227);
+   
+}
+.page3 .info{
+    width: 30%;
+}
+.filter-collection{
+    display: flex;
+    position: relative;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-bottom: 60px;
+}
+.filter{
+    width: 40%;
+}
+.filter .filter-title h5{
+    border-bottom: 1px solid rgb(227, 227, 227);
+    padding-bottom: 5px;
+    
+}
+.filter .filters{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filter .filters button{
+    box-sizing: border-box;
+margin: 0 6px 13px;
+min-height: 40px;
+opacity: .3;
+padding: 9px 17px 10px;
+white-space: nowrap;
+border-radius: 100px;
+background-color: transparent;
+border: 1px solid;
+transition: all .3s;
+cursor: pointer;
+}
+.filter .filters button:hover{
+    border-color: #d8d8d8;
+    opacity: 1;
+}
+
+@media(max-width: 800px) and (min-width: 0px) {
+    .page1{
+        background-image: none;
+        height: auto;
+    }
+    .links{
+        width: 100%;
+        position: relative;
+        top: 0px;
+        height: 30vh;   
+    
+    }
+    .page2{
+        flex-direction: column;
+    }
+    .page2 .content{
+        width: 100%;
+       text-align:left;
+    }
+    .page2 .imgcontainer{
+        margin-top: 30px;
+        width: 100%;
+    
+    }
+    .page3{
+        flex-direction: column;
+    }
+    .page3 .info{
+        width: 100%;
+    }
+    .filter-collection{
+        display: flex;
+        position: relative;
+        gap: 50px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .filter{
+        width: 100%;
+    }
+ }

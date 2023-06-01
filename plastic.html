@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="plastic.css">
     <title>Document</title>
+    <script src="plastic.js"></script>
 </head>
 
 <body>
@@ -14,11 +15,34 @@
         <div class="navbar">
             <div class="nav-items">
                 <div class="logo">
-                    <p>aaa</p>
+                    <a href="plastic.html"><img src="pics/Logo_2-300x53.png" alt=""></a>
                 </div>
                 <ul>
                     <li><button class="contact">contacts</button> </li>
-                    <li><button class="menu">menu</button></li>
+                    
+                    <!-- full screen navigation -->
+                    
+                    <li>
+                        <div id="myNav" class="overlay">
+
+                            <!-- close btn -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          
+                            <!-- inside content -->
+                            <div class="overlay-content">
+                              <a href="#">AAAA</a>
+                              <a href="#">AAAAA</a>
+                              <a href="#">AAAA</a>
+                              <a href="#">AAAAA</a>
+                            </div>
+                          
+                          </div>
+                          
+                          <!-- menu button -->
+                          <span onclick="openNav()"><button class="menu">menu</button></span>
+                        </li>
+                
+                
                 </ul>
             </div>
         </div>

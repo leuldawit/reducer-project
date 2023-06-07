@@ -12,6 +12,10 @@ body{
 
 
 }
+h1,h2,h3,h4,h5{
+    color: #4a4a4a;
+    font-weight: 100;
+}
 .page1{
     display: flex;
     flex-direction: column;
@@ -272,9 +276,10 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    justify-content: center;
 }
 .machine{
-    width: 250px;
+    width: 245px;
     height: 400px;
     text-align: center;
     cursor: pointer;
@@ -286,7 +291,7 @@ cursor: pointer;
         margin-bottom: 50px;
     }
   } 
-  @media(max-width: 1000px) and (min-width: 801px) {
+  @media(max-width: 1200px) and (min-width: 801px) {
     .machine{
         width: 45%;
     }
@@ -348,6 +353,119 @@ cursor: pointer;
   .machine:hover a::after {
     transform: scaleX(0);
     transform-origin: right;
+  }
+  .more-abt-plastics{
+    border-top:1px solid #e4e4e4;
+    margin-top: 100px;
+  }
+  .more-abt-plastics .title{
+   position: relative;
+    background-color:#f3f2f2;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    gap: 20px;
+   
+  }
+  .more-abt-plastics .title h1,.subtitle{
+    margin: 0px;
+    position: relative;
+    top: 90px;
+    width: 46%;
+  }
+  .subtitle{
+    font-size: 19px;
+  }
+  .info-collection{
+    margin: 0 auto;
+    margin-top: 150px;
+   width: 75%;
+  }
+
+  .info1{
+    display: flex;
+    gap: 50px;
+    position: relative;
+  }
+  .info1 .info1-title, .info2 .info2-title, .info3 .info3-title{
+    height: 100px;
+    border-left: 3px solid #bebebe;  
+   width: 5%;
+    
+  }
+  .info1 .info1-content{
+    width: 30%;
+  }
+  .info1-video{
+    width: 60%;
+  }
+  .info1-video iframe{
+    width:80%;
+    margin-left: 20%;
+     height:315px;
+  }
+
+  .info2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    
+  }
+  .info2 .info2-content{
+    margin-top: 50px;
+    width: 50%;
+    text-align: left;
+  }
+  .info3{
+    display: flex;
+    width: 25%;
+    margin-top: 100px;
+    gap: 20px;
+
+  }
+  @media(max-width: 800px) and (min-width: 0px) {
+
+    .more-abt-plastics .title{
+        width: 100%;
+    }
+    .more-abt-plastics .title h1,.subtitle{
+        width: 70%;
+      }
+      .info-collection{
+       width: 90%;
+      }
+    .info1{
+        display: flex;
+        margin: 0 auto;
+        width: 95%;
+        margin-top: 100px;
+        flex-wrap: wrap;
+      }
+      .info1 .info1-content{
+        width: 100%;
+      }
+      .info1-video{
+        width: 100%;
+      }
+      .info1-video iframe{
+        margin-left: 0%;
+        width: 100%;
+      }
+      .info2 .info2-content{
+        margin-top: 100px;
+        width: 100%;
+        text-align: left;
+      }
+      .info3{
+        width: 100%;
+    
+      }
   }
 
 @media(max-width: 800px) and (min-width: 0px) {

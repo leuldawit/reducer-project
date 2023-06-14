@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+
+
+}
+h1,h2,h3,h4,h5{
+    color: #4a4a4a;
+    font-weight: 100;
+}
+.navbar {
+    width: 100vw;
+    position: fixed;
+
+    z-index: 1000;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items ul {
+    padding-right: 1.5rem;
+}
+
+.nav-items ul li {
+
+    list-style: none;
+    display: inline-block;
+    padding-right: 0;
+    font-weight: bolder;
+
+
+}
+
+.nav-items ul li button {
+    text-decoration: none;
+    padding: 0.7rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    display: block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
+
+}
+
+.logo {
+    width: 30%;
+    overflow: hidden;
+}
+
+.logo img {
+
+    height: 30%;
+    padding: 2vh 0 0 2vw;
+}
+
+.contact {
+    background-color: #f76c4e;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.menu {
+    color: black;
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.menu:hover {
+    background-color: #d7d7d7;
+}
+
+
+.overlay {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.overlay-content .items {
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.shredding{
+    /* background-image: url("https://weima.com/wp-content/themes/weima-2023/images/menu/menu-shredder-mobile@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-weight: 100;
+}
+.overlay a:hover{
+    text-decoration: underline;
+}
+
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button top right corner */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+.contact:hover {
+    background-color: #414141;
+}
+
+.swiper-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.swiper-slide {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #414141;
+    position: relative;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-slide img {
+    height: 100%;
+
+}
+
+
+.abt-weima {
+
+    display: grid;
+    width: 70%;
+    gap: 10%;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+@media(max-width: 800px) and (min-width: 0px) {
+    .abt-weima {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.galleryTitle {
+    margin-left: 13%;
+    border-left: 5px solid #f76c4e;
+    padding-left: 1%;
+
+}
+
+.shredders {
+    width: 75%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 87vh;
+    gap: 2%;
+
+}
+
+
+.shredderone {
+    background-color: #f3f2f2;
+    grid-row: 1/3;
+    grid-template-columns: 1fr;
+    padding: 1% 5%;
+}
+
+.shOne_btn {
+    position: relative;
+    top: -13%;
+    background-color: white;
+    color: #4a4a4a;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.shredderButton:hover {
+    background-color: #9b9b9b;
+    color: white;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.shTwo_btn,
+.shThree_btn {
+
+    background-color: white;
+    color: #4a4a4a;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.shredderone img,
+.shreddertwo img,
+.shredderthree img {
+
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+.shImg {
+    position: absolute;
+    width: 60%;
+    left: 35%;
+}
+
+.shText {
+    width: 50%;
+    position: absolute;
+}
+
+.shreddertwo {
+    background-color: #d9d9d9;
+    grid-row: 1/2;
+    grid-template-columns: 1fr;
+    display: flex;
+    position: relative;
+    padding: 1% 5%;
+}
+
+.shredderthree {
+    background-color: #c2c2c2;
+    grid-row: 2/3;
+    grid-template-columns: 1fr;
+    display: flex;
+    position: relative;
+    padding: 1% 5%;
+
+
+}
+
+@media(max-width: 820px) and (min-width: 0px) {
+
+    .shredders {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 5%;
+    }
+
+    .shredderone,
+    .shreddertwo,
+    .shredderthree {
+        grid-row: auto;
+        grid-template-columns: auto;
+        padding: 5%;
+    }
+
+    .shredderone img,
+    .shreddertwo img,
+    .shredderthree img {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .shImg {
+        position: static;
+        width: 100%;
+        left: auto;
+    }
+
+    .shText {
+        width: 100%;
+        position: static;
+    }
+
+    
+
+}
+
+.keyFacts {
+    height: 100vh;
+    /* border: 10px solid red; */
+}
+
+.keyfactTitle {
+    width: 27%;
+    margin-left: 13%;
+
+    font-size: 2rem;
+    padding-left: 1%;
+    border-bottom: 10px solid #414141;
+
+}
+
+.keyFactsText {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.keyFactsText p {
+    width: 50%;
+    line-height: 2rem;
+    margin-left: 15%;
+
+}
+
+.clients {
+
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.exp,
+.sold,
+.employees {
+    border-left: thick solid #ff0000;
+    padding-left: 3%;
+    height: 120px;
+}
+
+.exp h1::after {
+    content: '+';
+}
+
+.sold h1::after {
+    content: 'K+';
+}
+
+.employees h1::after {
+    content: '+';
+}
+@media(max-width: 820px) and (min-width: 0px) {
+
+    .keyFacts {
+        margin-top: 150px;
+    }
+    .keyFactsText p {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    
+    }
+}

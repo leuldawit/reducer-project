@@ -16,6 +16,23 @@ h1,h2,h3,h4,h5{
     color: #4a4a4a;
     font-weight: 100;
 }
+@media (min-width: 1024px){
+  h3 {
+  font-size: 21px;
+}
+}
+
+  @media (min-width: 768px){
+    h3 {
+  font-size: 19px;
+}
+  }
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.14;
+}
 .page1{
     display: flex;
     flex-direction: column;
@@ -258,7 +275,7 @@ border: 1px solid;
 transition: all .3s;
 cursor: pointer;
 }
-.filter .filters button:hover{
+.filter .filters button:hover ,.filter .filters .active{
     border-color: #d8d8d8;
     opacity: 1;
 }
@@ -387,12 +404,12 @@ cursor: pointer;
    width: 75%;
   }
 
-  .info1{
+  .info1,.info4{
     display: flex;
-    gap: 50px;
+    gap: 0px;
     position: relative;
   }
-  .info1 .info1-title, .info2 .info2-title, .info3 .info3-title{
+  .info1 .info1-title, .info2 .info2-title, .info3 .info3-title,.info4-title{
     height: 100px;
     border-left: 3px solid #bebebe;  
    width: 5%;
@@ -401,10 +418,12 @@ cursor: pointer;
   .info1 .info1-content{
     width: 30%;
   }
-  .info1-video{
+  .info1-video, .info4-video{
     width: 60%;
+    display: flex;
+    align-items: center;
   }
-  .info1-video iframe{
+  .info1-video iframe, .info4-video iframe{
     width:80%;
     margin-left: 20%;
      height:315px;
@@ -430,11 +449,10 @@ cursor: pointer;
     gap: 20px;
 
   }
-
-.shredderGallery{
-  margin: 10% auto;
-
-}
+  .info4 .info4-content{
+    width: 25%;
+    line-height: 1.5rem;
+  }
 
   @media(max-width: 800px) and (min-width: 0px) {
 
@@ -447,20 +465,20 @@ cursor: pointer;
       .info-collection{
        width: 90%;
       }
-    .info1{
+    .info1,.info4{
         display: flex;
         margin: 0 auto;
         width: 95%;
         margin-top: 100px;
         flex-wrap: wrap;
       }
-      .info1 .info1-content{
+      .info1 .info1-content,.info4 .info4-content{
         width: 100%;
       }
-      .info1-video{
+      .info1-video,.info4-video{
         width: 100%;
       }
-      .info1-video iframe{
+      .info1-video iframe,.info4-video iframe{
         margin-left: 0%;
         width: 100%;
       }

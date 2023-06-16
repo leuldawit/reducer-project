@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="links">
-        <a href="home.html">home</a>
+        <a href="index.html">home</a>
         <span>|</span>
         <a href="#">
           In-house Recycling and Post Consumer Plastics Shredding</a>
@@ -83,61 +83,52 @@
             <h5>Filter by type</h5>
           </div>
           <div class="filters">
-            <button>aaaaaaaaa aaaa</button>
-            <button>aaaaa</button>
-            <button>aa aa a aaa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
+            <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=single-shaft]">Single-shaft
+              shredder</button>
+            <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=granulator]">Granulator</button>
           </div>
         </div>
 
         <div class="rotor-diameter filter">
           <div class="filter-title">
-            <h5>Filter by type</h5>
+            <h5>Filter by rotor diameter</h5>
           </div>
           <div class="filters">
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaaa a aa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaa a aaa</button>
-            <button>aaaaa</button>
-            <button>a a a a</button>
+            <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d300mm]">ø 300 mm</button>
+            <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d400mm]">ø 400 mm</button>
+            <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d500mm]">ø 500 mm</button>
+            <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d700mm]">ø 700 mm</button>
           </div>
         </div>
 
         <div class="ram-design filter">
           <div class="filter-title">
-            <h5>Filter by type</h5>
+            <h5>Filter by ram design</h5>
           </div>
           <div class="filters">
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaa a aa</button>
-            <button>aaaaaaa</button>
+            <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=horizontal-ram]">Horizontal
+              ram</button>
+            <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=swing-ram]">Swing ram</button>
           </div>
         </div>
 
         <div class="screen-design filter">
           <div class="filter-title">
-            <h5>Filter by type</h5>
+            <h5>Filter by screen design</h5>
           </div>
           <div class="filters">
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
-            <button>aaaaa</button>
+            <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=bolted]">Bolted</button>
+            <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=lift-up]">Lift-up</button>
+            <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=drop-down]">Drop-down</button>
           </div>
         </div>
       </div>
     </div>
+
     <div class="page4">
       <div class="machines">
-        <div class="wlk4 machine">
+        <div class="wlk4 machine" data-kind="single-shaft" data-rotor="d300mm" data-ramtype="horizontal-ram"
+          data-screen="bolted">
           <h3>WLK 4</h3>
           <div class="photo">
             <div class="line"></div>
@@ -153,7 +144,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wlk10 machine">
+        <div class="wlk10 machine" data-kind="single-shaft" data-rotor="d400mm" data-ramtype="horizontal-ram"
+          data-screen="lift-up">
           <h3>WLK 10</h3>
           <div class="photo">
             <div class="line"></div>
@@ -168,7 +160,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wlk1000 machine">
+        <div class="wlk1000 machine" data-kind="single-shaft" data-rotor="d400mm" data-ramtype="horizontal-ram"
+          data-screen="drop-down">
           <h3>WLK 1000</h3>
           <div class="photo">
             <div class="line"></div>
@@ -183,7 +176,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wlk20 machine">
+        <div class="wlk20 machine" data-kind="single-shaft" data-rotor="d400mm" data-ramtype="horizontal-ram"
+          data-screen="lift-up">
           <h3>WLK 20</h3>
           <div class="photo">
             <div class="line"></div>
@@ -200,7 +194,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="w5.22 machine">
+        <div class="w5.22 machine" data-kind="single-shaft" data-rotor="d500mm" data-ramtype="swing-ram"
+          data-screen="lift-up">
           <h3>W5.22</h3>
           <div class="photo">
             <div class="line"></div>
@@ -215,7 +210,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wlk15j machine">
+        <div class="wlk15j machine" data-kind="single-shaft" data-rotor="d500mm" data-ramtype="horizontal-ram"
+          data-screen="lift-up">
           <h3>WLK 15 J</h3>
           <div class="photo">
             <div class="line"></div>
@@ -230,7 +226,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="s5.20liftup machine">
+        <div class="s5.20liftup machine" data-kind="single-shaft" data-rotor="d500mm" data-ramtype="horizontal-ram"
+          data-screen="lift-up">
           <h3>S5.20 Lift-up</h3>
           <div class="photo">
             <div class="line"></div>
@@ -245,7 +242,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wlk20sj machine">
+        <div class="wlk20sj machine" data-kind="single-shaft" data-rotor="d700mm" data-ramtype="horizontal-ram"
+          data-screen="lift-up">
           <h3>WLK 20 SJ</h3>
           <div class="photo">
             <div class="line"></div>
@@ -260,7 +258,8 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wlk30sj machine">
+        <div class="wlk30sj machine" data-kind="single-shaft" data-rotor="d700mm" data-ramtype="horizontal-ram"
+          data-screen="lift-up">
           <h3>WLK 30 SJ</h3>
           <div class="photo">
             <div class="line"></div>
@@ -275,7 +274,7 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wsm500/700 machine">
+        <div class="wsm500/700 machine" data-kind="granulator" data-rotor="" data-ramtype="" data-screen="bolted">
           <h3>WSM 500/700</h3>
           <div class="photo">
             <div class="line"></div>
@@ -290,7 +289,7 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wnz310/600 machine">
+        <div class="wnz310/600 machine" data-kind="granulator" data-rotor="" data-ramtype="" data-screen="bolted">
           <h3>WSZ 310/600</h3>
           <div class="photo">
             <div class="line"></div>
@@ -308,7 +307,7 @@
           <a href="">Explore Machine ></a>
         </div>
 
-        <div class="wnz310/800 machine">
+        <div class="wnz310/800 machine" data-kind="granulator" data-rotor="" data-ramtype="" data-screen="bolted">
           <h3>WSZ 310/800</h3>
           <div class="photo">
             <div class="line"></div>
@@ -381,10 +380,36 @@
               industry
             </h3>
           </div>
+           <h2 style="font-weight: 600;">In-house recycling and post industrial plastics processing <br>
+              as part of the Circular Economy</h2>
+          <div class="info4">
+           
+            <p class="info4-title">04</p>
+            <div class="info4-content">
+              <h3>Direct return to the production line</h3>
+              <p> Plastic waste generated during production is becoming increasingly valuable. As a secondary raw
+                material, it
+                can be returned directly to the production cycle. The first step in this process is the shredding of
+                production waste such as start-up lumps or reject parts. WEIMA works closely with customers in order to
+                find
+                a suitable solution for the most diverse plastics. This way we ensure that even materials that are
+                difficult
+                to process are shredded into high-quality regrind.
+              </p>
+            </div>
+            <div class="info4-video">
+              <iframe src="https://www.youtube.com/embed/rhzXWziy7SI" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </body>
-<script src="plastic.js"></script>
+
+<script type="module" src="jquery.js"></script>
+<script type="module" src="plastic.js"></script>
+
 </html>

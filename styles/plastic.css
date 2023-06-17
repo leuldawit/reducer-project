@@ -323,7 +323,7 @@ cursor: pointer;
 }
 
 .machine-pic {
-    width: 95%;
+    width: 85%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -338,7 +338,8 @@ cursor: pointer;
 
 
 .machine-pic img{
-    width: 100%;
+    width: 200px;
+    height: 130px;
     border-radius: 10px;
     transition: transform 1s;
 }

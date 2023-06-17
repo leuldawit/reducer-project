@@ -354,84 +354,55 @@ h3 {
  .info10 .content .number-block{
     margin-top: 50px;
  }
-#compare{
-    width: 50%;
-    margin-left: 15%;
-    margin-top: 100px;
+ #compare{
+    margin: 0 auto;
+    width: 80%;
 }
-#compare .content{
-    display: flex;
-    flex-direction: column;
+
+table{
+    border: 0;
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+    
 }
-#compare .content .compare{
-   display: flex;
-   justify-content: space-between;
+table td#left{
+    background-color: transparent;
+    width: 60%;
 }
-#compare .content .compare .specifications{
-    position: relative;
-    top: 230px;
-    line-height: 2rem;
- }
- #compare .content .compare .specifications ul li{
-   text-decoration: none;
-   list-style: none;
-  
- }
- #compare .content .compare .models{
-    width:30%;
- }
- #compare .content .compare .slick-slider .slick-list .slick-track .model .model__specs{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+table td{
     background-color: #f4f2f2;
-    padding-right: 40px;
-    width: 100%;
- }
- 
- #compare .content .compare .slick-slider .slick-list .slick-track .model .model__specs ul li{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    line-height: 2rem;
+    padding: 7px;
     
-    
- }
- .slick-list .slick-track .model .model__specs .image{
-    display: flex;
-    justify-content: center;
-    width: 100%;
- }
- .slick-list .slick-track .model .model__specs .image img{
-   width: 160px;
-   height: 170px;
-   margin-left: 40px;
- }
- #compare .content .compare .slick-slider .slick-list .slick-track .model .model__info{
+}
+#compare #image{
+    width: 150px;
+    height: 150px;
+}
+#compare .model__info{
     border-top: 1px solid #818181;
-    margin-top: 30px;
     padding-top: 30px;
- }
- #compare .content .models-buttons .model-download a{
+}
+#compare .models-buttons .model-download a {
     display: block;
     position: relative;
     text-decoration: none;
-   border-radius: 100px;
-   padding: 10px;
+    border-radius: 100px;
+    padding: 10px;
     text-align: center;
-   width: 170px;
-   background-color: #f76c4e;
-   color: white;
-   transition:  background-color 0.2s;
-   margin-top: 60px;
-   transition: all 0.2s;
+    width: 170px;
+    background-color: #f76c4e;
+    color: white;
+    transition: background-color 0.2s;
+    margin-top: 60px;
+    transition: all 0.2s;
 
- }
- #compare .content .models-buttons .model-download a:hover{
+}
+
+#compare .models-buttons .model-download a:hover {
     background-color: #414141;
- }
+}
  @media(max-width: 800px) and (min-width: 0px){
     .wrapper1{
         display: flex;
@@ -504,21 +475,20 @@ h3 {
             width: 100%;
      }
      #compare{
+        margin: 0 auto;
         width: 100%;
-        margin-left: 0%;
     }
-    #compare .content .compare{
-        display: flex;
-        justify-content:unset;
-     }
-    #compare .content .compare .specifications{
-       width: 55%;
-       font-size: small;
-       top: 215px;
-     }
-    #compare .content .compare .slick-slider .slick-list .slick-track .model .model__specs{
-        width: 100%;
-        font-size: small;
+    
+    table{
+        border: 0;
+        border-collapse: collapse;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    table td#left{
+        background-color: transparent;
+        width: 60%;
     }
 }
  

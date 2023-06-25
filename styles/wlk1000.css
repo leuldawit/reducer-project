@@ -606,7 +606,7 @@ table td{
         flex-direction: column;
         width: 100%;
         background-color: #f3f2f2;
-        height: 100vh;
+        height: auto;
     }
 
     .machine-img {

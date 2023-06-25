@@ -257,14 +257,14 @@ h3 {
     width: 100%;
 }
 
-.about-wlk10 {
+.about-wlk1000 {
     width: 70%;
     margin: 0 auto;
     margin-top: 100px;
 
 }
 
-.about-wlk10 .text {
+.about-wlk1000 .text {
     font-size: 24px;
     font-weight: 100;
     color: #4a4a4a;
@@ -272,13 +272,13 @@ h3 {
 
 .info .content {
     display: flex;
-    gap: 50px;
+    gap: 150px;
 }
 
 .info .content .number-block {
     display: flex;
     gap: 15px;
-    width: 45%;
+    width: 50%;
 
 }
 
@@ -292,11 +292,12 @@ h3 {
 
 .info .content .number-block .inner {
     width: 70%;
+    line-height: 25px;
 
 }
 
 .info .content .image {
-    width: 55%;
+    width: 50%;
 }
 
 .info .content .image img {
@@ -314,15 +315,19 @@ h3 {
 .info7,
 .info8,
 .info9,
-.info10 {
+.info10,
+.info11,
+.info12,
+.info13,
+.info14 {
     margin-top: 100px;
 }
 
-.info4 .content .number-block {
-    margin-top: 100px;
+.info3 .content .number-block {
+    margin-top: 200px;
 }
 
-.info3 {
+.info4 {
     position: relative;
     left: -22%;
     width: 88%;
@@ -333,7 +338,7 @@ h3 {
 
 }
 
-.info3 .content {
+.info4 .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,12 +346,12 @@ h3 {
 
 }
 
-.info3 .content .number-block .inner {
+.info4 .content .number-block .inner {
     width: 100%;
 
 }
 
-.info3 .content a {
+.info4 .content a {
     display: block;
     text-decoration: none;
     border-radius: 100px;
@@ -360,12 +365,12 @@ h3 {
     transition: all 0.2s;
 }
 
-.info3 .content a:hover {
+.info4 .content a:hover {
     color: #514b4a;
     background-color: white;
 }
 
-.info3 .content .number-block .number {
+.info4 .content .number-block .number {
     height: 100px;
     border-left: 3px solid white;
     width: 5%;
@@ -374,15 +379,15 @@ h3 {
     top: 20px;
 }
 
-.info3 .info3-video {
+.info4 .info4-video {
     position: relative;
     top: -40%;
     width: 65%;
     left: 80%;
-    height: 400px;
+    height: 50vh;
 }
 
-.info3 .info3-video iframe {
+.info4 .info4-video iframe {
     width: 100%;
     height: 100%;
 }
@@ -411,7 +416,7 @@ h3 {
 }
 
 .swiper-slide-active {
-    width: 50%;
+    width: 75%;
 }
 
 .sliders {
@@ -499,10 +504,55 @@ h3 {
     overflow: hidden; 
 
 }
+.info12 .content .number-block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.info12 .content .number-block .inner {
+    width: 70%;
+    line-height: 40px;
+
+}
+.info12 .content .number-block .inner p{
+  font-size: 22px;
+
+}
+.info .content {
+    display: flex;
+    gap: 100px;
+}
+
+.info14 .content .number-block {
+    display: flex;
+    gap: 15px;
+    width: 33%;
+
+}
+
+.info14 .content .number-block .inner {
+    width: 100%;
+    line-height: 25px;
+
+}
+
+.info14 .content .image {
+    width: 63%;
+}
+
+.info14 .content .info14-video{
+    height: 50vh;
+}
+.info14 .info14-video iframe {
+    width: 100%;
+    height: 100%;
+}
 
 #compare{
     margin: 0 auto;
     width: 80%;
+    margin-top: 100px;
 }
 
 table{
@@ -514,6 +564,7 @@ table{
 }
 table td#left{
     background-color: transparent;
+    width: 60%;
 }
 table td{
     background-color: #f4f2f2;
@@ -568,7 +619,7 @@ table td{
 
     }
 
-    .about-wlk10 {
+    .about-wlk4 {
         position: relative;
         width: 90%;
         margin: 0 auto;
@@ -600,14 +651,13 @@ table td{
         width: 100%;
     }
 
-    .info3 {
+    .info4 {
         position: relative;
         left: 0%;
         width: 100%;
-        height: 50vh;
     }
 
-    .info3 .info3-video {
+    .info4 .info4-video {
         position: relative;
         top: 0%;
         width: 100%;
@@ -616,7 +666,7 @@ table td{
         margin-top: 50px;
     }
     
-    .info3 .content {
+    .info4 .content {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -624,12 +674,12 @@ table td{
     
     }
     
-    .info3 .content .number-block .inner {
+    .info4 .content .number-block .inner {
         width: 100%;
     
     }     
 
-    .info3 .info3-video iframe {
+    .info4 .info4-video iframe {
         width: 100%;
         height: 100%;
         
@@ -687,6 +737,20 @@ table td{
         line-height: 1.5;
         white-space: nowrap; 
         overflow: hidden;
+    }
+
+    .info12 .content .number-block .inner {
+        width: 100%;
+        line-height: 25px;
+        font-size: 12px;
+    
+    }
+    .info12 .content .number-block .inner p{
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .info14 .content .info14-video{
+        height: 300px;
     }
     #compare{
         margin: 0 auto;

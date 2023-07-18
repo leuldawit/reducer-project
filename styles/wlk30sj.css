@@ -52,7 +52,6 @@ p {
 .navbar {
   width: 100%;
   position: fixed;
-  background-color: #414141;
   z-index: 1000;
 }
 .nav-items {

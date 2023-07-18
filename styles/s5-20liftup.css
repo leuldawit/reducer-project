@@ -170,6 +170,19 @@ h5 {
 
              
          }
+    div.thirdSec{
+        flex-direction: column-reverse;
+    }
+    div.thirdTxt{
+        width: 100vw;
+    }
+    div.txtSec{
+        width: 100%;
+        padding-left: 0;
+    }
+    div.thirdImg {
+        width: 80%;
+    }
 }
  
 h3 {
@@ -300,3 +313,80 @@ h3 {
      background-color: #414141;
      color: #fff;
  }
+
+ .secondSec{
+    color: #4a4a4a;
+    padding: 5% 15%;
+    padding-right: 18%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    
+}
+.secondSec p{
+    justify-content: left;
+    font-weight: lighter;
+}
+.thirdSec{
+    display: flex;
+    width: 100vw;
+    padding: 0% 15%;
+    
+
+}
+.thirdImg{
+    width: 40%;
+}
+.thirdImg img{
+    width: 90%;
+}
+
+.thirdTxt{
+    width: 60%;
+    display: flex;
+
+}
+.txtSec{
+    width: 40%;
+    padding-left: 15%;
+    display: flex;
+    gap: 1rem;
+
+}
+.number{
+    height: 100px;
+        border-left: 3px solid #bebebe;
+        gap: 1rem;
+        width: 5%;
+        position: relative;
+        top: 20px;
+}
+.inner {
+    width: 70%;
+
+}
+.fourthSec{
+    display: flex;
+    z-index: 0;
+}
+
+.fourthTxt{
+    background-color: #f76c4e;
+    width: 60vw;
+}
+.fourthtxtSec {
+    width: 70%;
+    padding: 10% 0;
+    padding-left: 25%;
+    
+    display: flex;
+    gap: 1rem;
+
+}
+.fourthImg{
+    z-index: 10;
+}
+.fourthImg img{
+    
+
+    
+}

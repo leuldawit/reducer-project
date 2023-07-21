@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
     font-style: normal;
 }
 
@@ -257,14 +257,14 @@ h3 {
     width: 100%;
 }
 
-.about-wlk1000 {
+.about-wl6s {
     width: 70%;
     margin: 0 auto;
     margin-top: 100px;
 
 }
 
-.about-wlk1000 .text {
+.about-wl6s .text {
     font-size: 24px;
     font-weight: 100;
     color: #4a4a4a;
@@ -310,24 +310,17 @@ h3 {
 
 .info2,
 .info3,
-.info4,
+.info5,
 .info6,
 .info7,
 .info8,
 .info9,
-.info10,
-.info11,
-.info12,
-.info13,
-.info14 {
+.info10 {
     margin-top: 100px;
 }
 
-.info3 .content .number-block {
-    margin-top: 200px;
-}
 
-.info4 {
+.info3 {
     position: relative;
     left: -22%;
     width: 88%;
@@ -338,7 +331,7 @@ h3 {
 
 }
 
-.info4 .content {
+.info3 .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,12 +339,12 @@ h3 {
 
 }
 
-.info4 .content .number-block .inner {
+.info3 .content .number-block .inner {
     width: 100%;
 
 }
 
-.info4 .content a {
+.info3 .content a {
     display: block;
     text-decoration: none;
     border-radius: 100px;
@@ -365,12 +358,12 @@ h3 {
     transition: all 0.2s;
 }
 
-.info4 .content a:hover {
+.info3 .content a:hover {
     color: #514b4a;
     background-color: white;
 }
 
-.info4 .content .number-block .number {
+.info3 .content .number-block .number {
     height: 100px;
     border-left: 3px solid white;
     width: 5%;
@@ -379,7 +372,7 @@ h3 {
     top: 20px;
 }
 
-.info4 .info4-video {
+.info3 .info3-video {
     position: relative;
     top: -40%;
     width: 65%;
@@ -387,199 +380,79 @@ h3 {
     height: 50vh;
 }
 
-.info4 .info4-video iframe {
+.info3 .info3-video iframe {
     width: 100%;
     height: 100%;
 }
 
-.info5 {
+.info4 {
     margin-top: 400px;
 }
 
-.swiper-wrapper {
-    align-items: flex-end;
+.info4 .content .image iframe {
     width: 100%;
-    transform: translate3d(0px, 0px, 0px) !important;
-    position: relative;
-    overflow: hidden;
-    padding: 0px;
-    margin-top: 100px;
-}
-
-.swiper-slide {
-    width: 12.5%;
-    overflow: hidden;
-
-}
-.swiper-slide img{
-    width: 100%;
-}
-
-.swiper-slide-active {
-    width: 75%;
-}
-
-.sliders {
-    display: flex;
-    gap: 50px;
-    margin-top: 50px;
-
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    position: relative;
-    color: #fff;
-    top: 100%;
-    transform: none;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
-    transition: all .3s;
-    border-radius: 50%;
-    background-color: #333;
-    font-size: 10px; /* Adjust the font size to change the arrow size */
-  width: 30px; /* Adjust the width to change the arrow size */
-  height: 30px;
-
+    height: 300px;
 }
 
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    background-color: #333;
-}
-
-
-.info10 .content {
-    gap: 100px;
-}
-
-.info10 .content .number-block {
-    margin-top: 50px;
-}
-.material-discharge{
-    background-color: #f76c4e;
-    margin-left: 46%;
-    width: 50%;
-    margin-top: 100px;
-  
-}
-.material-discharge h1{
-    position: relative;
-    top: -22px;
-}
-.material-discharge .content{
-    margin-left: 30px;
-}
-.material-discharge .content,.material-discharge .content h2  {
-    display: flex;
-    gap: 50px;
-    color: #f1f1f1;
-}
-
-.material-discharge .content .number-block {
-    display: flex;
-    gap: 15px;
-    width: 70%;
-
-}
-
-.material-discharge .content .number-block .line {
-    height: 100px;
-    border-left: 3px solid #f1f1f1;
-    width: 5%;
-    position: relative;
-    top: 20px;
-}
-
-.material-discharge .content .number-block .inner {
-    width: 100%;
-
-}
-.material-discharge .content .number-block .inner .background-title {
-    color: #eb674a;
-    font-size: 123px;
-    font-weight: 500;
-    line-height: 1.5;
-    white-space: nowrap;  
-    overflow: hidden; 
-
-}
-.info12 .content .number-block {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-
-}
-.info12 .content .number-block .inner {
-    width: 70%;
-    line-height: 40px;
-
-}
-.info12 .content .number-block .inner p{
-  font-size: 22px;
-
-}
 .info .content {
     display: flex;
     gap: 100px;
 }
 
-.info14 .content .number-block {
+.info9 .content .number-block {
     display: flex;
-    gap: 15px;
-    width: 33%;
-
-}
-
-.info14 .content .number-block .inner {
     width: 100%;
-    line-height: 25px;
+    justify-content: center;
 
 }
 
-.info14 .content .image {
-    width: 63%;
+.info9 .content .number-block .inner {
+    width: 70%;
+    line-height: 40px;
+
 }
 
-.info14 .content .info14-video{
-    height: 50vh;
-}
-.info14 .info14-video iframe {
-    width: 100%;
-    height: 100%;
+.info9 .content .number-block .inner p {
+    font-size: 22px;
+
 }
 
-#compare{
+
+#compare {
     margin: 0 auto;
     width: 80%;
-    margin-top: 100px;
 }
 
-table{
+table {
     border: 0;
     border-collapse: collapse;
     width: 80%;
     margin: 0 auto;
-    
+
 }
-table td#left{
+
+table td#left {
     background-color: transparent;
-    width: 60%;
 }
-table td{
+
+table td {
     background-color: #f4f2f2;
     text-align: center;
     padding: 7px;
-    
+
 }
-#compare .model__info{
+
+#compare .model__info {
     border-top: 1px solid #818181;
     padding-top: 30px;
 }
-#compare #image{
+
+#compare #image {
     width: 150px;
     height: 150px;
 }
+
 #compare .models-buttons .model-download a {
     display: block;
     position: relative;
@@ -599,6 +472,7 @@ table td{
 #compare .models-buttons .model-download a:hover {
     background-color: #414141;
 }
+
 
 @media(max-width: 800px) and (min-width: 0px) {
     .wrapper1 {
@@ -622,7 +496,7 @@ table td{
 
     }
 
-    .about-wlk1000 {
+    .about-wl6s {
         position: relative;
         width: 90%;
         margin: 0 auto;
@@ -654,13 +528,13 @@ table td{
         width: 100%;
     }
 
-    .info4 {
+    .info3 {
         position: relative;
         left: 0%;
         width: 100%;
     }
 
-    .info4 .info4-video {
+    .info3 .info3-video {
         position: relative;
         top: 0%;
         width: 100%;
@@ -668,112 +542,63 @@ table td{
         height: 300px;
         margin-top: 50px;
     }
-    
-    .info4 .content {
+
+    .info3 .content {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-    
-    }
-    
-    .info4 .content .number-block .inner {
-        width: 100%;
-    
-    }     
 
-    .info4 .info4-video iframe {
+    }
+
+    .info3 .content .number-block .inner {
+        width: 100%;
+
+    }
+
+    .info3 .info3-video iframe {
         width: 100%;
         height: 100%;
-        
-    }
-    
-
-    .info5 .content .image {
-        margin-top: 0px;
 
     }
-  
-    .swiper-slide {
-        width: 10%;
-        overflow: hidden;
-    
-    }
-    
-    .swiper-slide-active {
-        width: 70%;
-    }   
 
     .info6 .content .number-block {
         margin-top: 0px;
 
     }
-    
-    .material-discharge .content{
-        margin-left: 0px;
-        width: 100%;
-    }
-    .material-discharge{
-        background-color: #f76c4e;
-        margin: 0 auto;
-        width: 95%;
-        margin-top: 100px;
-      
-    }
-    .material-discharge h1{
-        position: relative;
-        top: 0px;
-    }
-  
-    
-    .material-discharge .content .number-block {
-        display: flex;
-        gap: 15px;
-        width: 85%;
-    
-    }
-    
-    .material-discharge .content .number-block .inner .background-title {
-        color: #eb674a;
-        font-size:70px;
-        font-weight: 500;
-        line-height: 1.5;
-        white-space: nowrap; 
-        overflow: hidden;
-    }
 
-    .info12 .content .number-block .inner {
+    .info9 .content .number-block .inner {
         width: 100%;
         line-height: 25px;
         font-size: 12px;
     
     }
-    .info12 .content .number-block .inner p{
+    .info9 .content .number-block .inner p{
       font-size: 18px;
       line-height: 20px;
     }
-    .info14 .content .info14-video{
-        height: 300px;
-    }
-    #compare{
+
+    #compare {
         margin: 0 auto;
         width: 100%;
     }
-    
-    table{
+
+    table {
         border: 0;
         border-collapse: collapse;
         width: 90%;
         margin: 0 auto;
-        
+
     }
-    table td#left{
+
+    table td#left {
         background-color: transparent;
-        
+
     }
-    #compare #image{
+
+    #compare #image {
         width: 100px;
         height: 100px;
     }
-    
+
 }

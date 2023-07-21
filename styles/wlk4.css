@@ -411,6 +411,9 @@ table td{
        background-color: #f3f2f2;
        height: auto;
    }
+   .wrapper1-content{
+    margin-top: 100px;
+}
 
    .machine-img{
     position: relative;

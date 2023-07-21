@@ -349,7 +349,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .machine {
@@ -515,24 +515,24 @@ h3 {
   height: 100%;
 }
 
-.info2 .content,.info6 .content {
+.info2 .content,.info8 .content {
   justify-content: center;
 }
 
-.info2 .content .number-block,.info6 .content .number-block {
+.info2 .content .number-block,.info8 .content .number-block {
   display: flex;
   gap: 15px;
   width: 70%;
 
 }
 
-.info2 .content .number-block .inner,.info6 .content .number-block .inner {
+.info2 .content .number-block .inner,.info8 .content .number-block .inner {
   width: 85%;
   line-height: 35px;
 
 }
 
-.info2 .content .image,.info6 .content .image {
+.info2 .content .image,.info8 .content .image {
   width: 0%;
 }
 

@@ -1,7 +1,27 @@
 @font-face {
   font-family: "Roboto";
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 /* DEFAULT */
@@ -19,12 +39,11 @@ h3,
 h4,
 h5 {
   color: #4a4a4a;
-  font-weight: 100;
 }
 
 h1 {
   font-size: 29px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2 {
@@ -39,11 +58,11 @@ h3 {
 }
 
 p {
-  font-size: 13px;
-  font-weight: 100;
+  font-size: 15px;
+  font-weight: 300;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #8a8a8a;
+  color: #9b9b9b;
 }
 
 .navbar {
@@ -157,7 +176,7 @@ p {
   position: relative;
   top: 20%;
   padding-left: 15%;
-  width: 200px;
+  width: 250px;
 }
 .links {
   display: flex;
@@ -245,8 +264,8 @@ p {
   margin-top: 100px;
 }
 .about-wsm500_700 .text {
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 21px;
+  font-weight: 300;
   line-height: 35px;
   color: #4a4a4a;
 }
@@ -275,6 +294,10 @@ p {
 }
 .info .content .number-block .inner {
   width: 100%;
+}
+.info .content .number-block .inner p {
+  color: #4a4a4a;
+  font-size: 13px;
 }
 .info .content .button {
   border: none;
@@ -361,6 +384,8 @@ table th {
 }
 table td {
   text-align: center;
+  font-weight: 300;
+  color: #4a4a4a;
   padding: 7px;
 }
 table td:not(:first-child) {

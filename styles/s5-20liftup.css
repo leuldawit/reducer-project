@@ -263,7 +263,8 @@ p {
         padding-left: 0;
     }
     div.vidImg {
-        width: 50%;
+        width: 100%;
+        justify-content: center;
     }
     div.vidImg iframe {
         padding-top: 5%;
@@ -566,13 +567,14 @@ font-size: 0.8rem;
     width: 100%;
     padding: 5% 0;
     padding-left: 15%;
+    
     justify-content: left;
     gap: 5%;
 }
 
 .vidTxt {
     width: 33%;
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     justify-content: left;
     vertical-align: middle;
@@ -588,10 +590,13 @@ font-size: 0.8rem;
 
 .vidImg {
     z-index: 10;
+    width: 50%;
 }
 
 .vidImg iframe {
-    width:fit-content;
+    
+    width: 75%;
+    
     justify-content: left;
 
 }

@@ -201,7 +201,7 @@ button.req{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    margin: 2rem;
+    margin: 3rem;
 }
 div.slider{
     display: flex;
@@ -211,10 +211,12 @@ div.slider img:nth-child(1){
 }
 div.slider img{
     height: max-content;
+
 }
 .productCard img{
-    /* min-width: 40vw; */
+    min-width: 40vw;
     width: 600px;
+    margin-top: 5rem;
 }
 p{
     font-size: 1.2rem;

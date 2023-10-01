@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
   font-style: normal;
 }
 
@@ -44,10 +44,6 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 0%;
-  height: 90vh;
-  background-image: url('../pics/plastic_shredding_recycling_web-2048x1227.webp');
-  background-size: cover;
-  z-index: -1;
 
 }
 
@@ -223,7 +219,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   left: 0;
   bottom: 10vh;
   width: 50%;
@@ -281,17 +276,30 @@ h3 {
   background-color: #9b9b9b;
 }
 
-.page2 .imgcontainer {
+.page2 .swiper-container {
   margin-top: 60px;
   width: 50%;
   margin-bottom: 60px;
-
+  overflow: hidden;
 }
 
-.page2 .imgcontainer img {
+.swiper-slide img{
   width: 100%;
+}
+
+.sliders {
+  position:relative;
+  top: -65%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+
+    font-size: 10px; /* Adjust the font size to change the arrow size */
+  width: 30px; /* Adjust the width to change the arrow size */
+  height: 30px;
 
 }
+
 
 .page3 {
   margin-top: 50px;
@@ -368,7 +376,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .machine {
@@ -471,6 +479,7 @@ h3 {
   text-align: left;
   flex-direction: column;
   gap: 20px;
+  
 
 }
 
@@ -489,6 +498,8 @@ h3 {
 .info-collection {
   margin: 0 auto;
   width: 75%;
+  margin-top: 250px;
+  
 }
 
 .info {
@@ -621,10 +632,15 @@ h3 {
     text-align: left;
   }
 
-  .page2 .imgcontainer {
+  .page2 .swiper-container {
     margin-top: 30px;
     width: 100%;
 
+  }
+  .sliders {
+    position: relative;
+    padding: 20px;
+    top: -40vmin;
   }
 
   .page3 {
@@ -647,5 +663,4 @@ h3 {
   .filter {
     width: 100%;
   }
-
 }

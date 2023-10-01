@@ -139,23 +139,35 @@ h3 {
 
 .overlay-content {
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
-
+.overlay-content .items {
+  width: 30%;
+  height: 100%;
+  color: #fff;
+  
+}
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+  font-size: 20px;
+  color: #fff;
   display: block;
   transition: 0.3s;
+  font-weight: 100;
 }
 
 
+.overlay a:hover{
+  text-decoration: underline;
+}
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
@@ -167,12 +179,15 @@ h3 {
   top: 20px;
   right: 45px;
   font-size: 60px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 600px) {
+  
   .overlay a {
-    font-size: 20px
+    font-size: 20px;
   }
 
   .overlay .closebtn {
@@ -180,6 +195,23 @@ h3 {
     top: 15px;
     right: 35px;
   }
+  .overlay-content {
+    
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+}
+.overlay-content .items {
+  width: 90%;
+  height: 100%;
+  color: #fff;
+  
+}
 }
 
 

@@ -95,34 +95,27 @@ h1,h2,h3,h4,h5{
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-}
-
-
-.overlay-content {
+  }
+  
+  
+  .overlay-content {
     position: relative;
-    width: 100%;
-    margin-top: 10%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    overflow: hidden;
-    
-}
-.overlay-content .items {
+      width: 100%;
+      margin-top: 10%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+  }
+  .overlay-content .items {
     width: 30%;
     height: 100%;
     color: #fff;
     
-}
-.shredding{
-    /* background-image: url("https://weima.com/wp-content/themes/weima-2023/images/menu/menu-shredder-mobile@1x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
-}
-
-.overlay a {
+  }
+  
+  .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 20px;
@@ -130,39 +123,58 @@ h1,h2,h3,h4,h5{
     display: block;
     transition: 0.3s;
     font-weight: 100;
-}
-.overlay a:hover{
+  }
+  
+  
+  .overlay a:hover{
     text-decoration: underline;
-}
-
-
-.overlay a:hover,
-.overlay a:focus {
+  }
+  .overlay a:hover,
+  .overlay a:focus {
     color: #f1f1f1;
-}
-
-/* Position the close button top right corner */
-.overlay .closebtn {
+  }
+  
+  /* Position the close button top right corner */
+  .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
     cursor: pointer;
-}
-
-
-@media screen and (max-height: 450px) {
+    z-index: 1;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    
     .overlay a {
-        font-size: 20px
+      font-size: 20px;
     }
-
+  
     .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
     }
-}
-
+    .overlay-content {
+      
+      width: 100%;
+      margin-top: 10%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: auto;
+  }
+  .overlay-content .items {
+    width: 90%;
+    height: 100%;
+    color: #fff;
+    
+  }
+  }
+  
 
 .contact:hover {
     background-color: #414141;

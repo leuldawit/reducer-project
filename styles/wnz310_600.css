@@ -106,6 +106,7 @@ h3 {
 }
 
 
+
 .overlay {
 
     height: 100%;
@@ -118,41 +119,52 @@ h3 {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-}
-
-
-.overlay-content {
+  }
+  
+  
+  .overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-}
-
-
-.overlay a {
+  }
+  
+  
+  .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
-}
-
-
-.overlay a:hover,
-.overlay a:focus {
+  }
+  
+  
+  .overlay a:hover,
+  .overlay a:focus {
     color: #f1f1f1;
-}
-
-/* Position the close button top right corner */
-.overlay .closebtn {
+  }
+  
+  /* Position the close button top right corner */
+  .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
-
+  }
+  @media (min-width: 1024px) {
+    h3 {
+        font-size: 21px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    h3 {
+        font-size: 19px;
+    }
+   
+  }
 
 @media screen and (max-height: 450px) {
     .overlay a {

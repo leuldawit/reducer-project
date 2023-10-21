@@ -121,6 +121,7 @@ p {
 }
 
 .overlay {
+
   height: 100%;
   width: 0;
   position: fixed;
@@ -133,6 +134,7 @@ p {
   transition: 0.5s;
 }
 
+
 .overlay-content {
   position: relative;
   top: 25%;
@@ -140,6 +142,7 @@ p {
   text-align: center;
   margin-top: 30px;
 }
+
 
 .overlay a {
   padding: 8px;
@@ -149,6 +152,7 @@ p {
   display: block;
   transition: 0.3s;
 }
+
 
 .overlay a:hover,
 .overlay a:focus {
@@ -162,8 +166,18 @@ p {
   right: 45px;
   font-size: 60px;
 }
+@media (min-width: 1024px) {
+  h3 {
+      font-size: 21px;
+  }
+}
 
-.contact:hover {
+@media (min-width: 768px) {
+  h3 {
+      font-size: 19px;
+  }
+ 
+}.contact:hover {
   background-color: #414141;
 }
 

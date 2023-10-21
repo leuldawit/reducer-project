@@ -152,7 +152,18 @@ h3 {
     right: 45px;
     font-size: 60px;
 }
+@media (min-width: 1024px) {
+    h3 {
+        font-size: 21px;
+    }
+}
 
+@media (min-width: 768px) {
+    h3 {
+        font-size: 19px;
+    }
+   
+}
 
 @media screen and (max-height: 450px) {
     .overlay a {

@@ -1,0 +1,34 @@
+@import url('wlk6s.css');
+
+.galleryContainer{
+    height: max-content;
+    display: grid;
+    grid-template-areas: ' .  . ';
+    gap: 10px;
+}
+.galleryContainer>img{
+    height: auto;
+    width: 100%;
+}
+.imgCont{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.imgCont img{
+    width: 100px;
+    height: auto;
+}
+/* 
+       <div class="galleryContainer">
+            <img src="" alt="">
+            <div class="imgCont">
+                <img src="" alt="" class="small">
+                <img src="" alt="" class="small">
+                <img src="" alt="" class="small">
+            </div>
+        </div>
+ */

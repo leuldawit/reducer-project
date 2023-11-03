@@ -40,6 +40,7 @@ h3 {
     line-height: 1.14;
 }
 
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -152,6 +153,7 @@ h3 {
     right: 45px;
     font-size: 60px;
 }
+
 @media (min-width: 1024px) {
     h3 {
         font-size: 21px;
@@ -162,12 +164,14 @@ h3 {
     h3 {
         font-size: 19px;
     }
-   
+
 }
 
-@media screen and (max-height: 450px) {
+
+@media screen and (max-width: 600px) {
+
     .overlay a {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .overlay .closebtn {
@@ -175,8 +179,26 @@ h3 {
         top: 15px;
         right: 35px;
     }
-}
 
+    .overlay-content {
+
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    .overlay-content .items {
+        width: 90%;
+        height: 100%;
+        color: #fff;
+
+    }
+}
 
 .contact:hover {
     background-color: #414141;
@@ -338,7 +360,8 @@ h3 {
     margin-top: 200px;
 }
 
-.info4,.info14 {
+.info4,
+.info14 {
     position: relative;
     left: -22%;
     width: 88%;
@@ -349,7 +372,8 @@ h3 {
 
 }
 
-.info4 .content,.info14 .content {
+.info4 .content,
+.info14 .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,12 +381,14 @@ h3 {
 
 }
 
-.info4 .content .number-block .inner,.info14 .content .number-block .inner {
+.info4 .content .number-block .inner,
+.info14 .content .number-block .inner {
     width: 100%;
 
 }
 
-.info4 .content a,.info14 .content a {
+.info4 .content a,
+.info14 .content a {
     display: block;
     text-decoration: none;
     border-radius: 100px;
@@ -376,12 +402,14 @@ h3 {
     transition: all 0.2s;
 }
 
-.info4 .content a:hover,.info14 .content a:hover {
+.info4 .content a:hover,
+.info14 .content a:hover {
     color: #514b4a;
     background-color: white;
 }
 
-.info4 .content .number-block .number,.info14 .content .number-block .number {
+.info4 .content .number-block .number,
+.info14 .content .number-block .number {
     height: 100px;
     border-left: 3px solid white;
     width: 5%;
@@ -390,7 +418,8 @@ h3 {
     top: 20px;
 }
 
-.info4 .info4-video,.info14 .info14-video {
+.info4 .info4-video,
+.info14 .info14-video {
     position: relative;
     margin-top: -20%;
     margin-bottom: 20%;
@@ -399,7 +428,8 @@ h3 {
     height: 400px;
 }
 
-.info4 .info4-video iframe,.info14 .info14-video iframe {
+.info4 .info4-video iframe,
+.info14 .info14-video iframe {
     width: 100%;
     height: 100%;
 }
@@ -423,7 +453,8 @@ h3 {
     overflow: hidden;
 
 }
-.swiper-slide img{
+
+.swiper-slide img {
     width: 100%;
 }
 
@@ -448,9 +479,11 @@ h3 {
     transition: all .3s;
     border-radius: 50%;
     background-color: #333;
-    font-size: 10px; /* Adjust the font size to change the arrow size */
-  width: 30px; /* Adjust the width to change the arrow size */
-  height: 30px;
+    font-size: 10px;
+    /* Adjust the font size to change the arrow size */
+    width: 30px;
+    /* Adjust the width to change the arrow size */
+    height: 30px;
 
 }
 
@@ -468,21 +501,26 @@ h3 {
 .info10 .content .number-block {
     margin-top: 50px;
 }
-.material-discharge{
+
+.material-discharge {
     background-color: #f76c4e;
     margin-left: 46%;
     width: 50%;
     margin-top: 100px;
-  
+
 }
-.material-discharge h1{
+
+.material-discharge h1 {
     position: relative;
     top: -22px;
 }
-.material-discharge .content{
+
+.material-discharge .content {
     margin-left: 30px;
 }
-.material-discharge .content,.material-discharge .content h2  {
+
+.material-discharge .content,
+.material-discharge .content h2 {
     display: flex;
     gap: 50px;
     color: #f1f1f1;
@@ -507,30 +545,35 @@ h3 {
     width: 100%;
 
 }
+
 .material-discharge .content .number-block .inner .background-title {
     color: #eb674a;
     font-size: 123px;
     font-weight: 500;
     line-height: 1.5;
-    white-space: nowrap;  
-    overflow: hidden; 
+    white-space: nowrap;
+    overflow: hidden;
 
 }
+
 .info12 .content .number-block {
     display: flex;
     width: 100%;
     justify-content: center;
 
 }
+
 .info12 .content .number-block .inner {
     width: 70%;
     line-height: 40px;
 
 }
-.info12 .content .number-block .inner p{
-  font-size: 22px;
+
+.info12 .content .number-block .inner p {
+    font-size: 22px;
 
 }
+
 .info .content {
     display: flex;
     gap: 100px;
@@ -553,46 +596,52 @@ h3 {
     width: 63%;
 }
 
-.info13 .content .info13-video{
+.info13 .content .info13-video {
     height: 50vh;
 }
+
 .info13 .info13-video iframe {
     width: 100%;
     height: 100%;
 }
 
-#compare{
+#compare {
     margin: 0 auto;
     width: 80%;
     margin-top: 300px;
 }
 
-table{
+table {
     border: 0;
     border-collapse: collapse;
     width: 80%;
     margin: 0 auto;
-    
+
 }
-table td#left{
+
+table td#left {
     background-color: transparent;
     width: 35%;
 }
-table td{
+
+table td {
     background-color: #f4f2f2;
     text-align: center;
     padding: 7px;
     width: 30%;
-    
+
 }
-#compare .model__info{
+
+#compare .model__info {
     border-top: 1px solid #818181;
     padding-top: 30px;
 }
-#compare #image{
+
+#compare #image {
     width: 150px;
     height: 150px;
 }
+
 #compare .models-buttons .model-download a {
     display: block;
     position: relative;
@@ -621,7 +670,8 @@ table td{
         background-color: #f3f2f2;
         height: auto;
     }
-    .wrapper1-content{
+
+    .wrapper1-content {
         margin-top: 100px;
     }
 
@@ -668,13 +718,16 @@ table td{
         width: 100%;
     }
 
-    .info4,.info14 {
+    .info4,
+    .info14 {
         position: relative;
         left: 0%;
         width: 100%;
     }
 
-    .info4 .info4-video,.info14 .info14-video,.info13 .info13-video  {
+    .info4 .info4-video,
+    .info14 .info14-video,
+    .info13 .info13-video {
         position: relative;
         top: 0%;
         width: 100%;
@@ -682,77 +735,82 @@ table td{
         height: 300px;
         margin-top: 50px;
     }
-    
-    .info4 .content,.info14 .content {
+
+    .info4 .content,
+    .info14 .content {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-    
-    }
-    
-    .info4 .content .number-block .inner,.info14 .content .number-block .inner {
-        width: 100%;
-    
-    }     
 
-    .info4 .info4-video iframe,.info14 .info14-video iframe {
+    }
+
+    .info4 .content .number-block .inner,
+    .info14 .content .number-block .inner {
+        width: 100%;
+
+    }
+
+    .info4 .info4-video iframe,
+    .info14 .info14-video iframe {
         width: 100%;
         height: 100%;
-        
+
     }
-    
+
 
     .info5 .content .image {
         margin-top: 0px;
 
     }
-  
+
     .swiper-slide {
         width: 10%;
         overflow: hidden;
-    
+
     }
-    
+
     .swiper-slide-active {
         width: 70%;
-    }   
+    }
 
     .info6 .content .number-block {
         margin-top: 0px;
 
     }
-    
-    .material-discharge .content{
+
+    .material-discharge .content {
         margin-left: 0px;
         width: 100%;
     }
-    .material-discharge{
+
+    .material-discharge {
         background-color: #f76c4e;
         margin: 0 auto;
         width: 95%;
         margin-top: 100px;
-      
+
     }
-    .material-discharge h1{
+
+    .material-discharge h1 {
         position: relative;
         top: 0px;
     }
-  
-    
+
+
     .material-discharge .content .number-block {
         display: flex;
         gap: 15px;
         width: 85%;
-    
+
     }
-    
+
     .material-discharge .content .number-block .inner .background-title {
         color: #eb674a;
-        font-size:70px;
+        font-size: 70px;
         font-weight: 500;
         line-height: 1.5;
-        white-space: nowrap; 
+        white-space: nowrap;
         overflow: hidden;
     }
 
@@ -760,35 +818,40 @@ table td{
         width: 100%;
         line-height: 25px;
         font-size: 12px;
-    
+
     }
-    .info12 .content .number-block .inner p{
-      font-size: 18px;
-      line-height: 20px;
+
+    .info12 .content .number-block .inner p {
+        font-size: 18px;
+        line-height: 20px;
     }
-    .info13 .content .info13-video{
+
+    .info13 .content .info13-video {
         height: 35vh;
     }
-    #compare{
+
+    #compare {
         margin: 0 auto;
         margin-top: 400px;
         width: 100%;
     }
-    
-    table{
+
+    table {
         border: 0;
         border-collapse: collapse;
         width: 90%;
         margin: 0 auto;
-        
+
     }
-    table td#left{
+
+    table td#left {
         background-color: transparent;
-        
+
     }
-    #compare #image{
+
+    #compare #image {
         width: 100px;
         height: 100px;
     }
-    
+
 }

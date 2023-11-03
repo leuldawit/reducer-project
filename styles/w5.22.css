@@ -79,33 +79,34 @@ p {
     letter-spacing: 0.2px;
     color: #9b9b9b;
 }
+
 .navbar {
     width: 100%;
     position: fixed;
     z-index: 1000;
-}
-
-.nav-items {
+  }
+  
+  .nav-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.nav-items ul {
+  }
+  
+  .nav-items ul {
     padding-right: 1.5rem;
-}
-
-.nav-items ul li {
-
+  }
+  
+  .nav-items ul li {
+  
     list-style: none;
     display: inline-block;
     padding-right: 0;
     font-weight: bolder;
-
-
-}
-
-.nav-items ul li button {
+  
+  
+  }
+  
+  .nav-items ul li button {
     text-decoration: none;
     padding: 0.7rem;
     border-radius: 25px;
@@ -114,39 +115,39 @@ p {
     border: none;
     cursor: pointer;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
-
-}
-
-.logo {
+  
+  }
+  
+  .logo {
     width: 30%;
     overflow: hidden;
-}
-
-.logo img {
-
+  }
+  
+  .logo img {
+  
     height: 30%;
     padding: 2vh 0 0 2vw;
-}
-
-.contact {
+  }
+  
+  .contact {
     background-color: #f76c4e;
     color: white;
     transition: background-color 0.5s;
-}
-
-.menu {
+  }
+  
+  .menu {
     color: black;
     background-color: white;
     transition: background-color 0.5s;
-}
-
-.menu:hover {
+  }
+  
+  .menu:hover {
     background-color: #d7d7d7;
-}
-
-
-.overlay {
-
+  }
+  
+  
+  .overlay {
+  
     height: 100%;
     width: 0;
     position: fixed;
@@ -157,41 +158,85 @@ p {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-}
-
-
-.overlay-content {
+  }
+  
+  
+  .overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-}
-
-
-.overlay a {
+  }
+  
+  
+  .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
-}
-
-
-.overlay a:hover,
-.overlay a:focus {
+  }
+  
+  
+  .overlay a:hover,
+  .overlay a:focus {
     color: #f1f1f1;
-}
-
-/* Position the close button top right corner */
-.overlay .closebtn {
+  }
+  
+  /* Position the close button top right corner */
+  .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
-@media (min-width: 1024px) {
+  }
+  @media (min-width: 1024px) {
+    h3 {
+        font-size: 21px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    h3 {
+        font-size: 19px;
+    }
+   
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    
+    .overlay a {
+      font-size: 20px;
+    }
+  
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    .overlay-content {
+      
+      width: 100%;
+      margin-top: 10%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: auto;
+  }
+  .overlay-content .items {
+    width: 90%;
+    height: 100%;
+    color: #fff;
+    
+  }
+  }
+  
+  @media (min-width: 1024px) {
     h3 {
         font-size: 21px;
     }

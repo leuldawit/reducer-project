@@ -3,21 +3,25 @@
   src: url("../fonts/Roboto-Thin.ttf") format("truetype");
   font-weight: 100;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
@@ -65,26 +69,33 @@ p {
   color: #9b9b9b;
 }
 
+
 .navbar {
   width: 100%;
   position: fixed;
   z-index: 1000;
 }
+
 .nav-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav-items ul {
   padding-right: 1.5rem;
 }
 
 .nav-items ul li {
+
   list-style: none;
   display: inline-block;
   padding-right: 0;
   font-weight: bolder;
+
+
 }
+
 .nav-items ul li button {
   text-decoration: none;
   padding: 0.7rem;
@@ -93,14 +104,17 @@ p {
   display: block;
   border: none;
   cursor: pointer;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
+
 }
+
 .logo {
   width: 30%;
   overflow: hidden;
 }
 
 .logo img {
+
   height: 30%;
   padding: 2vh 0 0 2vw;
 }
@@ -110,14 +124,17 @@ p {
   color: white;
   transition: background-color 0.5s;
 }
+
 .menu {
   color: black;
   background-color: white;
   transition: background-color 0.5s;
 }
+
 .menu:hover {
   background-color: #d7d7d7;
 }
+
 
 .overlay {
 
@@ -165,18 +182,54 @@ p {
   right: 45px;
   font-size: 60px;
 }
+
 @media (min-width: 1024px) {
   h3 {
-      font-size: 21px;
+    font-size: 21px;
   }
 }
 
 @media (min-width: 768px) {
   h3 {
-      font-size: 19px;
+    font-size: 19px;
   }
- 
+
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .overlay a {
+    font-size: 20px;
+  }
+  
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .overlay-content {
+
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+  }
+
+  .overlay-content .items {
+    width: 90%;
+    height: 100%;
+    color: #fff;
+
+  }
+}
+
 .contact:hover {
   background-color: #414141;
 }
@@ -187,22 +240,26 @@ p {
   background-color: #f3f2f2;
   height: 100vh;
 }
+
 .wrapper-content {
   position: relative;
   top: 20%;
   padding-left: 15%;
   width: 250px;
 }
+
 .links {
   display: flex;
   align-items: center;
   font-size: 10px;
 }
+
 .links a {
   color: gray;
   text-decoration: none;
   padding: 0.3rem;
 }
+
 .links .main {
   color: #303030;
   font-weight: 600;
@@ -221,6 +278,7 @@ p {
   transition: all 0.2s;
   cursor: pointer;
 }
+
 .wrapper-content .back:hover,
 .downloadable .pdf-link:hover {
   background-color: #9b9b9b;
@@ -245,6 +303,7 @@ p {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
 }
+
 .quote-link {
   width: 200px;
   border-radius: 15px;
@@ -258,16 +317,19 @@ p {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
 }
+
 .quote-link:hover {
   background-color: #414141;
   color: #fff;
 }
+
 .machine-img {
   position: relative;
   top: -20vh;
   left: 83.9%;
   width: 70%;
 }
+
 .machine-img img {
   width: 100%;
 }
@@ -278,6 +340,7 @@ p {
   margin: 0 auto;
   margin-top: 100px;
 }
+
 .about-wsm500_700 .text {
   font-size: 21px;
   font-weight: 300;
@@ -296,6 +359,7 @@ p {
   display: flex;
   width: 45%;
 }
+
 .info .content .number-block .number {
   height: 100px;
   padding-left: 5px;
@@ -307,13 +371,16 @@ p {
   position: relative;
   top: 20px;
 }
+
 .info .content .number-block .inner {
   width: 100%;
 }
+
 .info .content .number-block .inner p {
   color: #4a4a4a;
   font-size: 13px;
 }
+
 .info .content .button {
   border: none;
   border-radius: 100px;
@@ -323,16 +390,20 @@ p {
   color: #fff;
   background-color: #f76c4e;
 }
+
 .info .content .button:hover {
   background-color: #303030;
   transition: 0.3s all;
 }
+
 .info .content .image {
   width: 70%;
 }
+
 .info .content .image img {
   width: 100%;
 }
+
 .info1,
 .info2,
 .info3,
@@ -345,9 +416,11 @@ p {
 .extra-stable {
   margin-top: 100px;
 }
+
 .info5 {
   margin-top: 600px;
 }
+
 .extra-stable {
   position: absolute;
   right: 0;
@@ -355,24 +428,29 @@ p {
   padding: 1rem 4rem 3rem 4rem;
   background-color: #f76c4e;
 }
+
 .extra-stable .content {
   width: 25rem;
   height: 20rem;
 }
+
 .extra-stable h2 {
   font-size: 2rem;
   color: #4a4a4a;
 }
+
 .extra-stable .inner {
   display: flex;
   align-items: baseline;
   gap: 2rem;
 }
+
 .extra-stable .line {
   height: 5rem;
   border-left: 2px solid white;
   color: #f76c4e;
 }
+
 .extra-stable p {
   color: #fff;
 }
@@ -397,26 +475,32 @@ table th {
   text-align: left;
   color: #4a4a4a;
 }
+
 table td {
   text-align: center;
   font-weight: 300;
   color: #4a4a4a;
   padding: 7px;
 }
+
 table td:not(:first-child) {
   width: 200px;
 }
+
 table td:nth-child(2) {
   background-color: #f4f2f2;
 }
+
 #compare #image {
   width: 150px;
   height: 150px;
 }
+
 #compare .model__info {
   border-top: 1px solid #818181;
   padding-top: 30px;
 }
+
 #compare .models-buttons .model-download a {
   display: block;
   position: relative;
@@ -432,6 +516,7 @@ table td:nth-child(2) {
   margin-top: 60px;
   transition: all 0.2s;
 }
+
 #compare .models-buttons .model-download a:hover {
   background-color: #414141;
 }
@@ -441,6 +526,7 @@ table td:nth-child(2) {
   .machine-img {
     top: -35vh;
   }
+
   table td:not(:first-child) {
     width: 150px;
   }
@@ -451,6 +537,7 @@ table td:nth-child(2) {
     width: 100px;
     height: 100px;
   }
+
   table td:not(:first-child) {
     width: 100px;
   }
@@ -461,15 +548,18 @@ table td:nth-child(2) {
     width: 100%;
     height: auto;
   }
+
   .machine-img {
     top: 0vh;
     left: 15%;
     width: 70%;
   }
+
   .info .content {
     flex-direction: column;
     gap: 0;
   }
+
   .info .content .number-block,
   .info .content .image {
     width: 100%;
@@ -482,20 +572,24 @@ table td:nth-child(2) {
   .info9 .content {
     flex-direction: column-reverse;
   }
+
   .extra-stable {
     left: 0;
     width: 80%;
     padding: 1rem 3rem;
   }
+
   .extra-stable .content {
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
   }
+
   .extra-stable h2 {
     font-size: 1.7rem;
     color: #fff;
   }
+
   .info5 {
     margin-top: 30rem;
   }
@@ -506,6 +600,7 @@ table td:nth-child(2) {
     width: 80px;
     height: 80px;
   }
+
   table td:not(:first-child) {
     width: 80px;
   }
@@ -517,5 +612,4 @@ table td:nth-child(2) {
   }
 }
 
-@media (max-width: 360px) {
-}
+@media (max-width: 360px) {}

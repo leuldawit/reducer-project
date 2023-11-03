@@ -52,8 +52,9 @@ h3 {
 
 }
 
+
 .navbar {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 1000;
 }
@@ -101,15 +102,10 @@ h3 {
   padding: 2vh 0 0 2vw;
 }
 
-.contact,.send_email {
-  border-radius: 25px;
-  border: none;
-  padding: 0.7rem;
+.contact {
   background-color: #f76c4e;
   color: white;
   transition: background-color 0.5s;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .menu {
@@ -140,35 +136,23 @@ h3 {
 
 .overlay-content {
   position: relative;
-    width: 100%;
-    margin-top: 10%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
-.overlay-content .items {
-  width: 30%;
-  height: 100%;
-  color: #fff;
-  
-}
+
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 20px;
-  color: #fff;
+  font-size: 36px;
+  color: #818181;
   display: block;
   transition: 0.3s;
-  font-weight: 100;
 }
 
 
-.overlay a:hover{
-  text-decoration: underline;
-}
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
@@ -180,8 +164,18 @@ h3 {
   top: 20px;
   right: 45px;
   font-size: 60px;
-  cursor: pointer;
-  z-index: 1;
+}
+@media (min-width: 1024px) {
+  h3 {
+      font-size: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  h3 {
+      font-size: 19px;
+  }
+ 
 }
 
 
@@ -214,7 +208,6 @@ h3 {
   
 }
 }
-
 
 .contact:hover,.send_email:hover {
   background-color: #414141;

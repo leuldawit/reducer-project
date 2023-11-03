@@ -40,6 +40,7 @@ h3 {
     line-height: 1.14;
 }
 
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -106,7 +107,6 @@ h3 {
 }
 
 
-
 .overlay {
 
     height: 100%;
@@ -119,56 +119,59 @@ h3 {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-  }
-  
-  
-  .overlay-content {
+}
+
+
+.overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
-  
-  
-  .overlay a {
+}
+
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-  
-  
-  .overlay a:hover,
-  .overlay a:focus {
+}
+
+
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  /* Position the close button top right corner */
-  .overlay .closebtn {
+}
+
+/* Position the close button top right corner */
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     h3 {
         font-size: 21px;
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     h3 {
         font-size: 19px;
     }
-   
-  }
 
-@media screen and (max-height: 450px) {
+}
+
+
+@media screen and (max-width: 600px) {
+
     .overlay a {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .overlay .closebtn {
@@ -176,104 +179,141 @@ h3 {
         top: 15px;
         right: 35px;
     }
+
+    .overlay-content {
+
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    .overlay-content .items {
+        width: 90%;
+        height: 100%;
+        color: #fff;
+
+    }
 }
 
 .contact:hover {
     background-color: #414141;
 }
 
-button{
+button {
     background-color: transparent;
-border: none;
-border-radius: 100px;
-box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
-color: #363636;
-cursor: pointer;
-display: inline-block;
-font-size: 13px;
-line-height: 18px;
-margin: 0;
-  margin-bottom: 0px;
-padding: 9px 20px 11px;
-  padding-right: 20px;
-position: relative;
-transition: all .3s;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
+    color: #363636;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 9px 20px 11px;
+    padding-right: 20px;
+    position: relative;
+    transition: all .3s;
 }
-button.req{
+
+button.req {
     background-color: #f76c4e;
     color: #f1f1f1;
     border-color: #f76c4e;
 }
-.wrapper{
-   position: relative;
-   top: 10vh;
-   padding: 0 5vw;
+
+.wrapper {
+    position: relative;
+    top: 10vh;
+    padding: 0 5vw;
 }
-.productCard{
+
+.productCard {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     margin: 2rem;
 }
-div.slider{
+
+div.slider {
     display: flex;
 }
-div.slider img:nth-child(1){
+
+div.slider img:nth-child(1) {
     width: 50vh;
 }
-div.slider img{
+
+div.slider img {
     height: max-content;
 }
-.productCard img{
+
+.productCard img {
     /* min-width: 40vw; */
     width: 600px;
 }
-p{
+
+p {
     font-size: 1.2rem;
     font-size: 22px;
     letter-spacing: 1.2px;
 }
-div.specs{
+
+div.specs {
     display: flex;
 }
-div.specs ul{
+
+div.specs ul {
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 5vh;
 }
-div.specs ul:nth-child(2){
+
+div.specs ul:nth-child(2) {
     background-color: rgb(230, 230, 230);
 }
-div.specs ul:hover{
+
+div.specs ul:hover {
     background-color: rgb(250, 250, 250);
     opacity: 60%;
 }
-li{
+
+li {
     text-align: center;
     align-items: center;
 }
-li img{
+
+li img {
     width: 15vw;
 }
-li img.transparent{
+
+li img.transparent {
     opacity: 0%;
 }
-.productCard.conv{
+
+.productCard.conv {
     background-color: #f76c4e;
     max-width: 80%;
     overflow: hidden;
     padding: 2rem;
 }
-.productCard.conv h2{
+
+.productCard.conv h2 {
     position: relative;
     top: -3rem;
     font-size: 2rem;
     font-weight: 500;
-    
+
 }
-.productCard.conv .hugeText{
+
+.productCard.conv .hugeText {
     margin: 0;
     border: 0;
     padding: 0;
@@ -282,11 +322,13 @@ li img.transparent{
     opacity: 40%;
     overflow: hidden;
 }
+
 @media (max-width:800px) {
-    .productCard{
+    .productCard {
         flex-direction: column;
     }
-    .productCard .p{
+
+    .productCard .p {
         max-width: 100%;
     }
 }

@@ -6,6 +6,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/wlk25-SJ.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                defaultLanguage: 'en',
+                includedLanguages: 'es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                gaTrack: true,
+                gaId: 'UA-12345678-1',
+                multilanguagePage: true,
+                includedLanguages: 'en,am',
+                languageDisplayNames: {
+                    en: 'English',
+                    am: 'Amharic'
+                }
+            }, 'myid');
+        }
+    </script>
+    <script>
+        // Call the function to load Google Translate after the script is loaded
+        loadGoogleTranslate();
+    </script>
   </head>
   <body>
    
@@ -19,7 +42,7 @@
           <li><button class="contact">contacts</button></li>
 
           <!-- full screen navigation -->
-
+          <li> <div id="myid">Choose Language</div></li>
           <li>
             <div id="myNav" class="overlay">
               <!-- close btn -->

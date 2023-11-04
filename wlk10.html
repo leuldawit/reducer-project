@@ -8,6 +8,29 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles/wlk10.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                defaultLanguage: 'en',
+                includedLanguages: 'es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                gaTrack: true,
+                gaId: 'UA-12345678-1',
+                multilanguagePage: true,
+                includedLanguages: 'en,am',
+                languageDisplayNames: {
+                    en: 'English',
+                    am: 'Amharic'
+                }
+            }, 'myid');
+        }
+    </script>
+    <script>
+        // Call the function to load Google Translate after the script is loaded
+        loadGoogleTranslate();
+    </script>
     <title>Document</title>
 </head>
 
@@ -21,7 +44,7 @@
                 <li><button class="contact">contacts</button></li>
       
                 <!-- full screen navigation -->
-      
+                <li> <div id="myid">Choose Language</div></li>
                 <li>
                   <div id="myNav" class="overlay">
                     <!-- close btn -->

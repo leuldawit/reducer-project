@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/translate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Swiper CSS -->
@@ -13,29 +14,6 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
-    </script>
-    <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
-    </script>
-
     <title>Home</title>
 </head>
 
@@ -50,7 +28,7 @@
                 <li><button class="contact">contacts</button></li>
 
                 <!-- full screen navigation -->
-                <li> <div id="myid">Choose Language</div></li>
+
                 <li>
                     <div id="myNav" class="overlay">
                         <!-- close btn -->
@@ -96,14 +74,21 @@
                                 <a href="#">Contact</a>
                             </div>
  -->
-
                         </div>
                     </div>
 
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
                 </li>
-                
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -133,36 +118,37 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-
-
-    <div class="abt-weima">
-        <h2>ReduceAll is a leading manufacturer of machines for shredding, briquetting and dewatering of waste and
-            residual
-            materials from plastics, wood, paper, metal and biomass.</h2>
-        <p>Our shredders are at the beginning of many recycling cycles. ReduceAll shredding technology contributes to
-            turning unused waste back into valuable materials. We are a partner of the industry as well as the trade, a
-            driver of the recycling economy and a proud solution provider for a sustainable future. </p>
-    </div>
-
-    <div class="shredderGallery">
-        <div class="galleryTitle">
-            <h1>Our Product & Services</h1>
+    <div id="textToTranslate">
+        <div class="abt-weima">
+            <h2>ReduceAll is a leading manufacturer of machines for shredding, briquetting and dewatering of waste and
+                residual
+                materials from plastics, wood, paper, metal and biomass.</h2>
+            <p>Our shredders are at the beginning of many recycling cycles. ReduceAll shredding technology contributes
+                to
+                turning unused waste back into valuable materials. We are a partner of the industry as well as the
+                trade, a
+                driver of the recycling economy and a proud solution provider for a sustainable future. </p>
         </div>
-        <div class="shredders">
-            <div class="shredderone">
-                <section class="shreddOne_Text" style="z-index: 1">
-                    <h1>Shredding</h1>
-                    <p>
-                        Single-shaft shredders, multi-shaft shredders, granulators and
-                        cutting mills for recycling or disposal.
-                    </p>
-                </section>
-                <img src="./pics/1Shredder-Animation.gif" alt="" />
-                <button class="shredderButton shOne_btn">
-                    Shredder Overview &rarr;
-                </button>
+
+        <div class="shredderGallery">
+            <div class="galleryTitle">
+                <h1>Our Product & Services</h1>
             </div>
-            <!-- <div class="shreddertwo">
+            <div class="shredders">
+                <div class="shredderone">
+                    <section class="shreddOne_Text" style="z-index: 1">
+                        <h1>Shredding</h1>
+                        <p>
+                            Single-shaft shredders, multi-shaft shredders, granulators and
+                            cutting mills for recycling or disposal.
+                        </p>
+                    </section>
+                    <img src="./pics/1Shredder-Animation.gif" alt="" />
+                    <button class="shredderButton shOne_btn">
+                        Shredder Overview &rarr;
+                    </button>
+                </div>
+                <!-- <div class="shreddertwo">
                 <section class="shText">
                     <h1>Briquetting</h1>
                     <p>
@@ -200,39 +186,43 @@
                     <img src="./pics/3verpressen-animation.gif" alt="" />
                 </section>
             </div> -->
-        </div>
-        <div class="keyFacts">
-            <div class="keyfactTitle">
-                <h2>ReduceAll at Glance</h2>
             </div>
-            <div class="clients">
-                <div class="exp">
-                    <h1 class="nums" data-val="43"></h1>
-                    <p>Years of Experience</p>
+            <div class="keyFacts">
+                <div class="keyfactTitle">
+                    <h2>ReduceAll at Glance</h2>
                 </div>
+                <div class="clients">
+                    <div class="exp">
+                        <h1 class="nums" data-val="43"></h1>
+                        <p>Years of Experience</p>
+                    </div>
 
-                <div class="sold">
-                    <h1 class="nums" data-val="40"></h1>
-                    <p>Machines Sold</p>
-                </div>
+                    <div class="sold">
+                        <h1 class="nums" data-val="40"></h1>
+                        <p>Machines Sold</p>
+                    </div>
 
-                <div class="employees">
-                    <h1 class="nums" data-val="300"></h1>
-                    <p>Employees</p>
+                    <div class="employees">
+                        <h1 class="nums" data-val="300"></h1>
+                        <p>Employees</p>
+                    </div>
                 </div>
-            </div>
-            <div class="keyFactsText">
-                <p>
-                    Numbers. Data. Facts. We are a mid-sized family-owned company
-                    based in the heart of Baden-Württemberg. Our core competencies are
-                    the shredding and compacting of all kinds of waste. ReduceAll machines
-                    turn big into small again. Together with our customers, we lay the
-                    foundation for a world without (unused) waste.
-                </p>
+                <div class="keyFactsText">
+                    <p>
+                        Numbers. Data. Facts. We are a mid-sized family-owned company
+                        based in the heart of Baden-Württemberg. Our core competencies are
+                        the shredding and compacting of all kinds of waste. ReduceAll machines
+                        turn big into small again. Together with our customers, we lay the
+                        foundation for a world without (unused) waste.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
+<script src="translate.js"></script>
 <script src="script/home.js"></script>

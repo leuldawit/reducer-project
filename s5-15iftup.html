@@ -7,29 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./styles/s5-15liftup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                includedLanguages: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
-    </script>
-    <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
-    </script>
+  <link rel="stylesheet" href="styles/translate.css">
 </head>
 
 <body>
@@ -41,9 +19,6 @@
         </div>
         <ul>
           <li><button class="contact">contacts</button></li>
-
-          <li> <div id="myid">Choose Language</div></li>
-
           <li>
             <div id="myNav" class="overlay">
               <!-- close btn -->
@@ -96,6 +71,15 @@
             <!-- menu button -->
             <span onclick="openNav()"><button class="menu">menu</button></span>
           </li>
+          <br>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Language</a>
+              <div class="dropdown-content">
+                  <button id="translateEnglish">🇺🇸 English</button>
+                  <button id="translateAmharic">🇪🇹 Amharic</button>
+              </div>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -123,389 +107,393 @@
         </div>
       </div>
     </div>
-    <div class="info2">
-      <p>
-        The ReduceAll S5 shredders are for the most extreme of applications. This
-        machine line boasts stability, functionality, consistent throughput,
-        and availability. A variety of sizes and options guarantees
-        customer-specific solutions for almost all applications. This line of
-        machines boasts extremely robust construction and almost endless
-        capabilities for the shredding of scrap. There are over 80 optional
-        features, making this a customizable shredding solution for almost any
-        application.
-      </p>
-    </div>
 
-    <div class="firstSec oddSec">
-      <div class="firstImg oddImg">
-        <img src="./pics/V-Rotor_1_web-768x523.webp" alt="" />
+    <div id="textToTranslate">
+      <div class="info2">
+        <p>
+          The ReduceAll S5 shredders are for the most extreme of applications. This
+          machine line boasts stability, functionality, consistent throughput,
+          and availability. A variety of sizes and options guarantees
+          customer-specific solutions for almost all applications. This line of
+          machines boasts extremely robust construction and almost endless
+          capabilities for the shredding of scrap. There are over 80 optional
+          features, making this a customizable shredding solution for almost any
+          application.
+        </p>
       </div>
-      <div class="firstTxt oddTxt">
-        <div class="oddtxtSec">
-          <div class="number">01</div>
-          <div class="inner">
-            <h2>
-              Achieve demanding throughput targets with Heavy Duty V rotor
-            </h2>
-            <p>
-              While the profiled V rotors of the S5 series have a diameter of
-              500 mm with up to 223 knives. All sizes are universally
-              applicable and guarantee maximum throughput rates at low wear
-              costs. The cutting knives can be reversed several times and are
-              available in sizes of 40 and 60 mm.
+  
+      <div class="firstSec oddSec">
+        <div class="firstImg oddImg">
+          <img src="./pics/V-Rotor_1_web-768x523.webp" alt="" />
+        </div>
+        <div class="firstTxt oddTxt">
+          <div class="oddtxtSec">
+            <div class="number">01</div>
+            <div class="inner">
+              <h2>
+                Achieve demanding throughput targets with Heavy Duty V rotor
+              </h2>
+              <p>
+                While the profiled V rotors of the S5 series have a diameter of
+                500 mm with up to 223 knives. All sizes are universally
+                applicable and guarantee maximum throughput rates at low wear
+                costs. The cutting knives can be reversed several times and are
+                available in sizes of 40 and 60 mm.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="secondSec vidSec">
+        <div class="secondTxt vidTxt">
+          <div class="secondtxtSec vidtxtSec">
+            <div class="number">02</div>
+            <div class="inner">
+              <h2>Film recycling in the US</h2>
+              <p id="grey">
+                At the Fiberon plant, two ReduceAll S7.25 lift-up shredders and a
+                S5.18 lift-up shredder shred film waste, which is then processed
+                into granulate with the help of an EREMA extrusion line.
+              </p>
+              <a href="https://www.youtube.com/W4quk3Alqog" target="_blank"><button class="youtube">Visit
+                  YouTube</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="secondImg vidImg">
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/W4quk3Alqog"
+            title="Film Shredding with WEIMA WLK 25 SJ &amp; WLK 18 J Shredder" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+  
+      <div class="thirdSec oddSec">
+        <div class="thirdImg oddImg">
+          <img src="./pics/SPS_S5_7_Bild_web-768x561.webp" alt="" />
+        </div>
+        <div class="thirdTxt oddTxt">
+          <div class="oddtxtSec">
+            <div class="number">03</div>
+            <div class="inner">
+              <h2>
+                Trouble-free shredding thanks to PLC control with automatic
+                reversing system
+              </h2>
+              <p>
+                With just one central, high-quality Siemens PLC control cabinet,
+                you control not only the shredder but also the entire conveyor
+                system. If required, you can also control downstream secondary
+                shredders within the production line. Large touch displays
+                facilitate operation. An automatic reversing system ensures a
+                trouble-free shredding process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fourthSec standardSec">
+        <div class="fourthTxt standardTxt">
+          <div class="txtSec fourthtxtSec standardtxtSec">
+            <div class="number">04</div>
+            <div class="inner">
+              <h2>
+                Safe shredding of large-volume parts with extended hopper
+                attachment
+              </h2>
+              <p>
+                Individual hopper extensions and enclosures with plastic
+                curtains are available to prevent materials from being thrown
+                from the hopper. In the heavy duty version, the feed hopper is
+                double-walled and thus effectively contributes to sound
+                insulation. For example this S7.30 lift-up shreds huge PE pipes.
+                The material is then granulated and fed to an extruder.
+              </p>
+              <button class="piper">To PipeLife customer story</button>
+            </div>
+          </div>
+        </div>
+        <div class="fourthImg standardImg">
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/rhzXWziy7SI"
+            title="WEIMA shredder WLK 30 SJ shreds huge PE pipes (plastic recycling)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+  
+      <div class="fifthSec oddSec">
+        <div class="fifthImg oddImg">
+          <img src="./pics/Einstellbare_Gegenmesser_web-768x449.webp" alt="" />
+        </div>
+        <div class="fifthTxt oddTxt">
+          <div class="oddtxtSec">
+            <div class="number">05</div>
+            <div class="inner">
+              <h2>Sharp cuts guaranteed thanks to adjustable counter knives</h2>
+              <p>
+                A perfect cutting gap with sharp knives keeps the material
+                throughput at a constantly high level. For this reason, ReduceAll
+                rotor and counter knives can not only be turned – the counter
+                knives are also manually adjustable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sixthSec standardSec">
+        <div class="sixthTxt standardTxt">
+          <div class="txtSec sixthtxtSec standardtxtSec">
+            <div class="number">06</div>
+            <div class="inner">
+              <h2>
+                Highest precision with flexible materials with F rotor including
+                Vautid wear protection
+              </h2>
+              <p>
+                The F rotors of the S5 series were designed for extreme demands.
+                An optional protective layer of Vautid counteracts increased
+                wear. Optional rotor cooling is available for particularly
+                temperature-sensitive materials
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sixthImg standardImg">
+          <img src="./pics/F-Rotor_Vautid_web-768x509.webp" alt="" />
+        </div>
+      </div>
+  
+      <div class="seventhSec vidSec">
+        <div class="seventhTxt vidTxt">
+          <div class="txtSec seventhtxtSec vidtxtSec">
+            <div class="number">07</div>
+            <div class="inner">
+              <h2>Shredders for the automotive industry</h2>
+              <p id="grey">
+                A ReduceAll S7.20 lift-up single-shaft shredder shreds production
+                waste from the automotive industry: plastic motor covers, rear
+                window shelving units, as well as large plastic drums. Once
+                shredded, these materials will be immediately granulated.
+              </p>
+              <a href="https://www.youtube.com/watch?v=sHT_B_AG1KU" target="_blank"> <button class="youtube">Visit
+                  YouTube</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="seventhImg vidImg">
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/sHT_B_AG1KU"
+            title="Automotive plastic scrap shredding with WEIMA WLK 20 SJ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+  
+      <div class="eigthSec oddSec">
+        <div class="eigthImg oddImg">
+          <img src="./pics/Segmentierte_Bodenfuhrung_web-768x509.webp" alt="" />
+        </div>
+        <div class="eigthTxt oddTxt">
+          <div class="txtSec eigthtxtSec oddtxtSec ">
+            <div class="number">08</div>
+            <div class="inner">
+              <h2>Precise material feeding due to segmented floor</h2>
+              <p>
+                Particularly when shredding very thin materials such as films or
+                fibers, it is recommended to use a segmented floor, which guides
+                the ram even more precisely and prevents jamming. The shock
+                valve at the end of the hydraulic ram also absorbs shocks to the
+                ram, thus reducing wear.
+              </p>
+              <button class="agrFilm">
+                More about agriculture film recycling
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="ninthSec standardSec">
+        <div class="ninthTxt standardTxt">
+          <div class="txtSec ninthtxtSec standardtxtSec">
+            <div class="number">09</div>
+            <div class="inner">
+              <h2>
+                Protected rotor bearings thanks to offset mounting from the
+                frame
+              </h2>
+              <p>
+                ReduceAll shredders are known for their durability. This is also due
+                to the spherical roller bearings used for our rotors. The
+                bearings are mounted at a distance from the machine and protect
+                against contaminants and uncontrolled forces acting on the
+                rotor. It also facilitates regular maintenance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ninthImg standardImg">
+          <img src="./pics/Rotorlager_1_web-768x600.webp" alt="" />
+        </div>
+      </div>
+  
+      <div class="fastMat">
+        <div class="fastMatTxt">
+          <h1>Fast material discharge</h1>
+          <div class="pbord">
+            <p style="color: white; font-weight: bolder">
+              with screw conveyor or conveyor
+            </p>
+            <p style="color: white; line-height: 2rem">
+              belt With such high throughput rates, the removal of shredded
+              material must also be ensured. For this reason, the machines of
+              both series have a 600 mm wide conveyor belt cutout.
             </p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="secondSec vidSec">
-      <div class="secondTxt vidTxt">
-        <div class="secondtxtSec vidtxtSec">
-          <div class="number">02</div>
-          <div class="inner">
-            <h2>Film recycling in the US</h2>
-            <p id="grey">
-              At the Fiberon plant, two ReduceAll S7.25 lift-up shredders and a
-              S5.18 lift-up shredder shred film waste, which is then processed
-              into granulate with the help of an EREMA extrusion line.
-            </p>
-            <a href="https://www.youtube.com/W4quk3Alqog" target="_blank"><button class="youtube">Visit
-                YouTube</button></a>
+  
+      <div class="tenthSec oddSec">
+        <div class="tenthImg oddImg">
+          <img src="./pics/Wartung_nach_oben_schwenkbarer_Siebkorb_web-768x544.webp" alt="" />
+        </div>
+        <div class="tenthTxt oddTxt">
+          <div class="txtSec tenthtxtSec oddtxtSec">
+            <div class="number">10</div>
+            <div class="inner">
+              <h2>
+                Maintenance-friendly rotor access thanks to upward-swiveling
+                screen basket
+              </h2>
+              <p>
+                The screen baskets of the S5 series can be swung upwards. This
+                allows free access to the rotor for convenient maintenance
+                without components getting in the way. Screens can be changed
+                just as easily. The screen basket can be equipped with round
+                hole screens in various diameters, zigzag, honeycomb, and kidney
+                screens – depending on the desired shredding result.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="secondImg vidImg">
-        <iframe width="540" height="332" src="https://www.youtube.com/embed/W4quk3Alqog"
-          title="Film Shredding with WEIMA WLK 25 SJ &amp; WLK 18 J Shredder" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+      <div class="elevenSec standardSec">
+        <div class="elevenTxt standardTxt">
+          <div class="txtSec eleventxtSec standardtxtSec">
+            <div class="number">11</div>
+            <div class="inner">
+              <h2>
+  
+                Powerful drive options: Hydraulic drive or electromechanical drive
+              </h2>
+              <p>
+                Hydraulic drives from Hägglunds / Bosch Rexroth are insensitive to foreign material and are therefore
+                extremely robust. Speed and torque can be adjusted without causing current peaks. In this way, high
+                torques are achieved at low kW output. The speed can be adjusted by means of a variable displacement pump.
+                Alternatively, a conventional electromechanical drive with ReduceAll WAP gearbox can be installed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="elevenImg standardImg">
+          <img src="./pics/Hydraulikantrieb_web-540x358.webp" alt="" />
+        </div>
       </div>
-    </div>
-
-    <div class="thirdSec oddSec">
-      <div class="thirdImg oddImg">
-        <img src="./pics/SPS_S5_7_Bild_web-768x561.webp" alt="" />
-      </div>
-      <div class="thirdTxt oddTxt">
-        <div class="oddtxtSec">
-          <div class="number">03</div>
-          <div class="inner">
-            <h2>
-              Trouble-free shredding thanks to PLC control with automatic
-              reversing system
-            </h2>
-            <p>
-              With just one central, high-quality Siemens PLC control cabinet,
-              you control not only the shredder but also the entire conveyor
-              system. If required, you can also control downstream secondary
-              shredders within the production line. Large touch displays
-              facilitate operation. An automatic reversing system ensures a
-              trouble-free shredding process.
-            </p>
+  
+  
+  
+      <div class="twelveSec oddSec">
+        <div class="twelveImg oddImg">
+          <img src="./pics/Elektromechanischer_Antrieb_web-768x561.webp" alt="" />
+        </div>
+        <div class="twelveTxt oddTxt">
+          <div class="txtSec twelvetxtSec oddtxtSec">
+            <div class="number">12</div>
+            <div class="inner">
+              <h2>
+                Stronger. Wider. Tougher. with Heavy Duty options
+              </h2>
+              <p>
+                The higher the requirements, the more robustly a shredder must be built. For this reason, we use
+                high-quality steel sidewalls with 40 mm wall thickness for the S5 series. Together with the extra large
+                rotors as well as suitable drives, ReduceAll machines are ready for anything.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="fourthSec standardSec">
-      <div class="fourthTxt standardTxt">
-        <div class="txtSec fourthtxtSec standardtxtSec">
-          <div class="number">04</div>
-          <div class="inner">
-            <h2>
-              Safe shredding of large-volume parts with extended hopper
-              attachment
-            </h2>
-            <p>
-              Individual hopper extensions and enclosures with plastic
-              curtains are available to prevent materials from being thrown
-              from the hopper. In the heavy duty version, the feed hopper is
-              double-walled and thus effectively contributes to sound
-              insulation. For example this S7.30 lift-up shreds huge PE pipes.
-              The material is then granulated and fed to an extruder.
-            </p>
-            <button class="piper">To PipeLife customer story</button>
+  
+  
+      <div class="thirteenSec vidSec">
+        <div class="thirteenTxt vidTxt">
+          <div class="txtSec thirteentxtSec vidtxtSec">
+            <div class="number">13</div>
+            <div class="inner">
+              <h2>
+                Paper shredding on a grand scale</h2>
+              <p id="grey">
+  
+  
+                A ReduceAll S5.18 lift-up shredder shreds paper and cardboard. This is the first step in paper recycling.
+  
+              </p>
+              <a href="https://www.youtube.com/watch?v=1fAnK0FhVMA" target="_blank"><button class="youtube">Visit
+                  YouTube</button></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="fourthImg standardImg">
-        <iframe width="540" height="332" src="https://www.youtube.com/embed/rhzXWziy7SI"
-          title="WEIMA shredder WLK 30 SJ shreds huge PE pipes (plastic recycling)" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="fifthSec oddSec">
-      <div class="fifthImg oddImg">
-        <img src="./pics/Einstellbare_Gegenmesser_web-768x449.webp" alt="" />
-      </div>
-      <div class="fifthTxt oddTxt">
-        <div class="oddtxtSec">
-          <div class="number">05</div>
-          <div class="inner">
-            <h2>Sharp cuts guaranteed thanks to adjustable counter knives</h2>
-            <p>
-              A perfect cutting gap with sharp knives keeps the material
-              throughput at a constantly high level. For this reason, ReduceAll
-              rotor and counter knives can not only be turned – the counter
-              knives are also manually adjustable.
-            </p>
-          </div>
+        <div class="thirteenImg vidImg">
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/1fAnK0FhVMA"
+            title="WEIMA shredder WLK 18 Jumbo - paper and cardboard shredding" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
-    </div>
-    <div class="sixthSec standardSec">
-      <div class="sixthTxt standardTxt">
-        <div class="txtSec sixthtxtSec standardtxtSec">
-          <div class="number">06</div>
-          <div class="inner">
-            <h2>
-              Highest precision with flexible materials with F rotor including
-              Vautid wear protection
-            </h2>
-            <p>
-              The F rotors of the S5 series were designed for extreme demands.
-              An optional protective layer of Vautid counteracts increased
-              wear. Optional rotor cooling is available for particularly
-              temperature-sensitive materials
-            </p>
+  
+  
+      <div class="fourteenSec standardSec">
+        <div class="fourteenTxt standardTxt">
+          <div class="txtSec fourteentxtSec standardtxtSec">
+            <div class="number">14</div>
+            <div class="inner">
+              <h2>
+  
+                Faster ram movements for higher throughputs
+              </h2>
+              <p>
+                With the help of turbo hydraulics, the ram feeds the material to be shredded to the rotor much faster.
+                This increases the throughput of your machine.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="sixthImg standardImg">
-        <img src="./pics/F-Rotor_Vautid_web-768x509.webp" alt="" />
-      </div>
-    </div>
-
-    <div class="seventhSec vidSec">
-      <div class="seventhTxt vidTxt">
-        <div class="txtSec seventhtxtSec vidtxtSec">
-          <div class="number">07</div>
-          <div class="inner">
-            <h2>Shredders for the automotive industry</h2>
-            <p id="grey">
-              A ReduceAll S7.20 lift-up single-shaft shredder shreds production
-              waste from the automotive industry: plastic motor covers, rear
-              window shelving units, as well as large plastic drums. Once
-              shredded, these materials will be immediately granulated.
-            </p>
-            <a href="https://www.youtube.com/watch?v=sHT_B_AG1KU" target="_blank"> <button class="youtube">Visit
-                YouTube</button></a>
-          </div>
+        <div class="fourteenImg standardImg">
+          <img src="./pics/Schieberbewegung2_web-540x243.webp" alt="" />
         </div>
       </div>
-      <div class="seventhImg vidImg">
-        <iframe width="540" height="332" src="https://www.youtube.com/embed/sHT_B_AG1KU"
-          title="Automotive plastic scrap shredding with WEIMA WLK 20 SJ" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="eigthSec oddSec">
-      <div class="eigthImg oddImg">
-        <img src="./pics/Segmentierte_Bodenfuhrung_web-768x509.webp" alt="" />
-      </div>
-      <div class="eigthTxt oddTxt">
-        <div class="txtSec eigthtxtSec oddtxtSec ">
-          <div class="number">08</div>
-          <div class="inner">
-            <h2>Precise material feeding due to segmented floor</h2>
-            <p>
-              Particularly when shredding very thin materials such as films or
-              fibers, it is recommended to use a segmented floor, which guides
-              the ram even more precisely and prevents jamming. The shock
-              valve at the end of the hydraulic ram also absorbs shocks to the
-              ram, thus reducing wear.
-            </p>
-            <button class="agrFilm">
-              More about agriculture film recycling
-            </button>
+  
+      <div class="fiveteenSec oddSec">
+        <div class="fiveteenImg oddImg">
+          <img src="./pics/Schieberbewegung_web-768x509.webp" alt="" />
+        </div>
+        <div class="fiveteenTxt oddTxt">
+          <div class="txtSec seventeentxtSec oddtxtSec">
+            <div class="number">15</div>
+            <div class="inner">
+              <h2>
+  
+                Less vibration with flexible set up with hard rubber feet
+              </h2>
+              <p>
+                Despite their many tons of weight, shredders in these series feature practical machine feet made of hard
+                rubber. They have a vibration-damping effect and reduce vibrations in the immediate vicinity.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="ninthSec standardSec">
-      <div class="ninthTxt standardTxt">
-        <div class="txtSec ninthtxtSec standardtxtSec">
-          <div class="number">09</div>
-          <div class="inner">
-            <h2>
-              Protected rotor bearings thanks to offset mounting from the
-              frame
-            </h2>
-            <p>
-              ReduceAll shredders are known for their durability. This is also due
-              to the spherical roller bearings used for our rotors. The
-              bearings are mounted at a distance from the machine and protect
-              against contaminants and uncontrolled forces acting on the
-              rotor. It also facilitates regular maintenance.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="ninthImg standardImg">
-        <img src="./pics/Rotorlager_1_web-768x600.webp" alt="" />
-      </div>
-    </div>
-
-    <div class="fastMat">
-      <div class="fastMatTxt">
-        <h1>Fast material discharge</h1>
-        <div class="pbord">
-          <p style="color: white; font-weight: bolder">
-            with screw conveyor or conveyor
-          </p>
-          <p style="color: white; line-height: 2rem">
-            belt With such high throughput rates, the removal of shredded
-            material must also be ensured. For this reason, the machines of
-            both series have a 600 mm wide conveyor belt cutout.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="tenthSec oddSec">
-      <div class="tenthImg oddImg">
-        <img src="./pics/Wartung_nach_oben_schwenkbarer_Siebkorb_web-768x544.webp" alt="" />
-      </div>
-      <div class="tenthTxt oddTxt">
-        <div class="txtSec tenthtxtSec oddtxtSec">
-          <div class="number">10</div>
-          <div class="inner">
-            <h2>
-              Maintenance-friendly rotor access thanks to upward-swiveling
-              screen basket
-            </h2>
-            <p>
-              The screen baskets of the S5 series can be swung upwards. This
-              allows free access to the rotor for convenient maintenance
-              without components getting in the way. Screens can be changed
-              just as easily. The screen basket can be equipped with round
-              hole screens in various diameters, zigzag, honeycomb, and kidney
-              screens – depending on the desired shredding result.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="elevenSec standardSec">
-      <div class="elevenTxt standardTxt">
-        <div class="txtSec eleventxtSec standardtxtSec">
-          <div class="number">11</div>
-          <div class="inner">
-            <h2>
-
-              Powerful drive options: Hydraulic drive or electromechanical drive
-            </h2>
-            <p>
-              Hydraulic drives from Hägglunds / Bosch Rexroth are insensitive to foreign material and are therefore
-              extremely robust. Speed and torque can be adjusted without causing current peaks. In this way, high
-              torques are achieved at low kW output. The speed can be adjusted by means of a variable displacement pump.
-              Alternatively, a conventional electromechanical drive with ReduceAll WAP gearbox can be installed.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="elevenImg standardImg">
-        <img src="./pics/Hydraulikantrieb_web-540x358.webp" alt="" />
-      </div>
-    </div>
-
-
-
-    <div class="twelveSec oddSec">
-      <div class="twelveImg oddImg">
-        <img src="./pics/Elektromechanischer_Antrieb_web-768x561.webp" alt="" />
-      </div>
-      <div class="twelveTxt oddTxt">
-        <div class="txtSec twelvetxtSec oddtxtSec">
-          <div class="number">12</div>
-          <div class="inner">
-            <h2>
-              Stronger. Wider. Tougher. with Heavy Duty options
-            </h2>
-            <p>
-              The higher the requirements, the more robustly a shredder must be built. For this reason, we use
-              high-quality steel sidewalls with 40 mm wall thickness for the S5 series. Together with the extra large
-              rotors as well as suitable drives, ReduceAll machines are ready for anything.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="thirteenSec vidSec">
-      <div class="thirteenTxt vidTxt">
-        <div class="txtSec thirteentxtSec vidtxtSec">
-          <div class="number">13</div>
-          <div class="inner">
-            <h2>
-              Paper shredding on a grand scale</h2>
-            <p id="grey">
-
-
-              A ReduceAll S5.18 lift-up shredder shreds paper and cardboard. This is the first step in paper recycling.
-
-            </p>
-            <a href="https://www.youtube.com/watch?v=1fAnK0FhVMA" target="_blank"><button class="youtube">Visit
-                YouTube</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="thirteenImg vidImg">
-        <iframe width="540" height="332" src="https://www.youtube.com/embed/1fAnK0FhVMA"
-          title="WEIMA shredder WLK 18 Jumbo - paper and cardboard shredding" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-
-
-    <div class="fourteenSec standardSec">
-      <div class="fourteenTxt standardTxt">
-        <div class="txtSec fourteentxtSec standardtxtSec">
-          <div class="number">14</div>
-          <div class="inner">
-            <h2>
-
-              Faster ram movements for higher throughputs
-            </h2>
-            <p>
-              With the help of turbo hydraulics, the ram feeds the material to be shredded to the rotor much faster.
-              This increases the throughput of your machine.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="fourteenImg standardImg">
-        <img src="./pics/Schieberbewegung2_web-540x243.webp" alt="" />
-      </div>
-    </div>
-
-    <div class="fiveteenSec oddSec">
-      <div class="fiveteenImg oddImg">
-        <img src="./pics/Schieberbewegung_web-768x509.webp" alt="" />
-      </div>
-      <div class="fiveteenTxt oddTxt">
-        <div class="txtSec seventeentxtSec oddtxtSec">
-          <div class="number">15</div>
-          <div class="inner">
-            <h2>
-
-              Less vibration with flexible set up with hard rubber feet
-            </h2>
-            <p>
-              Despite their many tons of weight, shredders in these series feature practical machine feet made of hard
-              rubber. They have a vibration-damping effect and reduce vibrations in the immediate vicinity.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div id="compare">
       <table>
@@ -690,4 +678,5 @@
 </body>
 
 </html>
+<script src="translate.js"></script>
 <script src="script/home.js"></script>

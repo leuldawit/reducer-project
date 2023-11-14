@@ -8,30 +8,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles/wlk20.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                includedLanguages: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
-    </script>
-    <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
-    </script>
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/translate.css">
+    <title>wlk20</title>
 </head>
 
 <body>
@@ -42,9 +20,6 @@
             </div>
             <ul>
                 <li><button class="contact">contacts</button></li>
-                <li> <div id="myid">Choose Language</div></li>
-                <!-- full screen navigation -->
-
                 <li>
                     <div id="myNav" class="overlay">
                         <!-- close btn -->
@@ -55,13 +30,13 @@
                             <div class="shredding items">
                                 <h1>Shredding</h1>
                                 <p>Make a quick selection of our shredding material options or see all of our machinery
-                                  overview.</p>
+                                    overview.</p>
                                 <a href="plastic.html">Plastic</a>
                                 <a href="wood/wood.html">Wood</a>
                                 <a href="waste/waste.html">Waste</a>
                                 <a href="paper/paper.html">paper</a>
                                 <a href="metal/metal.html">Metal</a>
-                              </div>
+                            </div>
 
                             <!-- <div class="compressing items">
                                   <h1>Compressing</h1>
@@ -97,6 +72,15 @@
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
                 </li>
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -117,7 +101,7 @@
             <img src="pics/WEIMA_WLK_20_shredder_web-2048x1427.webp" alt="" srcset="">
         </div>
     </div>
-    <div class="about-wlk20">
+    <div id="textToTranslate" class="about-wlk20">
         <p class="text">The WLK 20 single-shaft shredder is ideal for processing almost all plastics and paper as well
             as hard and resistant materials. These machines can shred plastic lumps, pipes, automotive parts, blow
             molded materials like PET bottles, PE/PP bottles, canisters, buckets, paper products, cardboard, and light
@@ -377,7 +361,7 @@
             </div>
         </div>
     </div>
-    <div class="about-wlk20">
+    <div id="textToTranslate" class="about-wlk20">
         <div class="info11 info">
             <div class="content">
                 <div class="image">
@@ -579,4 +563,5 @@
 </body>
 
 </html>
+<script src="translate.js"></script>
 <script src="script/wlk10.js"></script>

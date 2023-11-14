@@ -1,69 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/s5-20liftup.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                includedLanguages: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
-    </script>
-    <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
-    </script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="navbar">
-        <div class="nav-items">
-          <div class="logo">
-            <a href="home.html"><img src="pics/Logo_2-300x53.png" alt="" /></a>
-          </div>
-          <ul>
-            <li><button class="contact">contacts</button></li>
-            <li> <div id="myid">Choose Language</div></li>
-            <!-- full screen navigation -->
 
-            <li>
-                <div id="myNav" class="overlay">
-                    <!-- close btn -->
-                    <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/s5-20liftup.css" />
+  <link rel="stylesheet" href="styles/translate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-                    <!-- inside content -->
-                    <div class="overlay-content">
-                      <div class="shredding items">
-                        <h1>Shredding</h1>
-                        <p>Make a quick selection of our shredding material options or see all of our machinery
-                          overview.</p>
-                        <a href="plastic.html">Plastic</a>
-                        <a href="wood/wood.html">Wood</a>
-                        <a href="waste/waste.html">Waste</a>
-                        <a href="paper/paper.html">paper</a>
-                        <a href="metal/metal.html">Metal</a>
-                      </div>
+</head>
 
-                        <!-- <div class="compressing items">
+<body>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="nav-items">
+        <div class="logo">
+          <a href="home.html"><img src="pics/Logo_2-300x53.png" alt="" /></a>
+        </div>
+        <ul>
+          <li><button class="contact">contacts</button></li>
+          <li>
+            <div id="myNav" class="overlay">
+              <!-- close btn -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+              <!-- inside content -->
+              <div class="overlay-content">
+                <div class="shredding items">
+                  <h1>Shredding</h1>
+                  <p>Make a quick selection of our shredding material options or see all of our machinery
+                    overview.</p>
+                  <a href="plastic.html">Plastic</a>
+                  <a href="wood/wood.html">Wood</a>
+                  <a href="waste/waste.html">Waste</a>
+                  <a href="paper/paper.html">paper</a>
+                  <a href="metal/metal.html">Metal</a>
+                </div>
+
+                <!-- <div class="compressing items">
                             <h1>Compressing</h1>
                             <p>Make a quick selection of our shredding material options or see all of our machinery
                                 overview.</p>
@@ -91,47 +66,49 @@
                         </div>
 -->
 
-                    </div>
-                </div>
-
-                <!-- menu button -->
-                <span onclick="openNav()"><button class="menu">menu</button></span>
-            </li>
-        </ul>
-        </div>
-      </div>
-      <div class="info1">
-        <div class="info1Sec">
-          <div class="machinetitle">
-            <section class="links">
-              <a href="#">Start</a><span>|</span><a href="#">Shredding</a
-              ><span>|</span
-              ><a href="#" class="main"> <strong>S5.20 lift-up</strong></a>
-            </section>
-            <button
-              class="backBtn"
-              onclick="window.location.href = 'plastic.html';"
-            >
-              &RightArrow; Back To Overview
-            </button>
-            <div class="downloadable">
-              <h1>S5.20 lift-up</h1>
-              <p>Single-shaft shredders for <br />extreme applications</p>
-              <button class="pdf-link">
-                <i
-                  class="fa fa-file-pdf-o"
-                  style="font: size 0.6rem; color: red"
-                ></i>
-                Download PDF</button
-              ><br />
-              <button class="quote-link">Request a Quote</button>
+              </div>
             </div>
-          </div>
-          <div class="machinepic">
-            <img src="pics/WLK25SJ_Rendering-768x512.webp" alt="" srcset="" />
+
+            <!-- menu button -->
+            <span onclick="openNav()"><button class="menu">menu</button></span>
+          </li>
+          <br>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Language</a>
+            <div class="dropdown-content">
+              <button id="translateEnglish">🇺🇸 English</button>
+              <button id="translateAmharic">🇪🇹 Amharic</button>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="info1">
+      <div class="info1Sec">
+        <div class="machinetitle">
+          <section class="links">
+            <a href="#">Start</a><span>|</span><a href="#">Shredding</a><span>|</span><a href="#" class="main">
+              <strong>S5.20 lift-up</strong></a>
+          </section>
+          <button class="backBtn" onclick="window.location.href = 'plastic.html';">
+            &RightArrow; Back To Overview
+          </button>
+          <div class="downloadable">
+            <h1>S5.20 lift-up</h1>
+            <p>Single-shaft shredders for <br />extreme applications</p>
+            <button class="pdf-link">
+              <i class="fa fa-file-pdf-o" style="font: size 0.6rem; color: red"></i>
+              Download PDF</button><br />
+            <button class="quote-link">Request a Quote</button>
           </div>
         </div>
+        <div class="machinepic">
+          <img src="pics/WLK25SJ_Rendering-768x512.webp" alt="" srcset="" />
+        </div>
       </div>
+    </div>
+    <div id="textToTranslate">
       <div class="info2">
         <p>
           The ReduceAll S5 shredders are for the most extreme of applications. This
@@ -144,7 +121,7 @@
           application.
         </p>
       </div>
-
+  
       <div class="firstSec oddSec">
         <div class="firstImg oddImg">
           <img src="./pics/V-Rotor_1_web-768x523.webp" alt="" />
@@ -167,7 +144,7 @@
           </div>
         </div>
       </div>
-
+  
       <div class="secondSec vidSec">
         <div class="secondTxt vidTxt">
           <div class="secondtxtSec vidtxtSec">
@@ -179,15 +156,19 @@
                 S5.18 lift-up shredder shred film waste, which is then processed
                 into granulate with the help of an EREMA extrusion line.
               </p>
-              <a href="https://www.youtube.com/W4quk3Alqog" target="_blank"><button class="youtube">Visit YouTube</button></a>
+              <a href="https://www.youtube.com/W4quk3Alqog" target="_blank"><button class="youtube">Visit
+                  YouTube</button></a>
             </div>
           </div>
         </div>
         <div class="secondImg vidImg">
-       <iframe  width="540" height="332"  src="https://www.youtube.com/embed/W4quk3Alqog" title="Film Shredding with WEIMA WLK 25 SJ &amp; WLK 18 J Shredder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/W4quk3Alqog"
+            title="Film Shredding with WEIMA WLK 25 SJ &amp; WLK 18 J Shredder" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
-
+  
       <div class="thirdSec oddSec">
         <div class="thirdImg oddImg">
           <img src="./pics/SPS_S5_7_Bild_web-768x561.webp" alt="" />
@@ -234,10 +215,13 @@
           </div>
         </div>
         <div class="fourthImg standardImg">
-          <iframe width="540" height="332" src="https://www.youtube.com/embed/rhzXWziy7SI" title="WEIMA shredder WLK 30 SJ shreds huge PE pipes (plastic recycling)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/rhzXWziy7SI"
+            title="WEIMA shredder WLK 30 SJ shreds huge PE pipes (plastic recycling)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
-
+  
       <div class="fifthSec oddSec">
         <div class="fifthImg oddImg">
           <img src="./pics/Einstellbare_Gegenmesser_web-768x449.webp" alt="" />
@@ -279,7 +263,7 @@
           <img src="./pics/F-Rotor_Vautid_web-768x509.webp" alt="" />
         </div>
       </div>
-
+  
       <div class="seventhSec vidSec">
         <div class="seventhTxt vidTxt">
           <div class="txtSec seventhtxtSec vidtxtSec">
@@ -292,15 +276,19 @@
                 window shelving units, as well as large plastic drums. Once
                 shredded, these materials will be immediately granulated.
               </p>
-            <a href="https://www.youtube.com/watch?v=sHT_B_AG1KU" target="_blank">  <button class="youtube">Visit YouTube</button></a>
+              <a href="https://www.youtube.com/watch?v=sHT_B_AG1KU" target="_blank"> <button class="youtube">Visit
+                  YouTube</button></a>
             </div>
           </div>
         </div>
         <div class="seventhImg vidImg">
-          <iframe  width="540" height="332"  src="https://www.youtube.com/embed/sHT_B_AG1KU" title="Automotive plastic scrap shredding with WEIMA WLK 20 SJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/sHT_B_AG1KU"
+            title="Automotive plastic scrap shredding with WEIMA WLK 20 SJ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
-
+  
       <div class="eigthSec oddSec">
         <div class="eigthImg oddImg">
           <img src="./pics/Segmentierte_Bodenfuhrung_web-768x509.webp" alt="" />
@@ -324,7 +312,7 @@
           </div>
         </div>
       </div>
-
+  
       <div class="ninthSec standardSec">
         <div class="ninthTxt standardTxt">
           <div class="txtSec ninthtxtSec standardtxtSec">
@@ -348,7 +336,7 @@
           <img src="./pics/Rotorlager_1_web-768x600.webp" alt="" />
         </div>
       </div>
-
+  
       <div class="fastMat">
         <div class="fastMatTxt">
           <h1>Fast material discharge</h1>
@@ -364,13 +352,10 @@
           </div>
         </div>
       </div>
-
+  
       <div class="tenthSec oddSec">
         <div class="tenthImg oddImg">
-          <img
-            src="./pics/Wartung_nach_oben_schwenkbarer_Siebkorb_web-768x544.webp"
-            alt=""
-          />
+          <img src="./pics/Wartung_nach_oben_schwenkbarer_Siebkorb_web-768x544.webp" alt="" />
         </div>
         <div class="tenthTxt oddTxt">
           <div class="txtSec tenthtxtSec oddtxtSec">
@@ -391,35 +376,36 @@
             </div>
           </div>
         </div>
-</div>
-        <div class="elevenSec standardSec">
-          <div class="elevenTxt standardTxt">
-            <div class="txtSec eleventxtSec standardtxtSec">
-              <div class="number">11</div>
-              <div class="inner">
-                <h2>
-                 
-Powerful drive options: Hydraulic drive or electromechanical drive
-                </h2>
-                <p>
-                  Hydraulic drives from Hägglunds / Bosch Rexroth are insensitive to foreign material and are therefore extremely robust. Speed and torque can be adjusted without causing current peaks. In this way, high torques are achieved at low kW output. The speed can be adjusted by means of a variable displacement pump. Alternatively, a conventional electromechanical drive with ReduceAll WAP gearbox can be installed.
-                </p>
-              </div>
+      </div>
+      <div class="elevenSec standardSec">
+        <div class="elevenTxt standardTxt">
+          <div class="txtSec eleventxtSec standardtxtSec">
+            <div class="number">11</div>
+            <div class="inner">
+              <h2>
+  
+                Powerful drive options: Hydraulic drive or electromechanical drive
+              </h2>
+              <p>
+                Hydraulic drives from Hägglunds / Bosch Rexroth are insensitive to foreign material and are therefore
+                extremely robust. Speed and torque can be adjusted without causing current peaks. In this way, high
+                torques
+                are achieved at low kW output. The speed can be adjusted by means of a variable displacement pump.
+                Alternatively, a conventional electromechanical drive with ReduceAll WAP gearbox can be installed.
+              </p>
             </div>
           </div>
-          <div class="elevenImg standardImg">
-            <img src="./pics/Hydraulikantrieb_web-540x358.webp" alt="" />
-          </div>
         </div>
-
-
-        
+        <div class="elevenImg standardImg">
+          <img src="./pics/Hydraulikantrieb_web-540x358.webp" alt="" />
+        </div>
+      </div>
+  
+  
+  
       <div class="twelveSec oddSec">
         <div class="twelveImg oddImg">
-          <img
-            src="./pics/Elektromechanischer_Antrieb_web-768x561.webp"
-            alt=""
-          />
+          <img src="./pics/Elektromechanischer_Antrieb_web-768x561.webp" alt="" />
         </div>
         <div class="twelveTxt oddTxt">
           <div class="txtSec twelvetxtSec oddtxtSec">
@@ -429,133 +415,115 @@ Powerful drive options: Hydraulic drive or electromechanical drive
                 Stronger. Wider. Tougher. with Heavy Duty options
               </h2>
               <p>
-                The higher the requirements, the more robustly a shredder must be built. For this reason, we use high-quality steel sidewalls with 40 mm wall thickness for the S5 series. Together with the extra large rotors as well as suitable drives, ReduceAll machines are ready for anything.
+                The higher the requirements, the more robustly a shredder must be built. For this reason, we use
+                high-quality
+                steel sidewalls with 40 mm wall thickness for the S5 series. Together with the extra large rotors as well
+                as
+                suitable drives, ReduceAll machines are ready for anything.
               </p>
             </div>
           </div>
         </div>
-</div>
-
-
-  <div class="thirteenSec vidSec">
+      </div>
+  
+  
+      <div class="thirteenSec vidSec">
         <div class="thirteenTxt vidTxt">
           <div class="txtSec thirteentxtSec vidtxtSec">
             <div class="number">13</div>
             <div class="inner">
               <h2>
-Paper shredding on a grand scale</h2>
+                Paper shredding on a grand scale</h2>
               <p id="grey">
-
-
-A ReduceAll S5.18 lift-up shredder shreds paper and cardboard. This is the first step in paper recycling.
-
+  
+  
+                A ReduceAll S5.18 lift-up shredder shreds paper and cardboard. This is the first step in paper recycling.
+  
               </p>
-              <a href="https://www.youtube.com/watch?v=1fAnK0FhVMA" target="_blank" ><button class="youtube">Visit YouTube</button></a>
+              <a href="https://www.youtube.com/watch?v=1fAnK0FhVMA" target="_blank"><button class="youtube">Visit
+                  YouTube</button></a>
             </div>
           </div>
         </div>
         <div class="thirteenImg vidImg">
-          <iframe  width="540" height="332"  src="https://www.youtube.com/embed/1fAnK0FhVMA" title="WEIMA shredder WLK 18 Jumbo - paper and cardboard shredding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="540" height="332" src="https://www.youtube.com/embed/1fAnK0FhVMA"
+            title="WEIMA shredder WLK 18 Jumbo - paper and cardboard shredding" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
-
-      
-        <div class="fourteenSec standardSec">
-          <div class="fourteenTxt standardTxt">
-            <div class="txtSec fourteentxtSec standardtxtSec">
-              <div class="number">14</div>
-              <div class="inner">
-                <h2>
-                 
-Faster ram movements for higher throughputs 
-                </h2>
-                <p>
-                 With the help of turbo hydraulics, the ram feeds the material to be shredded to the rotor much faster. This increases the throughput of your machine.
-                </p>
-              </div>
+  
+  
+      <div class="fourteenSec standardSec">
+        <div class="fourteenTxt standardTxt">
+          <div class="txtSec fourteentxtSec standardtxtSec">
+            <div class="number">14</div>
+            <div class="inner">
+              <h2>
+  
+                Faster ram movements for higher throughputs
+              </h2>
+              <p>
+                With the help of turbo hydraulics, the ram feeds the material to be shredded to the rotor much faster.
+                This
+                increases the throughput of your machine.
+              </p>
             </div>
           </div>
-          <div class="fourteenImg standardImg">
-            <img src="./pics/Schieberbewegung2_web-540x243.webp" alt="" />
-          </div>
         </div>
-
-       <div class="fiveteenSec oddSec">
+        <div class="fourteenImg standardImg">
+          <img src="./pics/Schieberbewegung2_web-540x243.webp" alt="" />
+        </div>
+      </div>
+  
+      <div class="fiveteenSec oddSec">
         <div class="fiveteenImg oddImg">
-          <img
-            src="./pics/Schieberbewegung_web-768x509.webp"
-            alt=""
-          />
+          <img src="./pics/Schieberbewegung_web-768x509.webp" alt="" />
         </div>
         <div class="fiveteenTxt oddTxt">
           <div class="txtSec seventeentxtSec oddtxtSec">
             <div class="number">15</div>
             <div class="inner">
               <h2>
-               
-Less vibration with flexible set up with hard rubber feet 
+  
+                Less vibration with flexible set up with hard rubber feet
               </h2>
               <p>
-                Despite their many tons of weight, shredders in these series feature practical machine feet made of hard rubber. They have a vibration-damping effect and reduce vibrations in the immediate vicinity.
+                Despite their many tons of weight, shredders in these series feature practical machine feet made of hard
+                rubber. They have a vibration-damping effect and reduce vibrations in the immediate vicinity.
               </p>
             </div>
           </div>
         </div>
-</div>
+      </div>
+    </div>
+    
 
-<div id="compare">
+    <div id="compare">
       <table>
         <h1>Technical data</h1>
         <p>Get to know our machines in detail.</p>
         <tr>
           <th></th>
           <td>
-            <img
-              id="image"
-              src="./pics/WLK30SJ_medium-300x300.webp"
-              class="attachment-full size-full lazyautosizes lazyloaded"
-              alt=""
-              decoding="async"
-              loading="lazy"
-              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png"
-              data-sizes="auto"
-            />
+            <img id="image" src="./pics/WLK30SJ_medium-300x300.webp"
+              class="attachment-full size-full lazyautosizes lazyloaded" alt="" decoding="async" loading="lazy"
+              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png" data-sizes="auto" />
           </td>
           <td>
-            <img
-              id="image"
-              src="./pics/WLK30SJ_medium-300x300.webp"
-              class="attachment-full size-full lazyautosizes lazyloaded"
-              alt=""
-              decoding="async"
-              loading="lazy"
-              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png"
-              data-sizes="auto"
-            />
+            <img id="image" src="./pics/WLK30SJ_medium-300x300.webp"
+              class="attachment-full size-full lazyautosizes lazyloaded" alt="" decoding="async" loading="lazy"
+              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png" data-sizes="auto" />
           </td>
           <td>
-            <img
-              id="image"
-              src="./pics/WLK30SJ_medium-300x300.webp"
-              class="attachment-full size-full lazyautosizes lazyloaded"
-              alt=""
-              decoding="async"
-              loading="lazy"
-              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png"
-              data-sizes="auto"
-            />
+            <img id="image" src="./pics/WLK30SJ_medium-300x300.webp"
+              class="attachment-full size-full lazyautosizes lazyloaded" alt="" decoding="async" loading="lazy"
+              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png" data-sizes="auto" />
           </td>
           <td>
-            <img
-              id="image"
-              src="./pics/WLK30SJ_medium-300x300.webp"
-              class="attachment-full size-full lazyautosizes lazyloaded"
-              alt=""
-              decoding="async"
-              loading="lazy"
-              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png"
-              data-sizes="auto"
-            />
+            <img id="image" src="./pics/WLK30SJ_medium-300x300.webp"
+              class="attachment-full size-full lazyautosizes lazyloaded" alt="" decoding="async" loading="lazy"
+              data-src="https://weima.com/wp-content/uploads/2020/12/Icon_WLK4_medium.png" data-sizes="auto" />
           </td>
         </tr>
         <tr>
@@ -701,20 +669,19 @@ Less vibration with flexible set up with hard rubber feet
       </table>
       <div class="models-buttons">
         <div class="model-download">
-          <a
-            href="https://weima.com/wp-content/uploads/2021/11/2021_Catalog_S3-series_EN.pdf"
-            target="_blank"
-            class="button primary"
-            >Download brochure</a
-          >
+          <a href="https://weima.com/wp-content/uploads/2021/11/2021_Catalog_S3-series_EN.pdf" target="_blank"
+            class="button primary">Download brochure</a>
         </div>
         <div class="models-arrows"></div>
       </div>
     </div>
 
 
-      </div>
-    </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>
+
+<script src="translate.js"></script>
 <script src="script/home.js"></script>

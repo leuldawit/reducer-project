@@ -112,7 +112,7 @@ p {
 }
 
 .contact {
-  background-color: #f76c4e;
+  background-color: #f5b033;
   color: white;
   transition: background-color 0.5s;
 }
@@ -243,7 +243,7 @@ p {
   font-size: 0.625rem;
   border: 1px solid #d8d8d8;
   color: white;
-  background-color: #f76c4e;
+  background-color: #f5b033;
   transition: all 0.2s;
   cursor: pointer;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
@@ -316,7 +316,7 @@ p {
   height: 30px;
   font-size: 0.625rem;
   color: #fff;
-  background-color: #f76c4e;
+  background-color: #f5b033;
 }
 .info .content .button:hover {
   background-color: #303030;
@@ -336,7 +336,7 @@ p {
   left: 0;
   width: calc(50% + 180px);
   height: 30rem;
-  background-color: #f76c4e;
+  background-color: #f5b033;
 }
 .info3 .content,
 .info7 .content,
@@ -451,7 +451,7 @@ table td:nth-child(2) {
   font-size: 12px;
   text-align: center;
   width: 170px;
-  background-color: #f76c4e;
+  background-color: #f5b033;
   color: white;
   transition: background-color 0.2s;
   margin-top: 60px;

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/paper.css" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -15,62 +17,73 @@
     <title>Paper</title>
     <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                includedLanguages: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement(
+          {
+            defaultLanguage: "en",
+            includedLanguages: "es",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            gaTrack: true,
+            gaId: "UA-12345678-1",
+            multilanguagePage: true,
+            includedLanguages: "en,am",
+            languageDisplayNames: {
+              en: "English",
+              am: "Amharic",
+            },
+          },
+          "myid"
+        );
+      }
     </script>
     <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
+      // Call the function to load Google Translate after the script is loaded
+      loadGoogleTranslate();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="page1">
-            <div class="navbar">
-                <div class="nav-items">
-                    <div class="logo">
-                        <a href="../home.html"><img src="../pics/Logo_2-300x53.png" alt="" /></a>
+      <div class="page1">
+        <div class="navbar">
+          <div class="nav-items">
+            <div class="logo">
+              <a href="../home.html"
+                ><img src="../pics/Logo_2-300x53.png" alt=""
+              /></a>
+            </div>
+            <ul>
+              <li><button class="contact">contacts</button></li>
+              <li><div id="myid">Choose Language</div></li>
+              <!-- full screen navigation -->
+
+              <li>
+                <div id="myNav" class="overlay">
+                  <!-- close btn -->
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+
+                  <!-- inside content -->
+                  <div class="overlay-content">
+                    <div class="shredding items">
+                      <h1>Shredding</h1>
+                      <p>
+                        Make a quick selection of our shredding material options
+                        or see all of our machinery overview.
+                      </p>
+                      <a href="../plastic.html">Plastic</a>
+                      <a href="../wood/wood.html">Wood</a>
+                      <a href="../waste/waste.html">Waste</a>
+                      <a href="paper.html">paper</a>
+                      <a href="../metal/metal.html">Metal</a>
                     </div>
-                    <ul>
-                        <li><button class="contact">contacts</button></li>
-                        <li> <div id="myid">Choose Language</div></li>
-                        <!-- full screen navigation -->
 
-                        <li>
-                            <div id="myNav" class="overlay">
-                                <!-- close btn -->
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                                <!-- inside content -->
-                                <div class="overlay-content">
-                                    <div class="shredding items">
-                                        <h1>Shredding</h1>
-                                        <p>Make a quick selection of our shredding material options or see all of our
-                                            machinery
-                                            overview.</p>
-                                        <a href="../plastic.html">Plastic</a>
-                                        <a href="../wood/wood.html">Wood</a>
-                                        <a href="../waste/waste.html">Waste</a>
-                                        <a href="paper.html">paper</a>
-                                        <a href="../metal/metal.html">Metal</a>
-                                    </div>
-
-                                    <!-- <div class="compressing items">
+                    <!-- <div class="compressing items">
                                         <h1>compressing</h1>
                                         <p>Make a quick selection of our shredding material options or see all of our
                                             machinery
@@ -98,514 +111,669 @@
                                         <a href="#">Contact</a>
                                     </div>
  -->
-
-                                </div>
-                            </div>
-
-                            <!-- menu button -->
-                            <span onclick="openNav()"><button class="menu">menu</button></span>
-                        </li>
-                    </ul>
+                  </div>
                 </div>
-            </div>
-            <div class="links">
-                <a href="../home.html">Home</a>
-                <span>|</span>
-                <strong>Recycling and Shredding of Paper and Cardboard</strong>
-            </div>
+
+                <!-- menu button -->
+                <span onclick="openNav()"
+                  ><button class="menu">menu</button></span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="page2">
+        <div class="links">
+          <a href="../home.html">Home</a>
+          <span>|</span>
+          <strong>Recycling and Shredding of Paper and Cardboard</strong>
+        </div>
+      </div>
+      <div class="page2">
+        <div class="content">
+          <h1>Recycling and Shredding of Paper and Cardboard</h1>
+          <p>
+            Pulp is the pioneer of recycling. The recycling of paper and
+            cardboard is of the greatest economic and ecological importance –
+            because the more paper is recycled, the less newly cut wood is
+            needed for paper production.
+            <br /><br />
+            WEIMA shredders make a great contribution to the economical
+            shredding of paper and corrugated cardboard. Strong, robust drives
+            and rotors specially designed for shredding paper or cardboard also
+            make it possible to process material that is difficult to shred. Our
+            machines can handle all throughput requirements for post-consumer
+            applications such as waste paper, cartons, files and documents,
+            shipping packaging, and industrial production waste. This includes
+            cardboard tubes, paper webs, paper rolls, edge trims, printing waste
+            or paper bales.
+          </p>
+          <button>About waste shredding</button>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2017/07/WPL-2500-200kW-Hydro-40mm-screen-50-1024x683.jpg"
+                alt="First Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2017/05/DSC_7311-1024x684.jpg"
+                alt="Second Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/2x-W8web.jpg"
+                alt="Third Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg"
+                alt="fourth Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="	https://weima.com/wp-content/uploads/2020/08/W8.25-up-und-W8web.jpg"
+                alt="Third Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/Inspektionsklappe_web.jpg"
+                alt="Third Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/PowerLine_Rotor_web.jpg"
+                alt="Third Image"
+              />
+            </div>
+
+            <!-- Add more slides as needed -->
+          </div>
+          <div class="sliders">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page3">
+        <div class="info">
+          <h2>We have the perfect paper shredder for you!</h2>
+          <p>Make your selection using individual filter options.</p>
+        </div>
+        <div class="filter-collection">
+          <div class="type filter">
+            <div class="filter-title">
+              <h5>Filter by type</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="kind"
+                data-toggle="[data-kind~=single-shaft]"
+              >
+                Single-shaft shredder
+              </button>
+              <button
+                class="filter-btn"
+                data-type="kind"
+                data-toggle="[data-kind~=multi-shaft]"
+              >
+                Multi shaft
+              </button>
+            </div>
+          </div>
+
+          <div class="rotor-diameter filter">
+            <div class="filter-title">
+              <h5>Filter by rotor diameter</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="rotor"
+                data-toggle="[data-rotor~=d800mm]"
+              >
+                ø 800 mm
+              </button>
+            </div>
+          </div>
+
+          <div class="ram-design filter">
+            <div class="filter-title">
+              <h5>Filter by ram design</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="ramtype"
+                data-toggle="[data-ramtype~=swing-ram]"
+              >
+                Swing ram
+              </button>
+            </div>
+          </div>
+
+          <div class="screen-design filter">
+            <div class="filter-title">
+              <h5>Filter by screen design</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="screen"
+                data-toggle="[data-screen~=bolted]"
+              >
+                Bolted
+              </button>
+              <button
+                class="filter-btn"
+                data-type="screen"
+                data-toggle="[data-screen~=lift-up]"
+              >
+                Lift-up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page4">
+        <div class="machines">
+          <div
+            class="precut2000 machine"
+            onclick="window.location.href = 'wl4.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="bolted"
+          >
+            <h3>WL 4</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/WL4_Rendering-1-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>The proven classic with 600 mm rotor length</p>
+            </div>
+            <a href="./wl4.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="powerline1500 machine"
+            onclick="window.location.href = 'wl6s.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>WL 6 S</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2021/02/WL6_Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>With a bigger rotor diameter</p>
+            </div>
+            <a href="./wl6s.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="finecut1500 machine"
+            onclick="window.location.href = 'wl8.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>WL 8</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="	https://weima.com/wp-content/uploads/2020/08/WL8_Rendering.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>The proven classic with 1,000 mm rotor length</p>
+            </div>
+            <a href="./wl8.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="m8.28 machine"
+            onclick="window.location.href = 'wlk6s.html';"
+            data-kind="multi-shaft"
+            data-rotor
+            data-ramtype
+            data-screen
+          >
+            <h3>WLK 6 S</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2021/02/25_3D-Still_WLK6S_Zerkleinerer_REPRO_V03-2._Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>With larger rotor diameter and conveyor belt cutout</p>
+            </div>
+            <a href="./wlk6s.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="precut2000 machine"
+            onclick="window.location.href = 'wlk1000.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="bolted"
+          >
+            <h3>WLK 1000</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2021/02/WLK1000_Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>Economical compact machine with 1,000 mm working width.</p>
+            </div>
+            <a href="./wlk1000.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="powerline1500 machine"
+            onclick="window.location.href = '../s5-15iftup.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>S5.15 lift-up</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>Highly productive with big 500 mm diameter rotor</p>
+            </div>
+            <a href="../s5-15iftup.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="finecut1500 machine"
+            onclick="window.location.href = 'finecut1500.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>WLK 20 SJ</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>Highly productive with extra-big 700 mm rotor diameter</p>
+            </div>
+            <a href="./wlk 20 sj.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="m8.28 machine"
+            onclick="window.location.href = 'm8-28.html';"
+            data-kind="multi-shaft"
+            data-rotor
+            data-ramtype
+            data-screen
+          >
+            <h3>WLK 30 SJ</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>Highly productive with extra-big 700 mm rotor diameter</p>
+            </div>
+            <a href="../waste/M8-28.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="precut2000 machine"
+            onclick="window.location.href = 'zm30.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="bolted"
+          >
+            <h3>ZM 30</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Four-shaft shredder</p>
+              <p>For long and bulky material</p>
+            </div>
+            <a href="./zm30.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="powerline1500 machine"
+            onclick="window.location.href = 'zm50.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>ZM 50</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Four-shaft shredder</p>
+              <p>For long and bulky material</p>
+            </div>
+            <a href="./zm50.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="finecut1500 machine"
+            onclick="window.location.href = 'zm60.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>ZM 60</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Four-shaft shredder</p>
+              <p>For long and bulky material</p>
+            </div>
+            <a href="./zm60.html">Explore Machine ></a>
+          </div>
+        </div>
+      </div>
+      <div class="more-abt-plastics">
+        <div class="title">
+          <h1>Learn more about paper waste recovery and paper recycling</h1>
+          <div class="subtitle">Efficient shredding in the material cycle</div>
+        </div>
+        <div class="info-collection">
+          <div class="info1 info">
             <div class="content">
-                <h1>Recycling and Shredding of Paper and Cardboard</h1>
-                <p>
-                    Pulp is the pioneer of recycling. The recycling of paper and cardboard is of the greatest economic
-                    and ecological importance – because the more paper is recycled, the less newly cut wood is needed
-                    for paper production.
-                    <br><br>
-                    WEIMA shredders make a great contribution to the economical shredding of paper and corrugated
-                    cardboard. Strong, robust drives and rotors specially designed for shredding paper or cardboard also
-                    make it possible to process material that is difficult to shred. Our machines can handle all
-                    throughput requirements for post-consumer applications such as waste paper, cartons, files and
-                    documents, shipping packaging, and industrial production waste. This includes cardboard tubes, paper
-                    webs, paper rolls, edge trims, printing waste or paper bales.
-
-                </p>
-                <button>About waste shredding</button>
-            </div>
-
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2017/07/WPL-2500-200kW-Hydro-40mm-screen-50-1024x683.jpg"
-                            alt="First Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2017/05/DSC_7311-1024x684.jpg"
-                            alt="Second Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="		https://weima.com/wp-content/uploads/2020/08/2x-W8web.jpg" alt="Third Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg" alt="fourth Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2020/08/W8.25-up-und-W8web.jpg"
-                            alt="Third Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2020/08/Inspektionsklappe_web.jpg"
-                            alt="Third Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2020/08/PowerLine_Rotor_web.jpg"
-                            alt="Third Image" />
-                    </div>
-
-                    <!-- Add more slides as needed -->
-
+              <div class="number-block">
+                <div class="number">01</div>
+                <div class="inner">
+                  <p>
+                    In times of booming online trade, the sustainable disposal
+                    of corrugate and cardboard boxes is becoming increasingly
+                    important. In general, the processing of paper and paper
+                    waste is an essential part of the overall reusable material
+                    recycling – and not only for environmental reasons.
+                  </p>
+                  <br /><br /><br />
                 </div>
-                <div class="sliders">
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev "></div>
-                </div>
-
+              </div>
+              <div class="info1-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/1fAnK0FhVMA"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
+          </div>
+          <div class="info2 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">02</div>
+                <div class="inner">
+                  <h1>
+                    "Paper recycling is on the rise. In Europe, more than 70 %
+                    of waste paper is already being recycled".
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info3 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">03</div>
+                <div class="inner">
+                  <h3>
+                    Processing production waste in a resource-saving manner
+                  </h3>
+                  <p>
+                    The production of paper products regularly produces a lot of
+                    waste. The production waste or production surplus, for
+                    example in the form of paper bales, paper cuttings, paper
+                    rolls or paper sheets, presents many companies with
+                    logistical challenges. In order to reduce large volumes
+                    economically, industrial shredding by means of a shredder is
+                    ideally suited. The shredded pieces can be reintegrated into
+                    production processes, e.g. of new pulp.
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/Q6M90u4RZ1A"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="info4 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">04</div>
+                <div class="inner">
+                  <h3>Efficient data destruction</h3>
+                  <p>
+                    The disposal of confidential documents, files and data media
+                    requires particularly secure shredding technologies. Many
+                    companies therefore have special data protection containers
+                    available for collection. These are collected by the
+                    appropriate service providers and destroyed externally,
+                    either on site or at a central location, in other words
+                    shredded. <br />
+
+                    Especially the mobile document destruction on an
+                    individually designed vehicle is in line with the trend, as
+                    it is particularly flexible. In this case, a compact WEIMA
+                    shredder is permanently installed on the loading area and
+                    guarantees full security and data protection. In addition to
+                    data in paper form, our machines also shred e-waste such as
+                    CDs, floppy disks, hard disks and USB sticks if required.
+                    The choice of different screen sizes defines the grain size
+                    of the shredded material. This enables users to offer
+                    legally certified data destruction.
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/QEMxmAXcnag"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="info5 info">
+            <div class="content">
+              <div class="info4-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/FvDeaHnQO9Y"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="number-block">
+                <div class="number">05</div>
+                <div class="inner">
+                  <h3>
+                    Pulper heads / rejects shredding – sustainable paper
+                    production
+                  </h3>
+                  <p>
+                    For a long time, pulper braids and other production waste in
+                    the paper industry were mainly disposed of in landfills. In
+                    recent years, however, their potential as a secondary raw
+                    material source has been recognized. Pulper heads consist
+                    mainly of metal wires and plastic parts that get knotted
+                    during paper production. With the right shredding
+                    technology, the materials can be recovered and reused, for
+                    example as substitute fuel in cement plants.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info6 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">06</div>
+                <div class="inner">
+                  <h3>Safety risk paper dust</h3>
+                  <p>
+                    Workers in the paper processing industry are traditionally
+                    exposed to high concentrations of dust and fibers. This is
+                    particularly harmful to the lungs and can cause illness. In
+                    addition, non-exhausted paper residues pose a considerable
+                    risk of explosion, which must be avoided. For this reason,
+                    we recommend the use of suitable extraction systems with
+                    filters and subsequent briquetting. If required, the
+                    compacted dust can be used as a fuel to generate heating
+                    energy within the company.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info14 info">
+            <div class="content">
+              <div class="info11-video image">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="number-block">
+                <div class="number">07</div>
+                <div class="inner">
+                  <h3>See for yourself</h3>
+                  <p>
+                    The RecyleAll show room is equipped with shredding and
+                    briquetting machines of all sizes and technologies. This
+                    enables us to simulate your application as realistically as
+                    possible. You have the possibility to send us your material
+                    or visit us directly in Ilsfeld. From our gallery you have
+                    the best view directly into the cutting chamber. So you can
+                    observe the shredding process live.
+                  </p>
+                  <p>Request an appointment now</p>
+                  <br />
+                  <a
+                    class="send_email"
+                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
+                    class="cta contact"
+                  >
+                    <span class="button primary">Send eMail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="page3">
-            <div class="info">
-                <h2>We have the perfect paper shredder for you!
-                </h2>
-                <p>Make your selection using individual filter options.</p>
-            </div>
-            <div class="filter-collection">
-                <div class="type filter">
-                    <div class="filter-title">
-                        <h5>Filter by type</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=single-shaft]">Single-shaft
-                            shredder</button>
-                        <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=multi-shaft]">Multi
-                            shaft</button>
-
-                    </div>
-                </div>
-
-                <div class="rotor-diameter filter">
-                    <div class="filter-title">
-                        <h5>Filter by rotor diameter</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d800mm]">ø 800
-                            mm</button>
-                    </div>
-                </div>
-
-                <div class="ram-design filter">
-                    <div class="filter-title">
-                        <h5>Filter by ram design</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=swing-ram]">Swing
-                            ram</button>
-
-                    </div>
-                </div>
-
-                <div class="screen-design filter">
-                    <div class="filter-title">
-                        <h5>Filter by screen design</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="screen"
-                            data-toggle="[data-screen~=bolted]">Bolted</button>
-                        <button class="filter-btn" data-type="screen"
-                            data-toggle="[data-screen~=lift-up]">Lift-up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page4">
-            <div class="machines">
-
-                <div class="precut2000 machine" onclick="window.location.href = 'wl4.html';" data-kind="single-shaft"
-                    data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
-                    <h3>WL 4</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/WL4_Rendering-1-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>The proven classic with 600 mm rotor length
-                        </p>
-                    </div>
-                    <a href="wl4.html">Explore Machine ></a>
-                </div>
-
-
-                <div class="powerline1500 machine" onclick="window.location.href = 'wl6s.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>WL 6 S</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2021/02/WL6_Rendering-300x200.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>With a bigger rotor diameter</p>
-                    </div>
-                    <a href="wl6s.html">Explore Machine ></a>
-                </div>
-
-                <div class="finecut1500 machine" onclick="window.location.href = 'wl8.html';" data-kind="single-shaft"
-                    data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>WL 8</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="	https://weima.com/wp-content/uploads/2020/08/WL8_Rendering.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>The proven classic with 1,000 mm rotor length </p>
-                    </div>
-                    <a href="wl8.html">Explore Machine ></a>
-                </div>
-
-                <div class="m8.28 machine" onclick="window.location.href = 'wlk6s.html';" data-kind="multi-shaft"
-                    data-rotor data-ramtype data-screen>
-                    <h3>WLK 6 S</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2021/02/25_3D-Still_WLK6S_Zerkleinerer_REPRO_V03-2._Rendering-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>With larger rotor diameter and conveyor belt cutout </p>
-                    </div>
-                    <a href="wlk6s.html">Explore Machine ></a>
-                </div>
-
-                <div class="precut2000 machine" onclick="window.location.href = 'wlk1000.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
-                    <h3>WLK 1000</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2021/02/WLK1000_Rendering-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>Economical compact machine with 1,000 mm working width.</p>
-                    </div>
-                    <a href="wlk1000.html">Explore Machine ></a>
-                </div>
-
-
-                <div class="powerline1500 machine" onclick="window.location.href = '../s5-15iftup.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>S5.15 lift-up</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>Highly productive with big 500 mm diameter rotor</p>
-                    </div>
-                    <a href="../s5-15iftup.html">Explore Machine ></a>
-                </div>
-
-                <div class="finecut1500 machine" onclick="window.location.href = 'finecut1500.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>WLK 20 SJ</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>Highly productive with extra-big 700 mm rotor diameter</p>
-                    </div>
-                    <a href="finecut1500.html">Explore Machine ></a>
-                </div>
-
-                <div class="m8.28 machine" onclick="window.location.href = 'm8-28.html';" data-kind="multi-shaft"
-                    data-rotor data-ramtype data-screen>
-                    <h3>WLK 30 SJ</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>Highly productive with extra-big 700 mm rotor diameter</p>
-                    </div>
-                    <a href="m8-28.html">Explore Machine ></a>
-                </div>
-
-                <div class="precut2000 machine" onclick="window.location.href = 'zm30.html';" data-kind="single-shaft"
-                    data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
-                    <h3>ZM 30</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder</p>
-                        <p>For long and bulky material</p>
-                    </div>
-                    <a href="zm30.html">Explore Machine ></a>
-                </div>
-
-
-                <div class="powerline1500 machine" onclick="window.location.href = 'zm50.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>ZM 50</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder </p>
-                        <p>
-                            For long and bulky material</p>
-                    </div>
-                    <a href="zm50.html">Explore Machine ></a>
-                </div>
-
-                <div class="finecut1500 machine" onclick="window.location.href = 'zm60.html';" data-kind="single-shaft"
-                    data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>ZM 60</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder
-                        </p>
-                        <p>
-                            For long and bulky material</p>
-                    </div>
-                    <a href="zm60.html">Explore Machine ></a>
-                </div>
-            </div>
-        </div>
-        <div class="more-abt-plastics">
-            <div class="title">
-                <h1>Learn more about paper waste recovery and paper recycling</h1>
-                <div class="subtitle">Efficient shredding in the material cycle </div>
-            </div>
-            <div class="info-collection">
-                <div class="info1 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">01</div>
-                            <div class="inner">
-                                <p>
-                                    In times of booming online trade, the sustainable disposal of corrugate and
-                                    cardboard boxes is becoming increasingly important. In general, the processing of
-                                    paper and paper waste is an essential part of the overall reusable material
-                                    recycling – and not only for environmental reasons.
-
-                                </p><br><br><br>
-                            </div>
-                        </div>
-                        <div class="info1-video image">
-                            <iframe src="https://www.youtube.com/embed/1fAnK0FhVMA" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="info2 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">02</div>
-                            <div class="inner">
-                                <h1>
-
-                                    "Paper recycling is on the rise. In Europe, more than 70 % of waste paper is already
-                                    being recycled".
-                                </h1>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info3 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">03</div>
-                            <div class="inner">
-                                <h3>Processing production waste in a resource-saving manner</h3>
-                                <p>The production of paper products regularly produces a lot of waste. The production
-                                    waste or production surplus, for example in the form of paper bales, paper cuttings,
-                                    paper rolls or paper sheets, presents many companies with logistical challenges. In
-                                    order to reduce large volumes economically, industrial shredding by means of a
-                                    shredder is ideally suited. The shredded pieces can be reintegrated into production
-                                    processes, e.g. of new pulp.</p>
-                            </div>
-                        </div>
-                        <div class="info4-video image">
-                            <iframe src="https://www.youtube.com/embed/Q6M90u4RZ1A" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="info4 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">04</div>
-                            <div class="inner">
-                                <h3>Efficient data destruction</h3>
-                                <p>The disposal of confidential documents, files and data media requires particularly
-                                    secure shredding technologies. Many companies therefore have special data protection
-                                    containers available for collection. These are collected by the appropriate service
-                                    providers and destroyed externally, either on site or at a central location, in
-                                    other words shredded. <br>
-
-                                    Especially the mobile document destruction on an individually designed vehicle is in
-                                    line with the trend, as it is particularly flexible. In this case, a compact WEIMA
-                                    shredder is permanently installed on the loading area and guarantees full security
-                                    and data protection. In addition to data in paper form, our machines also shred
-                                    e-waste such as CDs, floppy disks, hard disks and USB sticks if required. The choice
-                                    of different screen sizes defines the grain size of the shredded material. This
-                                    enables users to offer legally certified data destruction.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image">
-                            <iframe src="https://www.youtube.com/embed/QEMxmAXcnag" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="info5 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <iframe src="https://www.youtube.com/embed/FvDeaHnQO9Y" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="number-block">
-                            <div class="number">05</div>
-                            <div class="inner">
-                                <h3>Pulper heads / rejects shredding – sustainable paper production</h3>
-                                <p>For a long time, pulper braids and other production waste in the paper industry were
-                                    mainly disposed of in landfills. In recent years, however, their potential as a
-                                    secondary raw material source has been recognized. Pulper heads consist mainly of
-                                    metal wires and plastic parts that get knotted during paper production. With the
-                                    right shredding technology, the materials can be recovered and reused, for example
-                                    as substitute fuel in cement plants.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info6 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">06</div>
-                            <div class="inner">
-                                <h3>Safety risk paper dust</h3>
-                                <p>Workers in the paper processing industry are traditionally exposed to high
-                                    concentrations of dust and fibers. This is particularly harmful to the lungs and can
-                                    cause illness. In addition, non-exhausted paper residues pose a considerable risk of
-                                    explosion, which must be avoided. For this reason, we recommend the use of suitable
-                                    extraction systems with filters and subsequent briquetting. If required, the
-                                    compacted dust can be used as a fuel to generate heating energy within the company.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info14 info">
-                    <div class="content">
-                        <div class="info11-video image">
-                            <img src="https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">07</div>
-                            <div class="inner">
-                                <h3>See for yourself</h3>
-                                <p>
-                                    The RecyleAll show room is equipped with shredding and briquetting machines of all sizes
-                                    and technologies.
-                                    This enables us to simulate your application as realistically as possible. You have
-                                    the possibility to
-                                    send us your material or visit us directly in Ilsfeld. From our gallery you have the
-                                    best view
-                                    directly into the cutting chamber. So you can observe the shredding process live.
-                                </p>
-                                <p>Request an appointment now</p>
-                                <br>
-                                <a class="send_email"
-                                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                                    class="cta contact"> <span class="button primary">Send eMail</span> </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="script/jquery.js"></script>
-<script src="script/paper.js"></script>
-
+  <script src="script/jquery.js"></script>
+  <script src="script/paper.js"></script>
 </html>

@@ -1,16 +1,14 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 body {
   margin: 0%;
   padding: 0%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: gray;
-
-
 }
 
 h1,
@@ -44,7 +42,6 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 0%;
-
 }
 .navbar {
   width: 100%;
@@ -63,13 +60,10 @@ h3 {
 }
 
 .nav-items ul li {
-
   list-style: none;
   display: inline-block;
   padding-right: 0;
   font-weight: bolder;
-
-
 }
 
 .nav-items ul li button {
@@ -80,8 +74,7 @@ h3 {
   display: block;
   border: none;
   cursor: pointer;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
-
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -90,13 +83,12 @@ h3 {
 }
 
 .logo img {
-
   height: 30%;
   padding: 2vh 0 0 2vw;
 }
 
 .contact {
-  background-color: #f76c4e;
+  background-color: #f5b033;
   color: white;
   transition: background-color 0.5s;
 }
@@ -111,9 +103,7 @@ h3 {
   background-color: #d7d7d7;
 }
 
-
 .overlay {
-
   height: 100%;
   width: 0;
   position: fixed;
@@ -126,7 +116,6 @@ h3 {
   transition: 0.5s;
 }
 
-
 .overlay-content {
   position: relative;
   top: 25%;
@@ -134,7 +123,6 @@ h3 {
   text-align: center;
   margin-top: 30px;
 }
-
 
 .overlay a {
   padding: 8px;
@@ -144,7 +132,6 @@ h3 {
   display: block;
   transition: 0.3s;
 }
-
 
 .overlay a:hover,
 .overlay a:focus {
@@ -160,20 +147,17 @@ h3 {
 }
 @media (min-width: 1024px) {
   h3 {
-      font-size: 21px;
+    font-size: 21px;
   }
 }
 
 @media (min-width: 768px) {
   h3 {
-      font-size: 19px;
+    font-size: 19px;
   }
- 
 }
 
-
 @media screen and (max-width: 600px) {
-  
   .overlay a {
     font-size: 20px;
   }
@@ -184,7 +168,6 @@ h3 {
     right: 35px;
   }
   .overlay-content {
-    
     width: 100%;
     margin-top: 10%;
     text-align: center;
@@ -193,17 +176,16 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
-}
-.overlay-content .items {
-  width: 90%;
-  height: 100%;
-  color: #fff;
-  
-}
+  }
+  .overlay-content .items {
+    width: 90%;
+    height: 100%;
+    color: #fff;
+  }
 }
 
-
-.contact:hover,.send_email:hover {
+.contact:hover,
+.send_email:hover {
   background-color: #414141;
 }
 
@@ -216,7 +198,6 @@ h3 {
   width: 50%;
   background-color: #f3f2f2;
   height: 20vh;
-
 }
 
 .links a {
@@ -234,7 +215,6 @@ h3 {
   margin: 0 auto;
   height: auto;
   border-bottom: 1px solid rgb(227, 227, 227);
-
 }
 
 .page2 h1 {
@@ -251,7 +231,7 @@ h3 {
   background-color: #414141;
   border: none;
   border-radius: 100px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -259,9 +239,7 @@ h3 {
   line-height: 18px;
   padding: 9px 20px 11px;
   position: relative;
-  transition: all .3s;
-
-
+  transition: all 0.3s;
 }
 
 .page2 .content button:hover {
@@ -275,23 +253,20 @@ h3 {
   overflow: hidden;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   width: 100%;
 }
 
 .sliders {
-  position:relative;
+  position: relative;
   top: -65%;
 }
 .swiper-button-next,
 .swiper-button-prev {
-
-    font-size: 10px; /* Adjust the font size to change the arrow size */
+  font-size: 10px; /* Adjust the font size to change the arrow size */
   width: 30px; /* Adjust the width to change the arrow size */
   height: 30px;
-
 }
-
 
 .page3 {
   margin-top: 50px;
@@ -300,7 +275,6 @@ h3 {
   width: 80%;
   margin: 0 auto;
   height: auto;
-
 }
 
 .page3 .info {
@@ -323,7 +297,6 @@ h3 {
 .filter .filter-title h5 {
   border-bottom: 1px solid rgb(227, 227, 227);
   padding-bottom: 5px;
-
 }
 
 .filter .filters {
@@ -336,13 +309,13 @@ h3 {
   box-sizing: border-box;
   margin: 0 6px 13px;
   min-height: 40px;
-  opacity: .3;
+  opacity: 0.3;
   padding: 9px 17px 10px;
   white-space: nowrap;
   border-radius: 100px;
   background-color: transparent;
   border: 1px solid;
-  transition: all .3s;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -360,7 +333,6 @@ h3 {
   margin: 0 auto;
   height: auto;
   border-top: 1px solid rgb(227, 227, 227);
-
 }
 
 .machines {
@@ -376,17 +348,16 @@ h3 {
   height: 400px;
   text-align: center;
   cursor: pointer;
-
 }
 
-@media(max-width: 800px) and (min-width: 0px) {
+@media (max-width: 800px) and (min-width: 0px) {
   .machine {
     width: 100%;
     margin-bottom: 50px;
   }
 }
 
-@media(max-width: 1200px) and (min-width: 801px) {
+@media (max-width: 1200px) and (min-width: 801px) {
   .machine {
     width: 45%;
   }
@@ -408,13 +379,12 @@ h3 {
 }
 
 .line {
-  background-color: #f76c4e;
+  background-color: #f5b033;
   content: "";
   height: 100px;
   top: 0;
   width: 3px;
 }
-
 
 .machine-pic img {
   width: 200px;
@@ -434,7 +404,7 @@ h3 {
 }
 
 .machine:hover a {
-  color: #f76c4e;
+  color: #f5b033;
 }
 
 .machine a::after {
@@ -471,8 +441,6 @@ h3 {
   text-align: left;
   flex-direction: column;
   gap: 20px;
-  
-
 }
 
 .more-abt-plastics .title h1,
@@ -491,7 +459,6 @@ h3 {
   margin: 0 auto;
   width: 75%;
   margin-top: 250px;
-  
 }
 
 .info {
@@ -507,7 +474,6 @@ h3 {
   display: flex;
   gap: 15px;
   width: 35%;
-
 }
 
 .info .content .number-block .number {
@@ -521,7 +487,6 @@ h3 {
 .info .content .number-block .inner {
   width: 100%;
   line-height: 25px;
-
 }
 
 .info .content .image {
@@ -537,29 +502,30 @@ h3 {
   height: 100%;
 }
 
-.info2 .content,.info6 .content {
+.info2 .content,
+.info6 .content {
   justify-content: center;
 }
 
-.info2 .content .number-block,.info6 .content .number-block {
+.info2 .content .number-block,
+.info6 .content .number-block {
   display: flex;
   gap: 15px;
   width: 70%;
-
 }
 
-.info2 .content .number-block .inner,.info6 .content .number-block .inner {
+.info2 .content .number-block .inner,
+.info6 .content .number-block .inner {
   width: 85%;
   line-height: 35px;
-
 }
 
-.info2 .content .image,.info6 .content .image {
+.info2 .content .image,
+.info6 .content .image {
   width: 0%;
 }
 
-@media(max-width: 800px) and (min-width: 0px) {
-
+@media (max-width: 800px) and (min-width: 0px) {
   .more-abt-plastics .title {
     width: 100%;
   }
@@ -579,12 +545,10 @@ h3 {
 
   .info .content .number-block {
     width: 100%;
-
   }
 
   .info .content .number-block .inner {
     width: 100%;
-
   }
 
   .info .content .image {
@@ -598,10 +562,9 @@ h3 {
     width: 100%;
     height: 350px;
   }
-
 }
 
-@media(max-width: 800px) and (min-width: 0px) {
+@media (max-width: 800px) and (min-width: 0px) {
   .page1 {
     background-image: none;
     height: auto;
@@ -612,7 +575,6 @@ h3 {
     position: relative;
     top: 0px;
     height: 30vh;
-
   }
 
   .page2 {
@@ -627,7 +589,6 @@ h3 {
   .page2 .swiper-container {
     margin-top: 30px;
     width: 100%;
-
   }
   .sliders {
     position: relative;

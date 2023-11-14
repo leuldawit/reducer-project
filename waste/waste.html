@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/waste.css" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -15,62 +17,73 @@
     <title>Waste</title>
     <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                includedLanguages: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement(
+          {
+            defaultLanguage: "en",
+            includedLanguages: "es",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            gaTrack: true,
+            gaId: "UA-12345678-1",
+            multilanguagePage: true,
+            includedLanguages: "en,am",
+            languageDisplayNames: {
+              en: "English",
+              am: "Amharic",
+            },
+          },
+          "myid"
+        );
+      }
     </script>
     <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
+      // Call the function to load Google Translate after the script is loaded
+      loadGoogleTranslate();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="page1">
-            <div class="navbar">
-                <div class="nav-items">
-                    <div class="logo">
-                        <a href="../home.html"><img src="../pics/Logo_2-300x53.png" alt="" /></a>
+      <div class="page1">
+        <div class="navbar">
+          <div class="nav-items">
+            <div class="logo">
+              <a href="../home.html"
+                ><img src="../pics/Logo_2-300x53.png" alt=""
+              /></a>
+            </div>
+            <ul>
+              <li><button class="contact">contacts</button></li>
+              <li><div id="myid">Choose Language</div></li>
+              <!-- full screen navigation -->
+
+              <li>
+                <div id="myNav" class="overlay">
+                  <!-- close btn -->
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+
+                  <!-- inside content -->
+                  <div class="overlay-content">
+                    <div class="shredding items">
+                      <h1>Shredding</h1>
+                      <p>
+                        Make a quick selection of our shredding material options
+                        or see all of our machinery overview.
+                      </p>
+                      <a href="../plastic.html">Plastic</a>
+                      <a href="../wood/wood.html">Wood</a>
+                      <a href="waste.html">Waste</a>
+                      <a href="../paper/paper.html">paper</a>
+                      <a href="../metal/metal.html">Metal</a>
                     </div>
-                    <ul>
-                        <li><button class="contact">contacts</button></li>
-                        <li> <div id="myid">Choose Language</div></li>
-                        <!-- full screen navigation -->
 
-                        <li>
-                            <div id="myNav" class="overlay">
-                                <!-- close btn -->
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                                <!-- inside content -->
-                                <div class="overlay-content">
-                                    <div class="shredding items">
-                                        <h1>Shredding</h1>
-                                        <p>Make a quick selection of our shredding material options or see all of our
-                                            machinery
-                                            overview.</p>
-                                        <a href="../plastic.html">Plastic</a>
-                                        <a href="../wood/wood.html">Wood</a>
-                                        <a href="waste.html">Waste</a>
-                                        <a href="../paper/paper.html">paper</a>
-                                        <a href="../metal/metal.html">Metal</a>
-                                    </div>
-
-                                    <!-- <div class="compressing items">
+                    <!-- <div class="compressing items">
                                         <h1>compressing</h1>
                                         <p>Make a quick selection of our shredding material options or see all of our
                                             machinery
@@ -98,545 +111,666 @@
                                         <a href="#">Contact</a>
                                     </div>
  -->
-
-                                </div>
-                            </div>
-
-                            <!-- menu button -->
-                            <span onclick="openNav()"><button class="menu">menu</button></span>
-                        </li>
-                    </ul>
+                  </div>
                 </div>
-            </div>
-            <div class="links">
-                <a href="../home.html">Home</a>
-                <span>|</span>
-                <strong>Waste Shredding and Secondary Fuel Production for Waste-to-Energy</strong>
-            </div>
+
+                <!-- menu button -->
+                <span onclick="openNav()"
+                  ><button class="menu">menu</button></span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="page2">
+        <div class="links">
+          <a href="../home.html">Home</a>
+          <span>|</span>
+          <strong
+            >Waste Shredding and Secondary Fuel Production for
+            Waste-to-Energy</strong
+          >
+        </div>
+      </div>
+      <div class="page2">
+        <div class="content">
+          <h1>
+            Waste Shredding and Secondary Fuel Production for Waste-to-Energy
+          </h1>
+          <p>
+            Waste is a valuable material. Whether commercial waste, bulky or
+            household waste, production rejects, rejects and paper, municipal
+            waste, wood residues and carpet materials: WEIMA ensures
+            high-throughput waste shredding and an optimal result in the
+            extraction of valuable secondary fuels (RDF).
+          </p>
+          <p>
+            Robustly designed pre-shredders and shredders are used worldwide as
+            a stand-alone solution or as part of a multi-stage waste treatment
+            plant. The output material from different material fractions is
+            ideally suited for the production of high-calorific alternative
+            fuels (RDF). These are in particularly high demand for the
+            production of energy for the cement industry.
+          </p>
+          <button>About waste shredding</button>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="	https://weima.com/wp-content/uploads/2017/07/WPL-2500-200kW-Hydro-40mm-screen-50-1024x683.jpg"
+                alt="First Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="	https://weima.com/wp-content/uploads/2017/05/DSC_7311-1024x684.jpg"
+                alt="Second Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="		https://weima.com/wp-content/uploads/2020/08/2x-W8web.jpg"
+                alt="Third Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg"
+                alt="fourth Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="	https://weima.com/wp-content/uploads/2020/08/W8.25-up-und-W8web.jpg"
+                alt="Third Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="	https://weima.com/wp-content/uploads/2020/08/Inspektionsklappe_web.jpg"
+                alt="Third Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="	https://weima.com/wp-content/uploads/2020/08/PowerLine_Rotor_web.jpg"
+                alt="Third Image"
+              />
+            </div>
+
+            <!-- Add more slides as needed -->
+          </div>
+          <div class="sliders">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page3">
+        <div class="info">
+          <h2>We have the ideal waste shredder for you!</h2>
+          <p>Make your selection using individual filter options.</p>
+        </div>
+        <div class="filter-collection">
+          <div class="type filter">
+            <div class="filter-title">
+              <h5>Filter by type</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="kind"
+                data-toggle="[data-kind~=single-shaft]"
+              >
+                Single-shaft shredder
+              </button>
+              <button
+                class="filter-btn"
+                data-type="kind"
+                data-toggle="[data-kind~=multi-shaft]"
+              >
+                Multi shaft
+              </button>
+            </div>
+          </div>
+
+          <div class="rotor-diameter filter">
+            <div class="filter-title">
+              <h5>Filter by rotor diameter</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="rotor"
+                data-toggle="[data-rotor~=d800mm]"
+              >
+                ø 800 mm
+              </button>
+            </div>
+          </div>
+
+          <div class="ram-design filter">
+            <div class="filter-title">
+              <h5>Filter by ram design</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="ramtype"
+                data-toggle="[data-ramtype~=swing-ram]"
+              >
+                Swing ram
+              </button>
+            </div>
+          </div>
+
+          <div class="screen-design filter">
+            <div class="filter-title">
+              <h5>Filter by screen design</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="screen"
+                data-toggle="[data-screen~=bolted]"
+              >
+                Bolted
+              </button>
+              <button
+                class="filter-btn"
+                data-type="screen"
+                data-toggle="[data-screen~=lift-up]"
+              >
+                Lift-up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page4">
+        <div class="machines">
+          <div
+            class="precut2000 machine"
+            onclick="window.location.href = 'precut2000.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="bolted"
+          >
+            <h3>PreCut 2000</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/09/11_3D-Still_WPC_3000_Zerkleinerer_REPPRO_V04_Halle_web.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>Pre-shredder with 2,000 mm working width.</p>
+            </div>
+            <a href="./precut2000.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="powerline1500 machine"
+            onclick="window.location.href = 'powerline1500.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>PowerLine 1500</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/WPL3000_Rendering-e1588690697164-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>Universal high-capacity machine with 1,500 mm working width</p>
+            </div>
+            <a href="./powerline1500.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="finecut1500 machine"
+            onclick="window.location.href = 'finecut1500.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>FineCut 1500</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="	https://weima.com/wp-content/uploads/2020/05/WFC3000Rendering-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Single-shaft shredder</p>
+              <p>High-end secondary shredder with 1,500 mm working width</p>
+            </div>
+            <a href="./finecut1500.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="m8.28 machine"
+            onclick="window.location.href = 'm8-28.html';"
+            data-kind="multi-shaft"
+            data-rotor
+            data-ramtype
+            data-screen
+          >
+            <h3>M8.28</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2022/01/Rendering_M8.28_web-540x359.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Twin-shaft shredder</p>
+              <p>For highest throughputs</p>
+            </div>
+            <a href="./m8-28.html">Explore Machine ></a>
+          </div>
+        </div>
+      </div>
+      <div class="more-abt-plastics">
+        <div class="title">
+          <h1>
+            Learn more about waste processing and production of refuse derived
+            fuel (RDF) and solid recovered fuel (SRF)
+          </h1>
+          <div class="subtitle">
+            Shredder for pre-shredding and secondary shredding of waste
+          </div>
+        </div>
+        <div class="info-collection">
+          <div class="info1 info">
             <div class="content">
-                <h1>Waste Shredding and Secondary Fuel Production for Waste-to-Energy</h1>
-                <p>
-                    Waste is a valuable material. Whether commercial waste, bulky or household waste, production
-                    rejects, rejects and paper, municipal waste, wood residues and carpet materials: WEIMA ensures
-                    high-throughput waste shredding and an optimal result in the extraction of valuable secondary fuels
-                    (RDF).
-                </p>
-                <p>
-                    Robustly designed pre-shredders and shredders are used worldwide as a stand-alone solution or as
-                    part of a multi-stage waste treatment plant. The output material from different material fractions
-                    is ideally suited for the production of high-calorific alternative fuels (RDF). These are in
-                    particularly high demand for the production of energy for the cement industry.
-                </p>
-                <button>About waste shredding</button>
-            </div>
+              <div class="number-block">
+                <div class="number">01</div>
+                <div class="inner">
+                  <h3>"Ain't no waste mountain high enough..."</h3>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2017/07/WPL-2500-200kW-Hydro-40mm-screen-50-1024x683.jpg"
-                            alt="First Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2017/05/DSC_7311-1024x684.jpg"
-                            alt="Second Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="		https://weima.com/wp-content/uploads/2020/08/2x-W8web.jpg" alt="Third Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg" alt="fourth Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2020/08/W8.25-up-und-W8web.jpg"
-                            alt="Third Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2020/08/Inspektionsklappe_web.jpg"
-                            alt="Third Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="	https://weima.com/wp-content/uploads/2020/08/PowerLine_Rotor_web.jpg"
-                            alt="Third Image" />
-                    </div>
-
-                    <!-- Add more slides as needed -->
-
+                  <p>
+                    With our shredding solutions we would like to contribute to
+                    the fact that waste that is no longer usable, but
+                    nevertheless valuable, does not find its way to the landfill
+                    site, but is used for energy generation. In doing so, the
+                    use of fossil fuels is further reduced, which protects the
+                    environment and is usually more economical.
+                  </p>
                 </div>
-                <div class="sliders">
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev "></div>
-                </div>
-
+              </div>
+              <div class="info1-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/7xuVFb7Hy6E"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
+          </div>
+          <div class="info2 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">02</div>
+                <div class="inner">
+                  <h1>
+                    "40 tons! This is the throughput a WEIMA waste shredder
+                    achieves per hour in the production of high-quality
+                    substitute fuel."
+                  </h1>
+                  <p>Erik Hagen</p>
+                  <p>Business Development | Waste at WEIMA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info3 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">03</div>
+                <div class="inner">
+                  <h2>
+                    Customer applications and sample materials from the
+                    secondary fuel industry and waste disposal
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 style="font-weight: 600">Fiery passion for substitute fuel</h2>
+          <p style="font-size: 23px">
+            The shredding of material streams is the cornerstone of any
+            recycling process. Industrial shredders are used here. With the
+            PowerLine, PreCut and FineCut Shredders, WEIMA demonstrates the
+            potential of single and multi-stage processing of waste.
+          </p>
+
+          <div class="info4 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">04</div>
+                <div class="inner">
+                  <h3>
+                    Stand-alone operation or integration into a production line
+                    – tap into the waste-to-energy potential
+                  </h3>
+                  <p>
+                    Depending on your requirements, we can supply you with the
+                    right shredder for your recycling task. If required, WEIMA
+                    also offers a multi-stage system solution in the form of a
+                    plant. We are assisted in this by an extensive supplier and
+                    service network that we have built up over the last decades.
+                    This includes specialists in the areas of conveyor
+                    technology, sorting, separation, screening technology,
+                    washing technology, metal detection, extrusion, heating
+                    construction and granulation. As a joint project team, we
+                    have already mastered hundreds of major tasks all over the
+                    world.
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/RB--qDnnUjE"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="info5 info">
+            <div class="content">
+              <div class="info4-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/xk-W9Ld1N1E"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="number-block">
+                <div class="number">05</div>
+                <div class="inner">
+                  <h3>Use of alternative fuels in cement production</h3>
+                  <p>
+                    The cement industry has a very high demand for energy. This
+                    can increasingly be covered by substitute fuels. The focus
+                    is on the combustion of alternative fuels in calciners,
+                    pre-burners and kilns. In order to reduce energy costs,
+                    cement manufacturers are placing more and more emphasis on
+                    increasing the proportion of alternative fuels in energy
+                    production. Compared to classic materials, the thermal
+                    utilization of these fuels has better physical burning
+                    properties and better burnout in the kiln. In general, the
+                    better the secondary fuel used, the more efficient the
+                    production of high-quality clinker.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info6 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">06</div>
+                <div class="inner">
+                  <h3>Waste shredders for co-processing</h3>
+                  <p>
+                    The production of cement requires enormous amounts of
+                    energy. To cover this sustainably, the use of secondary
+                    fuels is crucial. But co-processing is more than simply
+                    burning waste to generate energy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info7 info">
+            <div class="content">
+              <div class="info4-video image">
+                <img
+                  src="	https://weima.com/wp-content/uploads/2020/08/Ersatzbrennstoff-EBS-scaled.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="number-block">
+                <div class="number">07</div>
+                <div class="inner">
+                  <h3>Definition: What is co-processing?</h3>
+                  <p>
+                    The term co-processing describes a globally recognized
+                    technology used in energy-intensive industries (EII) such as
+                    cement production to recycle waste and industrial
+                    by-products for energy and materials. The mineral components
+                    in the waste replace primary raw materials (e.g. limestone)
+                    in the cement kiln, while the combustible materials provide
+                    the necessary energy for the production of clinker. No
+                    residual materials are produced in the process, and highly
+                    toxic wastes are also destroyed. Co-processing thus makes it
+                    possible to avoid landfilling and incineration of wastes
+                    such as sewage sludge, solvents, plastics from industry or
+                    mineral wastes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info8 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">08</div>
+                <div class="inner">
+                  <h3>Advantages of Co-Processing</h3>
+                  <p>
+                    Co-processing in the context of cement production has many
+                    advantages: The extremely high temperatures and long
+                    residence time in the kiln completely destroy even hazardous
+                    and toxic waste. No residual materials are produced that
+                    have to be further recycled or landfilled. The use of
+                    co-processing technology also avoids the need to use fossil
+                    fuels and consequently reduces greenhouse gas emissions. In
+                    addition, cement manufacturers can massively reduce their
+                    energy costs thanks to secondary fuels from waste.
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/12/pulper_waste_berge2_web-540x313.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="info9 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">09</div>
+                <div class="inner">
+                  <h3>Pre-Processing with WEIMA shredders</h3>
+                  <p>
+                    Generally, waste cannot directly processed in cement kilns,
+                    but must be prepared beforehand. The treatment process, also
+                    called pre-processing, includes the shredding, mixing and
+                    drying of waste. The use of WEIMA shredders in
+                    pre-processing enables consistently homogeneous particle
+                    sizes of the most demanding material. This guarantees a
+                    stable fuel that meets the technical requirements of cement
+                    production.
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/08/Produktionsabf%C3%A4lle-scaled.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <h2 style="font-weight: 600">You are interested in waste?</h2>
+          <p style="font-size: 23px">
+            Here you can learn more about the most important basic terms:
+          </p>
+
+          <div class="info10 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">10</div>
+                <div class="inner">
+                  <h3>Alternative fuel</h3>
+                  <p>
+                    WEIMA waste shredders are ideally suited for the production
+                    of medium and high calorific RDF (refuse derived fuel).
+                    These are fuels that are obtained from household, industrial
+                    and municipal waste. The different quality requirements
+                    depend on the thermal process. The typical processing steps
+                    of the high-calorific fraction include pre-sorting,
+                    pre-shredding, air separation and metal separation. Sensory
+                    sorting and drying are also possible. In most cases
+                    substitute fuel is used together with conventional fuels,
+                    e.g. in cement, lime, coal and industrial power plants.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info11 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">11</div>
+                <div class="inner">
+                  <h3>Municipal Solid Waste (MSW)</h3>
+                  <p>
+                    Household or municipal waste is usually referred to as MSW,
+                    collected in bags or garbage cans and collected by municipal
+                    or private waste service providers. This does not include
+                    commercial or industrial waste. While the organic components
+                    can be composted or otherwise made biologically usable, the
+                    majority of municipal household waste serves as an
+                    alternative fuel for various energy-intensive industries.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info12 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">12</div>
+                <div class="inner">
+                  <h3>Mechanical-biological waste treatment (MBT)</h3>
+                  <p>
+                    Generally speaking, this is household waste, MSW or
+                    commercial waste similar to household waste. This is first
+                    collected by waste management companies and transported to a
+                    central location for waste treatment, disposal or recycling.
+                    Typically, household waste contains a high proportion of
+                    organic substances. After a coarse pre-sifting, it is
+                    shredded and then divided into different fractions by
+                    screening. The coarse fraction (foil, paper, hard plastics,
+                    wood, etc.) is mostly used as fuel in RDF power plants due
+                    to its high caloric value. The fine fraction (organic
+                    substances), on the other hand, is usually treated further
+                    biologically. Gases produced in this way can be used to
+                    generate energy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info13 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">13</div>
+                <div class="inner">
+                  <h3>Solid Recovered Fuel (SRF)</h3>
+                  <p>
+                    The production of SRF usually requires additional process
+                    steps, as higher quality requirements for its production
+                    have been defined at European level. The essential
+                    properties of a classification include the calorific value
+                    as well as the chlorine and mercury content. This results in
+                    five quality classes to be able to call processed waste
+                    Solid Recovered Fuel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info14 info">
+            <div class="content">
+              <div class="info11-video image">
+                <img
+                  src="	https://weima.com/wp-content/uploads/2021/06/AFR-PRE-PROCESSING-weima_kiron_web-1-768x442.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="number-block">
+                <div class="number">14</div>
+                <div class="inner">
+                  <h3>See for yourself</h3>
+                  <p>
+                    The WEIMA show room is equipped with shredding and
+                    briquetting machines of all sizes and technologies. This
+                    enables us to simulate your application as realistically as
+                    possible. You have the possibility to send us your material
+                    or visit us directly in Ilsfeld. From our gallery you have
+                    the best view directly into the cutting chamber. So you can
+                    observe the shredding process live.
+                  </p>
+                  <p>Request an appointment now</p>
+                  <br />
+                  <a
+                    class="send_email"
+                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
+                    class="cta contact"
+                  >
+                    <span class="button primary">Send eMail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="page3">
-            <div class="info">
-                <h2>We have the ideal waste shredder for you!
-                </h2>
-                <p>Make your selection using individual filter options.</p>
-            </div>
-            <div class="filter-collection">
-                <div class="type filter">
-                    <div class="filter-title">
-                        <h5>Filter by type</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=single-shaft]">Single-shaft
-                            shredder</button>
-                        <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=multi-shaft]">Multi
-                            shaft</button>
-
-                    </div>
-                </div>
-
-                <div class="rotor-diameter filter">
-                    <div class="filter-title">
-                        <h5>Filter by rotor diameter</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d800mm]">ø 800
-                            mm</button>
-                    </div>
-                </div>
-
-                <div class="ram-design filter">
-                    <div class="filter-title">
-                        <h5>Filter by ram design</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=swing-ram]">Swing
-                            ram</button>
-
-                    </div>
-                </div>
-
-                <div class="screen-design filter">
-                    <div class="filter-title">
-                        <h5>Filter by screen design</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="screen"
-                            data-toggle="[data-screen~=bolted]">Bolted</button>
-                        <button class="filter-btn" data-type="screen"
-                            data-toggle="[data-screen~=lift-up]">Lift-up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page4">
-            <div class="machines">
-
-                <div class="precut2000 machine" onclick="window.location.href = 'precut2000.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
-                    <h3>PreCut 2000</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/09/11_3D-Still_WPC_3000_Zerkleinerer_REPPRO_V04_Halle_web.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>Pre-shredder with 2,000 mm working width.</p>
-                    </div>
-                    <a href="precut2000.html">Explore Machine ></a>
-                </div>
-
-
-                <div class="powerline1500 machine" onclick="window.location.href = 'powerline1500.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>PowerLine 1500</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/WPL3000_Rendering-e1588690697164-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>Universal high-capacity machine with 1,500 mm working width</p>
-                    </div>
-                    <a href="powerline1500.html">Explore Machine ></a>
-                </div>
-
-                <div class="finecut1500 machine" onclick="window.location.href = 'finecut1500.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>FineCut 1500</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="	https://weima.com/wp-content/uploads/2020/05/WFC3000Rendering-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>High-end secondary shredder with 1,500 mm working width</p>
-                    </div>
-                    <a href="finecut1500.html">Explore Machine ></a>
-                </div>
-
-                <div class="m8.28 machine" onclick="window.location.href = 'm8-28.html';" data-kind="multi-shaft"
-                    data-rotor data-ramtype data-screen>
-                    <h3>M8.28</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2022/01/Rendering_M8.28_web-540x359.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Twin-shaft shredder</p>
-                        <p>For highest throughputs</p>
-                    </div>
-                    <a href="m8-28.html">Explore Machine ></a>
-                </div>
-            </div>
-        </div>
-        <div class="more-abt-plastics">
-            <div class="title">
-                <h1>Learn more about waste processing and production of refuse derived fuel (RDF) and solid recovered
-                    fuel (SRF)</h1>
-                <div class="subtitle">Shredder for pre-shredding and secondary shredding of waste </div>
-            </div>
-            <div class="info-collection">
-                <div class="info1 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">01</div>
-                            <div class="inner">
-                                <h3>"Ain't no waste mountain high enough..."</h3>
-
-                                <p>
-                                    With our shredding solutions we would like to contribute to the fact that waste that
-                                    is no longer usable, but nevertheless valuable, does not find its way to the
-                                    landfill site, but is used for energy generation. In doing so, the use of fossil
-                                    fuels is further reduced, which protects the environment and is usually more
-                                    economical.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info1-video image">
-                            <iframe src="https://www.youtube.com/embed/7xuVFb7Hy6E" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="info2 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">02</div>
-                            <div class="inner">
-                                <h1>
-                                    "40 tons! This is the throughput a WEIMA waste shredder achieves per hour in the
-                                    production of high-quality substitute fuel."
-                                </h1>
-                                <p>Erik Hagen</p>
-                                <p>Business Development | Waste at WEIMA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info3 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">03</div>
-                            <div class="inner">
-                                <h2>
-                                    Customer applications and sample materials from the secondary fuel industry and
-                                    waste disposal
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 style="font-weight: 600;">Fiery passion for substitute fuel</h2>
-                <p style="font-size: 23px;">The shredding of material streams is the cornerstone of any recycling
-                    process. Industrial shredders are used here. With the PowerLine, PreCut and FineCut Shredders, WEIMA
-                    demonstrates the potential of single and multi-stage processing of waste.
-                </p>
-
-
-                <div class="info4 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">04</div>
-                            <div class="inner">
-                                <h3>Stand-alone operation or integration into a production line – tap into the
-                                    waste-to-energy potential
-                                </h3>
-                                <p>
-                                    Depending on your requirements, we can supply you with the right shredder for your
-                                    recycling task. If required, WEIMA also offers a multi-stage system solution in the
-                                    form of a plant. We are assisted in this by an extensive supplier and service
-                                    network that we have built up over the last decades. This includes specialists in
-                                    the areas of conveyor technology, sorting, separation, screening technology, washing
-                                    technology, metal detection, extrusion, heating construction and granulation. As a
-                                    joint project team, we have already mastered hundreds of major tasks all over the
-                                    world. </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image">
-                            <iframe src="https://www.youtube.com/embed/RB--qDnnUjE" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="info5 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <iframe src="https://www.youtube.com/embed/xk-W9Ld1N1E" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="number-block">
-                            <div class="number">05</div>
-                            <div class="inner">
-                                <h3>Use of alternative fuels in cement production</h3>
-                                <p>
-                                    The cement industry has a very high demand for energy. This can increasingly be
-                                    covered by substitute fuels. The focus is on the combustion of alternative fuels in
-                                    calciners, pre-burners and kilns. In order to reduce energy costs, cement
-                                    manufacturers are placing more and more emphasis on increasing the proportion of
-                                    alternative fuels in energy production. Compared to classic materials, the thermal
-                                    utilization of these fuels has better physical burning properties and better burnout
-                                    in the kiln. In general, the better the secondary fuel used, the more efficient the
-                                    production of high-quality clinker.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info6 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">06</div>
-                            <div class="inner">
-                                <h3>
-                                    Waste shredders for co-processing</h3>
-                                <p>The production of cement requires enormous amounts of energy. To cover this
-                                    sustainably, the use of secondary fuels is crucial. But co-processing is more than
-                                    simply burning waste to generate energy.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info7 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <img src="	https://weima.com/wp-content/uploads/2020/08/Ersatzbrennstoff-EBS-scaled.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">07</div>
-                            <div class="inner">
-                                <h3>Definition: What is co-processing?</h3>
-                                <p>
-                                    The term co-processing describes a globally recognized technology used in
-                                    energy-intensive industries (EII) such as cement production to recycle waste and
-                                    industrial by-products for energy and materials. The mineral components in the waste
-                                    replace primary raw materials (e.g. limestone) in the cement kiln, while the
-                                    combustible materials provide the necessary energy for the production of clinker. No
-                                    residual materials are produced in the process, and highly toxic wastes are also
-                                    destroyed. Co-processing thus makes it possible to avoid landfilling and
-                                    incineration of wastes such as sewage sludge, solvents, plastics from industry or
-                                    mineral wastes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info8 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">08</div>
-                            <div class="inner">
-                                <h3>Advantages of Co-Processing</h3>
-                                <p>
-                                    Co-processing in the context of cement production has many advantages: The extremely
-                                    high temperatures and long residence time in the kiln completely destroy even
-                                    hazardous and toxic waste. No residual materials are produced that have to be
-                                    further recycled or landfilled. The use of co-processing technology also avoids the
-                                    need to use fossil fuels and consequently reduces greenhouse gas emissions. In
-                                    addition, cement manufacturers can massively reduce their energy costs thanks to
-                                    secondary fuels from waste. </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image"><img
-                                src="https://weima.com/wp-content/uploads/2020/12/pulper_waste_berge2_web-540x313.jpg"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info9 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">09</div>
-                            <div class="inner">
-                                <h3>
-                                    Pre-Processing with WEIMA shredders</h3>
-                                <p>
-                                    Generally, waste cannot directly processed in cement kilns, but must be prepared
-                                    beforehand. The treatment process, also called pre-processing, includes the
-                                    shredding, mixing and drying of waste. The use of WEIMA shredders in pre-processing
-                                    enables consistently homogeneous particle sizes of the most demanding material. This
-                                    guarantees a stable fuel that meets the technical requirements of cement production.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image"><img
-                                src="https://weima.com/wp-content/uploads/2020/08/Produktionsabf%C3%A4lle-scaled.jpg"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <h2 style="font-weight: 600;">You are interested in waste?</h2>
-                <p style="font-size: 23px;">Here you can learn more about the most important basic terms:
-                </p>
-
-                <div class="info10 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">10</div>
-                            <div class="inner">
-                                <h3>Alternative fuel
-                                </h3>
-                                <p> WEIMA waste shredders are ideally suited for the production of medium and high
-                                    calorific RDF (refuse derived fuel). These are fuels that are obtained from
-                                    household, industrial and municipal waste. The different quality requirements depend
-                                    on the thermal process. The typical processing steps of the high-calorific fraction
-                                    include pre-sorting, pre-shredding, air separation and metal separation. Sensory
-                                    sorting and drying are also possible. In most cases substitute fuel is used together
-                                    with conventional fuels, e.g. in cement, lime, coal and industrial power plants.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info11 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">11</div>
-                            <div class="inner">
-                                <h3>Municipal Solid Waste (MSW)</h3>
-                                <p>Household or municipal waste is usually referred to as MSW, collected in bags or
-                                    garbage cans and collected by municipal or private waste service providers. This
-                                    does not include commercial or industrial waste. While the organic components can be
-                                    composted or otherwise made biologically usable, the majority of municipal household
-                                    waste serves as an alternative fuel for various energy-intensive industries.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="info12 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">12</div>
-                            <div class="inner">
-                                <h3>Mechanical-biological waste treatment (MBT)</h3>
-                                <p>
-                                    Generally speaking, this is household waste, MSW or commercial waste similar to
-                                    household waste. This is first collected by waste management companies and
-                                    transported to a central location for waste treatment, disposal or recycling.
-                                    Typically, household waste contains a high proportion of organic substances. After a
-                                    coarse pre-sifting, it is shredded and then divided into different fractions by
-                                    screening. The coarse fraction (foil, paper, hard plastics, wood, etc.) is mostly
-                                    used as fuel in RDF power plants due to its high caloric value. The fine fraction
-                                    (organic substances), on the other hand, is usually treated further biologically.
-                                    Gases produced in this way can be used to generate energy.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="info13 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">13</div>
-                            <div class="inner">
-                                <h3>Solid Recovered Fuel (SRF)</h3>
-                                <p>The production of SRF usually requires additional process steps, as higher quality
-                                    requirements for its production have been defined at European level. The essential
-                                    properties of a classification include the calorific value as well as the chlorine
-                                    and mercury content. This results in five quality classes to be able to call
-                                    processed waste Solid Recovered Fuel.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="info14 info">
-                    <div class="content">
-                        <div class="info11-video image">
-                            <img src="	https://weima.com/wp-content/uploads/2021/06/AFR-PRE-PROCESSING-weima_kiron_web-1-768x442.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">14</div>
-                            <div class="inner">
-                                <h3>See for yourself</h3>
-                                <p>
-                                    The WEIMA show room is equipped with shredding and briquetting machines of all sizes
-                                    and technologies.
-                                    This enables us to simulate your application as realistically as possible. You have
-                                    the possibility to
-                                    send us your material or visit us directly in Ilsfeld. From our gallery you have the
-                                    best view
-                                    directly into the cutting chamber. So you can observe the shredding process live.
-                                </p>
-                                <p>Request an appointment now</p>
-                                <br>
-                                <a class="send_email"
-                                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                                    class="cta contact"> <span class="button primary">Send eMail</span> </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="script/jquery.js"></script>
-<script src="script/waste.js"></script>
-
+  <script src="script/jquery.js"></script>
+  <script src="script/waste.js"></script>
 </html>

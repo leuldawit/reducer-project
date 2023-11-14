@@ -1,76 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/metal.css" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <title>Paper</title>
-    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-        function loadGoogleTranslate() {
-            new google.translate.TranslateElement({
-                defaultLanguage: 'en',
-                includedLanguages: 'es',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-12345678-1',
-                multilanguagePage: true,
-                includedLanguages: 'en,am',
-                languageDisplayNames: {
-                    en: 'English',
-                    am: 'Amharic'
-                }
-            }, 'myid');
-        }
-    </script>
-    <script>
-        // Call the function to load Google Translate after the script is loaded
-        loadGoogleTranslate();
-    </script>
-</head>
+    <title>Metal</title>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="page1">
-            <div class="navbar">
-                <div class="nav-items">
-                    <div class="logo">
-                        <a href="../home.html"><img src="../pics/Logo_2-300x53.png" alt="" /></a>
+      <div class="page1">
+        <div class="navbar">
+          <div class="nav-items">
+            <div class="logo">
+              <a href="../home.html"
+                ><img src="../pics/new weima_logo.png" alt=""
+              /></a>
+            </div>
+            <ul>
+              <li><button class="contact">contacts</button></li>
+              <!-- full screen navigation -->
+
+              <li>
+                <div id="myNav" class="overlay">
+                  <!-- close btn -->
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+
+                  <!-- inside content -->
+                  <div class="overlay-content">
+                    <div class="shredding items">
+                      <h1>Shredding</h1>
+                      <p>
+                        Make a quick selection of our shredding material options
+                        or see all of our machinery overview.
+                      </p>
+                      <a href="../plastic.html">Plastic</a>
+                      <a href="../wood/wood.html">Wood</a>
+                      <a href="../waste/waste.html">Waste</a>
+                      <a href="../paper/paper.html">paper</a>
+                      <a href="metal.html">Metal</a>
                     </div>
-                    <ul>
-                        <li><button class="contact">contacts</button></li>
-                        <li> <div id="myid">Choose Language</div></li>
-                        <!-- full screen navigation -->
 
-                        <li>
-                            <div id="myNav" class="overlay">
-                                <!-- close btn -->
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                                <!-- inside content -->
-                                <div class="overlay-content">
-                                    <div class="shredding items">
-                                        <h1>Shredding</h1>
-                                        <p>Make a quick selection of our shredding material options or see all of our
-                                            machinery
-                                            overview.</p>
-                                        <a href="../plastic.html">Plastic</a>
-                                        <a href="../wood/wood.html">Wood</a>
-                                        <a href="../waste/waste.html">Waste</a>
-                                        <a href="../paper/paper.html">paper</a>
-                                        <a href="metal.html">Metal</a>
-                                    </div>
-
-                                    <!-- <div class="compressing items">
+                    <!-- <div class="compressing items">
                                         <h1>compressing</h1>
                                         <p>Make a quick selection of our shredding material options or see all of our
                                             machinery
@@ -98,329 +84,416 @@
                                         <a href="#">Contact</a>
                                     </div>
  -->
-
-                                </div>
-                            </div>
-
-                            <!-- menu button -->
-                            <span onclick="openNav()"><button class="menu">menu</button></span>
-                        </li>
-                    </ul>
+                  </div>
                 </div>
-            </div>
-            <div class="links">
-                <a href="../home.html">Home</a>
-                <span>|</span>
-                <strong>Metal recycling and metal shredding</strong>
-            </div>
+
+                <!-- menu button -->
+                <span onclick="openNav()"
+                  ><button class="menu">menu</button></span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="page2">
+        <div class="links">
+          <a href="../home.html">Home</a>
+          <span>|</span>
+          <strong>Metal recycling and metal shredding</strong>
+        </div>
+      </div>
+
+      <div class="page2">
+        <div class="content">
+          <h1>Metal recycling and metal shredding</h1>
+          <p>
+            The metal industry is a shining example of the circular economy. Old
+            products are collected, crushed and melted down to be reused as a
+            valuable raw material. The shredding of metals of all kinds,
+            however, presents even industrial shredders with particularly great
+            challenges. Metal waste is extremely abrasive, heavy and usually
+            bulky. This includes, for example, production waste from the waste,
+            automotive and electrical industries as well as the metal processing
+            sector. Typical applications are punching waste, beverage cans,
+            foils, profiles, milling and sawdust, light scrap, car body parts,
+            wires, cables, sheet metal waste and aluminium scrap of all kinds.
+          </p>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2021/01/aluminium_dosen_shredder.jpg"
+                alt="First Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/Elektronikger%C3%A4te_Schrott_web.jpg"
+                alt="Second Image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://weima.com/wp-content/uploads/2020/08/zerkleinerte_Metall_sp%C3%A4ne.jpg"
+                alt="Third Image"
+              />
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page3">
+        <div class="info">
+          <h2>We have the ideal metal shredder for you!</h2>
+          <p>Make your selection using individual filter options.</p>
+        </div>
+        <div class="filter-collection">
+          <div class="type filter">
+            <div class="filter-title">
+              <h5>Filter by type</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="kind"
+                data-toggle="[data-kind~=single-shaft]"
+              >
+                Single-shaft shredder
+              </button>
+              <button
+                class="filter-btn"
+                data-type="kind"
+                data-toggle="[data-kind~=multi-shaft]"
+              >
+                Multi shaft
+              </button>
+            </div>
+          </div>
+
+          <div class="rotor-diameter filter">
+            <div class="filter-title">
+              <h5>Filter by rotor diameter</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="rotor"
+                data-toggle="[data-rotor~=d800mm]"
+              >
+                ø 800 mm
+              </button>
+            </div>
+          </div>
+
+          <div class="ram-design filter">
+            <div class="filter-title">
+              <h5>Filter by ram design</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="ramtype"
+                data-toggle="[data-ramtype~=swing-ram]"
+              >
+                Swing ram
+              </button>
+            </div>
+          </div>
+
+          <div class="screen-design filter">
+            <div class="filter-title">
+              <h5>Filter by screen design</h5>
+            </div>
+            <div class="filters">
+              <button
+                class="filter-btn"
+                data-type="screen"
+                data-toggle="[data-screen~=bolted]"
+              >
+                Bolted
+              </button>
+              <button
+                class="filter-btn"
+                data-type="screen"
+                data-toggle="[data-screen~=lift-up]"
+              >
+                Lift-up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page4">
+        <div class="machines">
+          <div
+            class="precut2000 machine"
+            onclick="window.location.href = 'zm30.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="bolted"
+          >
+            <h3>ZM 30</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Four-shaft shredder</p>
+              <p>For long and bulky material</p>
+            </div>
+            <a href="zm30.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="powerline1500 machine"
+            onclick="window.location.href = 'zm50.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>ZM 50</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Four-shaft shredder</p>
+              <p>For long and bulky material</p>
+            </div>
+            <a href="zm50.html">Explore Machine ></a>
+          </div>
+
+          <div
+            class="finecut1500 machine"
+            onclick="window.location.href = 'zm60.html';"
+            data-kind="single-shaft"
+            data-rotor="d800mm"
+            data-ramtype="swing-ram"
+            data-screen="lift-up"
+          >
+            <h3>ZM 60</h3>
+            <div class="photo">
+              <div class="line"></div>
+              <div class="machine-pic">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="machine-info">
+              <p style="color: #4a4a4a">Four-shaft shredder</p>
+              <p>For long and bulky material</p>
+            </div>
+            <a href="zm60.html">Explore Machine ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-abt-plastics">
+        <div class="title">
+          <h1>Learn more about metal shredding and recycling</h1>
+          <div class="subtitle">
+            Metal shredding as part of the recycling cycle
+          </div>
+        </div>
+        <div class="info-collection">
+          <div class="info1 info">
             <div class="content">
-                <h1>Metal recycling and metal shredding</h1>
-                <p>
-                    The metal industry is a shining example of the circular economy. Old products are collected, crushed
-                    and melted down to be reused as a valuable raw material. The shredding of metals of all kinds,
-                    however, presents even industrial shredders with particularly great challenges. Metal waste is
-                    extremely abrasive, heavy and usually bulky. This includes, for example, production waste from the
-                    waste, automotive and electrical industries as well as the metal processing sector. Typical
-                    applications are punching waste, beverage cans, foils, profiles, milling and sawdust, light scrap,
-                    car body parts, wires, cables, sheet metal waste and aluminium scrap of all kinds.
-
-                </p>
-            </div>
-
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://weima.com/wp-content/uploads/2021/01/aluminium_dosen_shredder.jpg"
-                            alt="First Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://weima.com/wp-content/uploads/2020/08/Elektronikger%C3%A4te_Schrott_web.jpg"
-                            alt="Second Image" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://weima.com/wp-content/uploads/2020/08/zerkleinerte_Metall_sp%C3%A4ne.jpg"
-                            alt="Third Image" />
-                    </div>
-
+              <div class="number-block">
+                <div class="number">01</div>
+                <div class="inner">
+                  <p>
+                    WEIMA not only shreds light metals such as aluminium and
+                    magnesium, but also copper, brass and bronze, as well as
+                    sawing and milling waste from steel. Before bulky materials
+                    can be further processed, they usually have to be shredded
+                    to a homogenous material size. Whether long profiles, cans
+                    and foils, or long and bulky chips and punching waste from
+                    production: our machines make everything small and reusable.
+                  </p>
+                  <br /><br /><br />
                 </div>
-                <div class="sliders">
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev "></div>
-                </div>
-
+              </div>
+              <div class="info1-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/P5b5BXV1hnk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
+          </div>
+          <div class="info2 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">02</div>
+                <div class="inner">
+                  <h1>
+                    "Did you know that the recycling rate for aluminum beverage
+                    cans is over 99%? And we are actively contributing to it."
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info3 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">03</div>
+                <div class="inner">
+                  <h3>ReduceAll shreds electrical waste (WEEE)</h3>
+                  <p>
+                    TEEE (Waste of Electrical and Electronic Equipment) is the
+                    fastest growing waste stream in Europe, growing three to
+                    five percent per year. In total, this amounts to around ten
+                    million tons of electronic waste, which corresponds to the
+                    weight of around 50,000 blue whales. However, less than a
+                    third of this waste is currently recycled professionally.
+                    The majority ends up in household waste or is exported
+                    illegally. This is a problem in many respects, since
+                    batteries in particular, but also other electrical
+                    appliances, can contain toxic pollutants. (Source: WEEE
+                    Europe)
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/08/weee2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="info4 info">
+            <div class="content">
+              <div class="number-block">
+                <div class="number">04</div>
+                <div class="inner">
+                  <p>
+                    According to the WEEE directive, electrical and electronic
+                    equipment can be divided into six categories:
+                  </p>
+
+                  <ol>
+                    <li>Heat exchanger</li>
+                    <li>Screens and monitors</li>
+                    <li>Lamps</li>
+                    <li>Large units from 50 cm</li>
+                    <li>Small devices up to 50 cm</li>
+                    <li>Small IT and telecom equipment</li>
+                  </ol>
+                  <p>
+                    Shredding with ReduceAll shredders is particularly suitable
+                    for transferring this electrical waste into the recycling
+                    cycle. Single-shaft or four-shaft shredders are available
+                    for this, depending on the application.
+                  </p>
+                </div>
+              </div>
+              <div class="info4-video image">
+                <img
+                  src="https://weima.com/wp-content/uploads/2020/08/weee1_web.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="info5 info">
+            <div class="content">
+              <div class="info4-video image">
+                <iframe
+                  src="https://www.youtube.com/embed/Ueqxj13NM7s"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="number-block">
+                <div class="number">05</div>
+                <div class="inner">
+                  <h3>
+                    Shredding and briquetting of metal waste: Efficient duo
+                  </h3>
+                  <p>
+                    The shredding of metal waste represents the first step in
+                    the recycling cycle. The result is a homogeneous piece
+                    goods, which can now be further processed. However, loose
+                    material is only suitable for melting down to a limited
+                    extent, as a lot of burn-up occurs. The solution is
+                    briquetting. In addition to the further volume reduction,
+                    expensive coolants and lubricants, residual oils and
+                    emulsions can be recovered. Furthermore, the resale value of
+                    the raw material increases.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info14 info">
+            <div class="content">
+              <div class="info11-video image">
+                <img
+                  src="https://weima.com/wp-content/uploads/2017/07/Schneidscheibensmall-e1503773346546-768x509.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="number-block">
+                <div class="number">06</div>
+                <div class="inner">
+                  <h3>See for yourself</h3>
+                  <p>
+                    The RecyleAll show room is equipped with shredding and
+                    briquetting machines of all sizes and technologies. This
+                    enables us to simulate your application as realistically as
+                    possible. You have the possibility to send us your material
+                    or visit us directly in Ilsfeld. From our gallery you have
+                    the best view directly into the cutting chamber. So you can
+                    observe the shredding process live.
+                  </p>
+                  <p>Request an appointment now</p>
+                  <br />
+                  <a
+                    class="send_email"
+                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
+                    class="cta contact"
+                  >
+                    <span class="button primary">Send eMail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="page3">
-            <div class="info">
-                <h2>We have the ideal metal shredder for you!</h2>
-                <p>Make your selection using individual filter options.</p>
-            </div>
-            <div class="filter-collection">
-                <div class="type filter">
-                    <div class="filter-title">
-                        <h5>Filter by type</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=single-shaft]">Single-shaft
-                            shredder</button>
-                        <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=multi-shaft]">Multi
-                            shaft</button>
-
-                    </div>
-                </div>
-
-                <div class="rotor-diameter filter">
-                    <div class="filter-title">
-                        <h5>Filter by rotor diameter</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d800mm]">ø 800
-                            mm</button>
-                    </div>
-                </div>
-
-                <div class="ram-design filter">
-                    <div class="filter-title">
-                        <h5>Filter by ram design</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=swing-ram]">Swing
-                            ram</button>
-
-                    </div>
-                </div>
-
-                <div class="screen-design filter">
-                    <div class="filter-title">
-                        <h5>Filter by screen design</h5>
-                    </div>
-                    <div class="filters">
-                        <button class="filter-btn" data-type="screen"
-                            data-toggle="[data-screen~=bolted]">Bolted</button>
-                        <button class="filter-btn" data-type="screen"
-                            data-toggle="[data-screen~=lift-up]">Lift-up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="page4">
-            <div class="machines">
-
-
-                <div class="precut2000 machine" onclick="window.location.href = 'zm30.html';" data-kind="single-shaft"
-                    data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
-                    <h3>ZM 30</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder</p>
-                        <p>For long and bulky material</p>
-                    </div>
-                    <a href="zm30.html">Explore Machine ></a>
-                </div>
-
-
-                <div class="powerline1500 machine" onclick="window.location.href = 'zm50.html';"
-                    data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>ZM 50</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder </p>
-                        <p>
-                            For long and bulky material</p>
-                    </div>
-                    <a href="zm50.html">Explore Machine ></a>
-                </div>
-
-                <div class="finecut1500 machine" onclick="window.location.href = 'zm60.html';" data-kind="single-shaft"
-                    data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
-                    <h3>ZM 60</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder
-                        </p>
-                        <p>
-                            For long and bulky material</p>
-                    </div>
-                    <a href="zm60.html">Explore Machine ></a>
-                </div>
-            </div>
-        </div>
-        <div class="more-abt-plastics">
-            <div class="title">
-                <h1>Learn more about metal shredding and recycling</h1>
-                <div class="subtitle">Metal shredding as part of the recycling cycle</div>
-            </div>
-            <div class="info-collection">
-                <div class="info1 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">01</div>
-                            <div class="inner">
-                                <p>WEIMA not only shreds light metals such as aluminium and magnesium, but also copper,
-                                    brass and bronze, as well as sawing and milling waste from steel. Before bulky
-                                    materials can be further processed, they usually have to be shredded to a homogenous
-                                    material size. Whether long profiles, cans and foils, or long and bulky chips and
-                                    punching waste from production: our machines make everything small and reusable.
-                                </p><br><br><br>
-                            </div>
-                        </div>
-                        <div class="info1-video image">
-                            <iframe src="https://www.youtube.com/embed/P5b5BXV1hnk" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="info2 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">02</div>
-                            <div class="inner">
-                                <h1>"Did you know that the recycling rate for aluminum beverage cans is over 99%? And we
-                                    are actively contributing to it."</h1>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info3 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">03</div>
-                            <div class="inner">
-                                <h3>ReduceAll shreds electrical waste (WEEE)</h3>
-                                <p>TEEE (Waste of Electrical and Electronic Equipment) is the fastest growing waste
-                                    stream in Europe, growing three to five percent per year. In total, this amounts to
-                                    around ten million tons of electronic waste, which corresponds to the weight of
-                                    around 50,000 blue whales. However, less than a third of this waste is currently
-                                    recycled professionally. The majority ends up in household waste or is exported
-                                    illegally. This is a problem in many respects, since batteries in particular, but
-                                    also other electrical appliances, can contain toxic pollutants. (Source: WEEE
-                                    Europe)</p>
-                            </div>
-                        </div>
-                        <div class="info4-video image">
-                            <img src="https://weima.com/wp-content/uploads/2020/08/weee2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="info4 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">04</div>
-                            <div class="inner">
-                                <p>According to the WEEE directive, electrical and electronic equipment can be divided
-                                    into six categories:
-                                <ol>
-                                    <li>Heat exchanger</li>
-                                    <li> Screens and monitors</li>
-                                    <li>Lamps</li>
-                                    <li>Large units from 50 cm</li>
-                                    <li>Small devices up to 50 cm</li>
-                                    <li>Small IT and telecom equipment</li>
-                                </ol>
-                                <p>Shredding with ReduceAll shredders is particularly suitable for transferring this
-                                    electrical waste into the recycling cycle. Single-shaft or four-shaft shredders are
-                                    available for this, depending on the application.</p>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image">
-                            <img src="https://weima.com/wp-content/uploads/2020/08/weee1_web.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="info5 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <iframe src="https://www.youtube.com/embed/Ueqxj13NM7s" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="number-block">
-                            <div class="number">05</div>
-                            <div class="inner">
-                                <h3>Shredding and briquetting of metal waste: Efficient duo</h3>
-                                <p>The shredding of metal waste represents the first step in the recycling cycle. The
-                                    result is a homogeneous piece goods, which can now be further processed. However,
-                                    loose material is only suitable for melting down to a limited extent, as a lot of
-                                    burn-up occurs. The solution is briquetting. In addition to the further volume
-                                    reduction, expensive coolants and lubricants, residual oils and emulsions can be
-                                    recovered. Furthermore, the resale value of the raw material increases.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info14 info">
-                    <div class="content">
-                        <div class="info11-video image">
-                            <img src="https://weima.com/wp-content/uploads/2017/07/Schneidscheibensmall-e1503773346546-768x509.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">06</div>
-                            <div class="inner">
-                                <h3>See for yourself</h3>
-                                <p>
-                                    The RecyleAll show room is equipped with shredding and briquetting machines of all
-                                    sizes
-                                    and technologies.
-                                    This enables us to simulate your application as realistically as possible. You have
-                                    the possibility to
-                                    send us your material or visit us directly in Ilsfeld. From our gallery you have the
-                                    best view
-                                    directly into the cutting chamber. So you can observe the shredding process live.
-                                </p>
-                                <p>Request an appointment now</p>
-                                <br>
-                                <a class="send_email"
-                                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                                    class="cta contact"> <span class="button primary">Send eMail</span> </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="../paper/script/jquery.js"></script>
-<script src="../paper/script/paper.js"></script>
-
+  <script src="../paper/script/jquery.js"></script>
+  <script src="../paper/script/paper.js"></script>
 </html>

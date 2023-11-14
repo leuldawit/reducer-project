@@ -13,8 +13,8 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <title>Metal</title>
+    <link rel="stylesheet" href="../styles/translate.css">
+    <title>Metal</title>  
   </head>
 
   <body>
@@ -55,35 +55,6 @@
                       <a href="../paper/paper.html">paper</a>
                       <a href="metal.html">Metal</a>
                     </div>
-
-                    <!-- <div class="compressing items">
-                                        <h1>compressing</h1>
-                                        <p>Make a quick selection of our shredding material options or see all of our
-                                            machinery
-                                            overview.</p>
-                                        <a href="#"> View all hydraulic presses</a>
-                                        <h2> Briquetting</h2>
-                                        <a href="#">Wood</a>
-                                        <a href="#">Paper</a>
-                                        <a href="#">Metal</a>
-                                        <a href="#">Biomass</a>
-                                        <h2> Compacting & draining</h2>
-                                        <a href="#">Swarf</a>
-                                        <a href="#">Sluge</a>
-                                        <a href="#">Plastic rejects|fines</a>
-                                        <a href="#">Packaging|empty</a>
-                                        <a href="#">Packaging|filled</a>
-                                        <a href="#">Labels</a>
-                                    </div>
-
-                                    <div class="service items">
-                                        <h1>Service</h1>
-                                        <p>Need support? We will find a solution.</p>
-                                        <a href="#">Services we offer</a>
-                                        <a href="#">ServiceBot</a>
-                                        <a href="#">Contact</a>
-                                    </div>
- -->
                   </div>
                 </div>
 
@@ -92,6 +63,16 @@
                   ><button class="menu">menu</button></span
                 >
               </li>
+              <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
+
             </ul>
           </div>
         </div>
@@ -309,7 +290,7 @@
         </div>
       </div>
 
-      <div class="more-abt-plastics">
+      <div id="textToTranslate" class="more-abt-plastics">
         <div class="title">
           <h1>Learn more about metal shredding and recycling</h1>
           <div class="subtitle">
@@ -493,7 +474,7 @@
       </div>
     </div>
   </body>
-
+  <script src="../translate.js"></script>
   <script src="../paper/script/jquery.js"></script>
   <script src="../paper/script/paper.js"></script>
 </html>

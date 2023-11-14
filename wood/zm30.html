@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/zm30.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Four-shaft shredder of the ZM 30 series from WEIMA</title>
-   
+    <link rel="stylesheet" href="../styles/translate.css">
 </head>
 
 <body>
@@ -22,7 +22,9 @@
                 <li><button onclick="window.location.href = '../contact.html';" class="contact">contacts</button></li>
 
                 <!-- full screen navigation -->
-                <li> <div id="myid">Choose Language</div></li>
+                <li>
+                    <div id="myid">Choose Language</div>
+                </li>
                 <li>
                     <div id="myNav" class="overlay">
                         <!-- close btn -->
@@ -33,25 +35,35 @@
                             <div class="shredding items">
                                 <h1>Shredding</h1>
                                 <p>Make a quick selection of our shredding material options or see all of our machinery
-                                  overview.</p>
+                                    overview.</p>
                                 <a href="../plastic.html">Plastic</a>
                                 <a href="wood.html">Wood</a>
                                 <a href="../waste/waste.html">Waste</a>
                                 <a href="../paper/paper.html">paper</a>
                                 <a href="../metal/metal.html">Metal</a>
-                              </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
                 </li>
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
     <div class="wrapper1">
         <div class="wrapper1-content">
-            <div class="links"><a href="#">start</a><span>|</span><a href="#">Shredding</a><span>|</span><a href="#">ZM30</a></div>
+            <div class="links"><a href="#">start</a><span>|</span><a href="#">Shredding</a><span>|</span><a
+                    href="#">ZM30</a></div>
             <button class="back" onclick="window.location.href = 'wood.html';">back to overview </button>
             <div class="downloadable">
                 <h1>ZM 30</h1>
@@ -66,7 +78,12 @@
     </div>
     <div class="about-zm60">
         <p class="text">
-            Wherever the volume reduction of bulky and long wood and plastic waste as well as packaging, cardboard or metal waste of all kinds is required, there is no way around the machines of the ZM series. The proven shredder with four shafts mounted in parallel is designed for medium throughput volumes. With a generous hopper, two cutting and two clearing shafts, and a screen insert that can be individually adapted to your application, the shredders in this series reduce your waste materials to homogeneous particle sizes – whether as a stand-alone solution or as part of a multi-stage system.            
+            Wherever the volume reduction of bulky and long wood and plastic waste as well as packaging, cardboard or
+            metal waste of all kinds is required, there is no way around the machines of the ZM series. The proven
+            shredder with four shafts mounted in parallel is designed for medium throughput volumes. With a generous
+            hopper, two cutting and two clearing shafts, and a screen insert that can be individually adapted to your
+            application, the shredders in this series reduce your waste materials to homogeneous particle sizes –
+            whether as a stand-alone solution or as part of a multi-stage system.
         </p>
     </div>
     <div class="virtualBooth" data-control="virtualBooth">
@@ -97,7 +114,7 @@
             </div>
         </div>
     </div>
-    <div class="about-zm60">
+    <div id="textToTranslate" class="about-zm60">
         <div class="info1 info">
             <div class="content">
                 <div class="image">
@@ -410,8 +427,7 @@
                     </div>
                 </div>
                 <div class="image">
-                    <img
-                        src="https://weima.com/wp-content/uploads/2021/11/ZM_VierWellen_S33_web-768x651.png">
+                    <img src="https://weima.com/wp-content/uploads/2021/11/ZM_VierWellen_S33_web-768x651.png">
                 </div>
 
             </div>
@@ -426,13 +442,19 @@
             <p>Get to know our machines in detail.</p>
             <tr>
                 <td id="left"></td>
-                <td> <img id="image" src="https://weima.com/wp-content/uploads/2020/07/Icon_ZM40_medium-300x300.png"></td>
-                <td> <img id="image" src="https://weima.com/wp-content/uploads/2020/07/Icon_ZM40_medium-300x300.png"></td>
+                <td> <img id="image" src="https://weima.com/wp-content/uploads/2020/07/Icon_ZM40_medium-300x300.png">
+                </td>
+                <td> <img id="image" src="https://weima.com/wp-content/uploads/2020/07/Icon_ZM40_medium-300x300.png">
+                </td>
             </tr>
             <tr>
                 <td id="left"></td>
-                <td><h5>ZM 30</h5></td>
-                <td><h5>ZM 60</h5></td>
+                <td>
+                    <h5>ZM 30</h5>
+                </td>
+                <td>
+                    <h5>ZM 60</h5>
+                </td>
             </tr>
             <tr>
                 <td id="left"><strong> Hopper opening length (mm)</strong></td>
@@ -525,6 +547,8 @@
     </div>
 
 </body>
+
+<script src="../translate.js"></script>
 <script src="script/wood.js"></script>
 
 <script>

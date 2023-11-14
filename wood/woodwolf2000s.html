@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/woodwolf2000s.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodwolf 2000 S</title>
-    
+    <link rel="stylesheet" href="../styles/translate.css">
 </head>
 
 <body>
@@ -30,18 +30,26 @@
                             <div class="shredding items">
                                 <h1>Shredding</h1>
                                 <p>Make a quick selection of our shredding material options or see all of our machinery
-                                  overview.</p>
+                                    overview.</p>
                                 <a href="../plastic.html">Plastic</a>
                                 <a href="wood.html">Wood</a>
                                 <a href="../waste/waste.html">Waste</a>
                                 <a href="../paper/paper.html">paper</a>
                                 <a href="../metal/metal.html">Metal</a>
-                              </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
+                </li>
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -90,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="about-woodwolf">
+    <div id="textToTranslate" class="about-woodwolf">
         <div class="info1 info">
             <div class="content">
                 <div class="image">
@@ -365,7 +373,7 @@
                     <h5>Woodwolf 2000 S</h5>
                 </td>
             </tr>
-            
+
             <tr>
                 <td id="left"><strong> Rotor Diameter (mm)</strong></td>
                 <td>900</td>
@@ -378,7 +386,7 @@
                 <td id="left"><strong> Screw speed (rpm)</strong></td>
                 <td>19</td>
             </tr>
-            
+
             <tr>
                 <td id="left"><strong> Power (kW)</strong></td>
                 <td>30|37</td>
@@ -408,12 +416,12 @@
             <tr>
                 <td id="left"></td>
                 <td id="left"></td>
-               
+
             </tr>
             <tr>
                 <td id="left"></td>
                 <td id="left"></td>
-                
+
             </tr>
             <tr>
                 <td id="left"></td>
@@ -421,7 +429,7 @@
                     *2 dependent on specific drive configuration<br>
                     *3 dependent on drive technology<br>
                     *4 dependent on machine configuration</td>
-                    </tr>
+            </tr>
         </table>
         <div class="models-buttons">
             <div class="model-download">
@@ -433,6 +441,7 @@
     </div>
 
 </body>
+<script src="../translate.js"></script>
 <script src="script/wood.js"></script>
 
 <script>
@@ -449,5 +458,6 @@
         });
     });
 </script>
+
 
 </html>

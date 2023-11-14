@@ -11,9 +11,9 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/translate.css">
+    <title>Wood</title>
 
-    <title>Document</title>
-   
 </head>
 
 <body>
@@ -25,26 +25,28 @@
                         <a href="../home.html"><img src="../pics/Logo_2-300x53.png" alt="" /></a>
                     </div>
                     <ul>
-                        <li><button onclick="window.location.href = '../contact.html';" class="contact">contacts</button></li>
+                        <li><button onclick="window.location.href = '../contact.html';"
+                                class="contact">contacts</button></li>
                         <li>
                             <div id="myNav" class="overlay">
-                              <!-- close btn -->
-                              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              
-                              <!-- inside content -->
-                              <div class="overlay-content">
-                                <div class="shredding items">
-                                  <h1>Shredding</h1>
-                                  <p>Make a quick selection of our shredding material options or see all of our machinery
-                                    overview.</p>
-                                  <a href="../plastic.html">Plastic</a>
-                                  <a href="wood.html">Wood</a>
-                                  <a href="../waste/waste.html">Waste</a>
-                                  <a href="../paper/paper.html">paper</a>
-                                  <a href="../metal/metal.html">Metal</a>
-                                </div>
-              
-                                <!-- <div class="compressing items">
+                                <!-- close btn -->
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                                <!-- inside content -->
+                                <div class="overlay-content">
+                                    <div class="shredding items">
+                                        <h1>Shredding</h1>
+                                        <p>Make a quick selection of our shredding material options or see all of our
+                                            machinery
+                                            overview.</p>
+                                        <a href="../plastic.html">Plastic</a>
+                                        <a href="wood.html">Wood</a>
+                                        <a href="../waste/waste.html">Waste</a>
+                                        <a href="../paper/paper.html">paper</a>
+                                        <a href="../metal/metal.html">Metal</a>
+                                    </div>
+
+                                    <!-- <div class="compressing items">
                                   <h1>compressing</h1>
                                   <p>Make a quick selection of our shredding material options or see all of our machinery
                                     overview.</p>
@@ -70,14 +72,23 @@
                                   <a href="#">ServiceBot</a>
                                   <a href="#">Contact</a>
                                 </div> -->
-              
-              
-                              </div>
+
+
+                                </div>
                             </div>
-              
+
                             <!-- menu button -->
                             <span onclick="openNav()"><button class="menu">menu</button></span>
-                          </li>
+                        </li>
+                        <br>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Language</a>
+                            <div class="dropdown-content">
+                                <button id="translateEnglish">🇺🇸 English</button>
+                                <button id="translateAmharic">🇪🇹 Amharic</button>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -88,6 +99,7 @@
                     Wood Scrap and Wood Waste Shredding</a>
             </div>
         </div>
+
         <div class="page2">
             <div class="content">
                 <h1>Wood Scrap and Wood Waste Shredding</h1>
@@ -208,508 +220,548 @@
             </div>
         </div>
 
-        <div class="page4">
-            <div class="machines">
+        <div id="textToTranslate">
+            <div class="page4">
+                <div class="machines">
 
-                <div class="wl600 machine" onclick="window.location.href = 'wl600.html';" data-kind="single-shaft"
-                    data-rotor="d300mm" data-ramtype="horizontal-ram" data-screen="bolted">
-                    <h3>WL 600</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="./pics/WL600_Rendering.webp" alt="" />
+                    <div class="wl600 machine" onclick="window.location.href = 'wl600.html';" data-kind="single-shaft"
+                        data-rotor="d300mm" data-ramtype="horizontal-ram" data-screen="bolted">
+                        <h3>WL 600</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="./pics/WL600_Rendering.webp" alt="" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>The standard machine.</p>
-                    </div>
-                    <a href="./wl600.html">Explore Machine ></a>
-                </div>
-
-
-                <div class="wl 6s machine" onclick="window.location.href = 'wl6s.html';" data-kind="single-shaft"
-                    data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="bolted">
-                    <h3>WL 6 S</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="./pics/WL6S_Rendering-1-768x512.webp" alt="" />
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Single-shaft shredder</p>
+                            <p>The standard machine.</p>
                         </div>
+                        <a href="./wl600.html">Explore Machine ></a>
                     </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>With a bigger rotor diameter</p>
-                    </div>
-                    <a href="./wl6s.html">Explore Machine ></a>
-                </div>
 
-                <div class="wl8 machine" onclick="window.location.href = '../paper/wl8.html';" data-kind="single-shaft"
-                    data-rotor="d300mm" data-ramtype="horizontal-ram" data-screen="bolted">
-                    <h3>WL 8</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="./pics/WL8_Rendering.webp" alt="" />
+
+                    <div class="wl 6s machine" onclick="window.location.href = 'wl6s.html';" data-kind="single-shaft"
+                        data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="bolted">
+                        <h3>WL 6 S</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="./pics/WL6S_Rendering-1-768x512.webp" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>The proven classic with 1,000 mm rotor length</p>
-                    </div>
-                    <a href="../paper/wl8.html">Explore Machine ></a>
-                </div>
-
-                <div class="wl 20 machine" onclick="window.location.href = 'wl20.html';" data-kind="single-shaft"
-                    data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="bolted">
-                    <h3>WL 20</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="./pics/WL_20-shredder.webp" alt="" />
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Single-shaft shredder</p>
+                            <p>With a bigger rotor diameter</p>
                         </div>
+                        <a href="./wl6s.html">Explore Machine ></a>
                     </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>
-                            The all-rounder with bolted screen and 2,000 mm working width
-                        </p>
-                    </div>
-                    <a href="./wl20.html">Explore Machine ></a>
-                </div>
 
-                <div class="wlk2000 machine" onclick="window.location.href = 'wlk2000.html';" data-kind="single-shaft" data-rotor="d400mm" data-ramtype="horizontal-ram"
-                    data-screen="drop-down">
-                    <h3>WLK 2000</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="./pics/WLK_2000-shredder.webp" alt="" />
+                    <div class="wl8 machine" onclick="window.location.href = '../paper/wl8.html';"
+                        data-kind="single-shaft" data-rotor="d300mm" data-ramtype="horizontal-ram" data-screen="bolted">
+                        <h3>WL 8</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="./pics/WL8_Rendering.webp" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Single-shaft shredder</p>
-                        <p>
-                            The proven multi-talent with 2,000 mm working width
-                        </p>
-                    </div>
-                    <a href="./wlk2000.html">Explore Machine ></a>
-                </div>
-
-                <div class="beaver400 machine" onclick="window.location.href = 'beaver-400.html';" data-kind="horizontal" data-rotor="d300mm" data-ramtype=""
-                    data-screen="bolted">
-                    <h3>Beaver 400</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2021/02/Biber400_Rendering-300x200.png" alt="" />
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Single-shaft shredder</p>
+                            <p>The proven classic with 1,000 mm rotor length</p>
                         </div>
+                        <a href="../paper/wl8.html">Explore Machine ></a>
                     </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Horizontal shredder </p>
-                        <p> With beveled manual infeed </p>
-                    </div>
-                    <a href="beaver-400.html">Explore Machine ></a>
-                </div>
 
-                <div class="wlh400 machine" onclick="window.location.href = 'wlh400.html';" data-kind="horizontal" data-rotor="d300mm" data-ramtype="vibrating-chute"
-                    data-screen="bolted">
-                    <h3>WLH 400 </h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/WLH300WRR300_Rendering-300x200.jpg" alt="" />
+                    <div class="wl 20 machine" onclick="window.location.href = 'wl20.html';" data-kind="single-shaft"
+                        data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="bolted">
+                        <h3>WL 20</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="./pics/WL_20-shredder.webp" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Horizontal shredder</p>
-                        <p>Material feed with infeed rollers and 400 mm rotor length</p>
-                    </div>
-                    <a href="wlh400.html">Explore Machine ></a>
-                </div>
-
-                <div class="wlh600 machine"  onclick="window.location.href = 'wlh600.html';" data-kind="horizontal" data-rotor="d300mm" data-ramtype="vibrating-chute"
-                    data-screen="bolted">
-                    <h3>WLH 600</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/WLH300WRR300_Rendering-300x200.jpgs" alt="" />
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Single-shaft shredder</p>
+                            <p>
+                                The all-rounder with bolted screen and 2,000 mm working width
+                            </p>
                         </div>
+                        <a href="./wl20.html">Explore Machine ></a>
                     </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">
-                            Horizontal shredder</p>
-                        <p>
-                            Material feed with infeed rollers and 600 mm rotor length</p>
-                    </div>
-                    <a href="wlh600.html">Explore Machine ></a>
-                </div>
 
-                <div class="zm30 machine" onclick="window.location.href = 'zm30.html';" data-kind="multi-shaft" data-rotor="" data-ramtype="" data-screen="bolted">
-                    <h3>ZM 30</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg" alt="" />
+                    <div class="wlk2000 machine" onclick="window.location.href = 'wlk2000.html';"
+                        data-kind="single-shaft" data-rotor="d400mm" data-ramtype="horizontal-ram"
+                        data-screen="drop-down">
+                        <h3>WLK 2000</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="./pics/WLK_2000-shredder.webp" alt="" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder</p>
-                        <p>
-                            For long and bulky material</p>
-                    </div>
-                    <a href="zm30.html">Explore Machine ></a>
-                </div>
-
-                <div class="zm60 machine" data-kind="multi-shaft" data-rotor="" data-ramtype="" data-screen="bolted" onclick="window.location.href = 'zm60.html';">
-                    <h3>ZM 60</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="pics/ZM60_Rendering-e1588748873761-768x512.webp" alt="" />
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Single-shaft shredder</p>
+                            <p>
+                                The proven multi-talent with 2,000 mm working width
+                            </p>
                         </div>
+                        <a href="./wlk2000.html">Explore Machine ></a>
                     </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Four-shaft shredder</p>
-                        <p>
-                            For long and bulky material</p>
-                    </div>
-                    <a href="zm60.html">Explore Machine ></a>
-                </div>
 
-                <div class="woodwolf2000s machine" data-kind="breaker" data-rotor="d900mm" data-ramtype="" onclick="window.location.href = 'woodwolf2000s.html';"
-                    data-screen="">
-                    <h3>Woodwolf 2000 S</h3>
-                    <div class="photo">
-                        <div class="line"></div>
-                        <div class="machine-pic">
-                            <img src="pics/Holzwolf_Rendering.webp" alt="" />
+                    <div class="beaver400 machine" onclick="window.location.href = 'beaver-400.html';"
+                        data-kind="horizontal" data-rotor="d300mm" data-ramtype="" data-screen="bolted">
+                        <h3>Beaver 400</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="https://weima.com/wp-content/uploads/2021/02/Biber400_Rendering-300x200.png"
+                                    alt="" />
+                            </div>
                         </div>
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Horizontal shredder </p>
+                            <p> With beveled manual infeed </p>
+                        </div>
+                        <a href="beaver-400.html">Explore Machine ></a>
                     </div>
-                    <div class="machine-info">
-                        <p style="color: #4a4a4a">Breaker
-                        </p>
-                        <p>
-                            Powerful pre-crusher for pallets, particle board, boxes and furniture
-                        </p>
-                    </div>
-                    <a href="woodwolf2000s.html">Explore Machine ></a>
-                </div>
 
+                    <div class="wlh400 machine" onclick="window.location.href = 'wlh400.html';" data-kind="horizontal"
+                        data-rotor="d300mm" data-ramtype="vibrating-chute" data-screen="bolted">
+                        <h3>WLH 400 </h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="https://weima.com/wp-content/uploads/2020/05/WLH300WRR300_Rendering-300x200.jpg"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Horizontal shredder</p>
+                            <p>Material feed with infeed rollers and 400 mm rotor length</p>
+                        </div>
+                        <a href="wlh400.html">Explore Machine ></a>
+                    </div>
+
+                    <div class="wlh600 machine" onclick="window.location.href = 'wlh600.html';" data-kind="horizontal"
+                        data-rotor="d300mm" data-ramtype="vibrating-chute" data-screen="bolted">
+                        <h3>WLH 600</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="https://weima.com/wp-content/uploads/2020/05/WLH300WRR300_Rendering-300x200.jpgs"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">
+                                Horizontal shredder</p>
+                            <p>
+                                Material feed with infeed rollers and 600 mm rotor length</p>
+                        </div>
+                        <a href="wlh600.html">Explore Machine ></a>
+                    </div>
+
+                    <div class="zm30 machine" onclick="window.location.href = 'zm30.html';" data-kind="multi-shaft"
+                        data-rotor="" data-ramtype="" data-screen="bolted">
+                        <h3>ZM 30</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Four-shaft shredder</p>
+                            <p>
+                                For long and bulky material</p>
+                        </div>
+                        <a href="zm30.html">Explore Machine ></a>
+                    </div>
+
+                    <div class="zm60 machine" data-kind="multi-shaft" data-rotor="" data-ramtype="" data-screen="bolted"
+                        onclick="window.location.href = 'zm60.html';">
+                        <h3>ZM 60</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="pics/ZM60_Rendering-e1588748873761-768x512.webp" alt="" />
+                            </div>
+                        </div>
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Four-shaft shredder</p>
+                            <p>
+                                For long and bulky material</p>
+                        </div>
+                        <a href="zm60.html">Explore Machine ></a>
+                    </div>
+
+                    <div class="woodwolf2000s machine" data-kind="breaker" data-rotor="d900mm" data-ramtype=""
+                        onclick="window.location.href = 'woodwolf2000s.html';" data-screen="">
+                        <h3>Woodwolf 2000 S</h3>
+                        <div class="photo">
+                            <div class="line"></div>
+                            <div class="machine-pic">
+                                <img src="pics/Holzwolf_Rendering.webp" alt="" />
+                            </div>
+                        </div>
+                        <div class="machine-info">
+                            <p style="color: #4a4a4a">Breaker
+                            </p>
+                            <p>
+                                Powerful pre-crusher for pallets, particle board, boxes and furniture
+                            </p>
+                        </div>
+                        <a href="woodwolf2000s.html">Explore Machine ></a>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="more-abt-plastics">
-            <div class="title">
-                <h1>Learn more about the disposal and energetic use of wood waste</h1>
-                <div class="subtitle">Wood shredding at its best </div>
-            </div>
-            <div class="info-collection">
-                <div class="info1 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">01</div>
-                            <div class="inner">
-                                <p>
-                                    Anyone who wants to produce energy from their waste in an environmentally friendly
-                                    way cannot avoid the raw material wood. The residues, which are processed into wood
-                                    chips by means of shredding, can be used for direct heat generation in combustion
-                                    plants or for the production of briquettes.
-                                </p>
-
-                                <p>
-                                    Typical applications are all kinds of hard and soft woods, waste wood, OSB and MDF
-                                    residues, veneer, plywood, stairs, doors and pallets. And don't worry. Their nails
-                                    and screws are simply shredded with them. Later they can be easily separated with a
-                                    magnet.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info1-video image">
-                            <iframe src="https://www.youtube.com/embed/5moLJhb-LsA" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-
-                    </div>
+            <div class="more-abt-plastics">
+                <div class="title">
+                    <h1>Learn more about the disposal and energetic use of wood waste</h1>
+                    <div class="subtitle">Wood shredding at its best </div>
                 </div>
-                <div class="info2 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">02</div>
-                            <div class="inner">
-                                <h1>
-                                    "The first WEIMA shredders of the 1980s were used for wood applications. Since then
-                                    a lot has changed from a technical point of view. In the meantime we have also
-                                    become experts for the corresponding conveying technology".
-                                </h1>
-                                <p>Fred Haller</p>
-                                <p>Business Development | Wood at WEIMA</p>
+                <div class="info-collection">
+                    <div class="info1 info">
+                        <div class="content">
+
+                            <div class="number-block">
+                                <div class="number">01</div>
+                                <div class="inner">
+                                    <p>
+                                        Anyone who wants to produce energy from their waste in an environmentally
+                                        friendly
+                                        way cannot avoid the raw material wood. The residues, which are processed into
+                                        wood
+                                        chips by means of shredding, can be used for direct heat generation in
+                                        combustion
+                                        plants or for the production of briquettes.
+                                    </p>
+
+                                    <p>
+                                        Typical applications are all kinds of hard and soft woods, waste wood, OSB and
+                                        MDF
+                                        residues, veneer, plywood, stairs, doors and pallets. And don't worry. Their
+                                        nails
+                                        and screws are simply shredded with them. Later they can be easily separated
+                                        with a
+                                        magnet.
+                                    </p>
+                                </div>
                             </div>
+                            <div class="info1-video image">
+                                <iframe src="https://www.youtube.com/embed/5moLJhb-LsA" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-
-                <div class="info3 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">03</div>
-                            <div class="inner">
-                                <h2>
-                                    Customer applications and sample materials from the wood
-                                    industry
-                                </h2>
+                    <div class="info2 info">
+                        <div class="content">
+                            <div class="number-block">
+                                <div class="number">02</div>
+                                <div class="inner">
+                                    <h1>
+                                        "The first WEIMA shredders of the 1980s were used for wood applications. Since
+                                        then
+                                        a lot has changed from a technical point of view. In the meantime we have also
+                                        become experts for the corresponding conveying technology".
+                                    </h1>
+                                    <p>Fred Haller</p>
+                                    <p>Business Development | Wood at WEIMA</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <h2 style="font-weight: 600;">The different series and rotor variants are the top solutions for wood
-                    processors: Whether pallets, sawn timber, chipboard or MDF boards, stairs, window frames, doors or
-                    semi-finished wood products – our machines turn everything into valuable kindling.</h2>
-
-
-                <div class="info4 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">04</div>
-                            <div class="inner">
-                                <h3>Waste wood utilization and waste wood processing with WEIMA</h3>
-                                <p>
-                                    No matter what you call your machine. Whether wood chipper, grinder or shredder –
-                                    with a WEIMA you shred everything to the last chip and dispose of your wood waste
-                                    sustainably.
-                                </p>
-                                <p>As a pre-shredder, the Woodwolf is available for large-volume residual wood waste
-                                    such as pallets or furniture. With our universally applicable shredders of the WL
-                                    series, e.g. WL 4 or WL 15, you can achieve highest throughputs. For even smaller
-                                    material sizes we offer secondary shredders of the WNZ series.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image">
-                            <img src="https://weima.com/wp-content/uploads/2020/08/S3web8-e1598038734456.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="info5 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <img src="	https://weima.com/wp-content/uploads/2020/08/Holz-Treppen-Hackschnitzel.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">05</div>
-                            <div class="inner">
-                                <h3>Material flows under control: Conveying. Separating. Storing</h3>
-                                <p>
-                                    Thanks to our extensive experience with conveyor technology (air extraction, screw
-                                    conveyors, bunker systems, conveyor belts, metal detection and metal separation), we
-                                    can offer you the complete package for wood disposal and recycling from a single
-                                    source. Thus, you are optimally equipped for your own energy production.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info6 info">
-                    <div class="content">
-
-                        <div class="number-block">
-                            <div class="number">06</div>
-                            <div class="inner">
-                                <h3>
-                                    Every carpenter needs a WEIMA.</h3>
-                                <p>
-                                    This was already the case when we were founded in the 80s and will not change in the
-                                    future. All joineries, carpentries, joinery, sawmills and (industrial) furniture
-                                    workshops of all sizes inevitably generate residual wood waste from production.
-                                    These must be disposed of or made usable. Because: Wood is biomass raw material with
-                                    future.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info4-video image"><img
-                                src="	https://weima.com/wp-content/uploads/2020/08/Verbrennung-Hackschnitzel-scaled.jpg"
-                                alt="">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="info7 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <img src="	https://weima.com/wp-content/uploads/2020/11/holzpaletten_zerkleinerung_web-768x496.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">07</div>
-                            <div class="inner">
-                                <h3>Pallet shredding</h3>
-                                <p>
-                                    One of the most common applications of wood shredding is the shredding of pallets.
-                                    WEIMA offers machines specially designed for this task.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info8 info">
-                    <div class="content">
-                        <div class="number-block">
-                            <div class="number">08</div>
-                            <div class="inner">
-                                <h1>
-                                    Possibilities for the utilization of wood waste:
-                                </h1>
-                                <ol>
+                    <div class="info3 info">
+                        <div class="content">
+                            <div class="number-block">
+                                <div class="number">03</div>
+                                <div class="inner">
                                     <h2>
-                                        <li>
-                                            Use wood chips for combustion
-                                            e.g. chip bunker with wood chip firing oven
-
-                                        </li>
-                                        <li>
-                                            Use wood chips for the production of biogas
-                                            e.g. wood gasification plants in bio-heat power plants
-                                        </li>
-                                        <li>Briquetting shredded wood and using it for own heat generation
-                                            e.g. wood briquettes for wood stove
-                                        </li>
-                                        <li>
-                                            briquetting wood chips and selling them for a profit
-                                            e.g. hardware stores or private households
-                                        </li>
-                                        <li>
-                                            Waste wood and used wood recycling
-                                            e.g. chipboard production
-                                        </li>
+                                        Customer applications and sample materials from the wood
+                                        industry
                                     </h2>
-                                    </0l>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="info9 info">
-                    <div class="content">
+                    <h2 style="font-weight: 600;">The different series and rotor variants are the top solutions for wood
+                        processors: Whether pallets, sawn timber, chipboard or MDF boards, stairs, window frames, doors
+                        or
+                        semi-finished wood products – our machines turn everything into valuable kindling.</h2>
 
-                        <div class="number-block">
-                            <div class="number">09</div>
-                            <div class="inner">
-                                <h3>
-                                    Did you know?</h3>
-                                <p>
-                                    Our sustainability initiative Destroy Responsibly™ has been around for over ten
-                                    years. We support event organizers on site with waste disposal.
 
-                                </p>
+                    <div class="info4 info">
+                        <div class="content">
+
+                            <div class="number-block">
+                                <div class="number">04</div>
+                                <div class="inner">
+                                    <h3>Waste wood utilization and waste wood processing with WEIMA</h3>
+                                    <p>
+                                        No matter what you call your machine. Whether wood chipper, grinder or shredder
+                                        –
+                                        with a WEIMA you shred everything to the last chip and dispose of your wood
+                                        waste
+                                        sustainably.
+                                    </p>
+                                    <p>As a pre-shredder, the Woodwolf is available for large-volume residual wood waste
+                                        such as pallets or furniture. With our universally applicable shredders of the
+                                        WL
+                                        series, e.g. WL 4 or WL 15, you can achieve highest throughputs. For even
+                                        smaller
+                                        material sizes we offer secondary shredders of the WNZ series.
+
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info4-video image"><img
-                                src="https://weima.com/wp-content/uploads/2019/10/DestroyResponsibly.Clean_.TM_-768x296.png"
-                                alt="">
+                            <div class="info4-video image">
+                                <img src="https://weima.com/wp-content/uploads/2020/08/S3web8-e1598038734456.jpg"
+                                    alt="">
+                            </div>
+
                         </div>
                     </div>
-                </div>
 
-                <div class="info10 info">
-                    <div class="content">
-                        <div class="info4-video image">
-                            <img src="https://weima.com/wp-content/uploads/2020/11/Hackschnitzel_zerkleinert_weima_web-768x512.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">10</div>
-                            <div class="inner">
-                                <h3>Why is it necessary to have homogeneous particle sizes when shredding waste wood?
-                                </h3>
-                                <p>
-                                    A homogeneous grain size is particularly important in the thermal utilization of
-                                    wood waste, since heating plants are often designed for a standardized grain size.
-                                    If the particle size is not sufficiently homogeneous, wood chip heating systems
-                                    operated with screw conveyors can quickly become clogged. The formation of material
-                                    bridges also prevents smooth firing of the system.
-                                    In addition, the safety of the firing system can be impaired if excessively large or
-                                    long chips block safety devices such as the rotary feeder.
-                                    For the production of high-density briquettes, homogeneous wood chips are essential
-                                    as well. Only in this way can wood briquettes keep their shape stably without
-                                    binders and glue.
-                                </p>
+                    <div class="info5 info">
+                        <div class="content">
+                            <div class="info4-video image">
+                                <img src="	https://weima.com/wp-content/uploads/2020/08/Holz-Treppen-Hackschnitzel.jpg"
+                                    alt="">
+                            </div>
+                            <div class="number-block">
+                                <div class="number">05</div>
+                                <div class="inner">
+                                    <h3>Material flows under control: Conveying. Separating. Storing</h3>
+                                    <p>
+                                        Thanks to our extensive experience with conveyor technology (air extraction,
+                                        screw
+                                        conveyors, bunker systems, conveyor belts, metal detection and metal
+                                        separation), we
+                                        can offer you the complete package for wood disposal and recycling from a single
+                                        source. Thus, you are optimally equipped for your own energy production.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="info11 info">
-                    <div class="content">
+                    <div class="info6 info">
+                        <div class="content">
 
-                        <div class="number-block">
-                            <div class="number">11</div>
-                            <div class="inner">
-                                <h3>Optimal recycling of wood waste</h3>
-                                <p>
-                                    No matter whether you use a planer, band saw or circular saw, sander or lathe,
-                                    woodworking produces a lot of wood chips, sanding dust and sawing waste. Even in CNC
-                                    machining centers, wood chips and wood dust are produced through the use of CNC
-                                    machines and milling machines, which can be optimally recycled with a WEIMA
-                                    shredder.
-                                </p>
+                            <div class="number-block">
+                                <div class="number">06</div>
+                                <div class="inner">
+                                    <h3>
+                                        Every carpenter needs a WEIMA.</h3>
+                                    <p>
+                                        This was already the case when we were founded in the 80s and will not change in
+                                        the
+                                        future. All joineries, carpentries, joinery, sawmills and (industrial) furniture
+                                        workshops of all sizes inevitably generate residual wood waste from production.
+                                        These must be disposed of or made usable. Because: Wood is biomass raw material
+                                        with
+                                        future.
+
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info4-video image"><img
-                                src="	https://weima.com/wp-content/uploads/2020/09/Tischlerin_Fr%C3%A4sen.jpg" alt="">
+                            <div class="info4-video image"><img
+                                    src="	https://weima.com/wp-content/uploads/2020/08/Verbrennung-Hackschnitzel-scaled.jpg"
+                                    alt="">
+                            </div>
+
                         </div>
                     </div>
-                </div>
-
-                <div class="info12 info">
-                    <div class="content">
-                        <div class="info11-video image">
-                            <img src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                                data-src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                                alt="">
-                        </div>
-                        <div class="number-block">
-                            <div class="number">12</div>
-                            <div class="inner">
-                                <h3>See for yourself</h3>
-                                <p>
-                                    The WEIMA show room is equipped with shredding and briquetting machines of all sizes
-                                    and technologies.
-                                    This enables us to simulate your application as realistically as possible. You have
-                                    the possibility to
-                                    send us your material or visit us directly in Ilsfeld. From our gallery you have the
-                                    best view
-                                    directly into the cutting chamber. So you can observe the shredding process live.
-                                </p>
-                                <p>Request an appointment now</p>
-                                <br>
-                                <a class="send_email"
-                                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                                    class="cta contact"> <span class="button primary">Send eMail</span> </a>
-
+                    <div class="info7 info">
+                        <div class="content">
+                            <div class="info4-video image">
+                                <img src="	https://weima.com/wp-content/uploads/2020/11/holzpaletten_zerkleinerung_web-768x496.jpg"
+                                    alt="">
+                            </div>
+                            <div class="number-block">
+                                <div class="number">07</div>
+                                <div class="inner">
+                                    <h3>Pallet shredding</h3>
+                                    <p>
+                                        One of the most common applications of wood shredding is the shredding of
+                                        pallets.
+                                        WEIMA offers machines specially designed for this task.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        
                     </div>
-                </div>
 
+                    <div class="info8 info">
+                        <div class="content">
+                            <div class="number-block">
+                                <div class="number">08</div>
+                                <div class="inner">
+                                    <h1>
+                                        Possibilities for the utilization of wood waste:
+                                    </h1>
+                                    <ol>
+                                        <h2>
+                                            <li>
+                                                Use wood chips for combustion
+                                                e.g. chip bunker with wood chip firing oven
+
+                                            </li>
+                                            <li>
+                                                Use wood chips for the production of biogas
+                                                e.g. wood gasification plants in bio-heat power plants
+                                            </li>
+                                            <li>Briquetting shredded wood and using it for own heat generation
+                                                e.g. wood briquettes for wood stove
+                                            </li>
+                                            <li>
+                                                briquetting wood chips and selling them for a profit
+                                                e.g. hardware stores or private households
+                                            </li>
+                                            <li>
+                                                Waste wood and used wood recycling
+                                                e.g. chipboard production
+                                            </li>
+                                        </h2>
+                                        </0l>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info9 info">
+                        <div class="content">
+
+                            <div class="number-block">
+                                <div class="number">09</div>
+                                <div class="inner">
+                                    <h3>
+                                        Did you know?</h3>
+                                    <p>
+                                        Our sustainability initiative Destroy Responsibly™ has been around for over ten
+                                        years. We support event organizers on site with waste disposal.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info4-video image"><img
+                                    src="https://weima.com/wp-content/uploads/2019/10/DestroyResponsibly.Clean_.TM_-768x296.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info10 info">
+                        <div class="content">
+                            <div class="info4-video image">
+                                <img src="https://weima.com/wp-content/uploads/2020/11/Hackschnitzel_zerkleinert_weima_web-768x512.jpg"
+                                    alt="">
+                            </div>
+                            <div class="number-block">
+                                <div class="number">10</div>
+                                <div class="inner">
+                                    <h3>Why is it necessary to have homogeneous particle sizes when shredding waste
+                                        wood?
+                                    </h3>
+                                    <p>
+                                        A homogeneous grain size is particularly important in the thermal utilization of
+                                        wood waste, since heating plants are often designed for a standardized grain
+                                        size.
+                                        If the particle size is not sufficiently homogeneous, wood chip heating systems
+                                        operated with screw conveyors can quickly become clogged. The formation of
+                                        material
+                                        bridges also prevents smooth firing of the system.
+                                        In addition, the safety of the firing system can be impaired if excessively
+                                        large or
+                                        long chips block safety devices such as the rotary feeder.
+                                        For the production of high-density briquettes, homogeneous wood chips are
+                                        essential
+                                        as well. Only in this way can wood briquettes keep their shape stably without
+                                        binders and glue.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info11 info">
+                        <div class="content">
+
+                            <div class="number-block">
+                                <div class="number">11</div>
+                                <div class="inner">
+                                    <h3>Optimal recycling of wood waste</h3>
+                                    <p>
+                                        No matter whether you use a planer, band saw or circular saw, sander or lathe,
+                                        woodworking produces a lot of wood chips, sanding dust and sawing waste. Even in
+                                        CNC
+                                        machining centers, wood chips and wood dust are produced through the use of CNC
+                                        machines and milling machines, which can be optimally recycled with a WEIMA
+                                        shredder.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info4-video image"><img
+                                    src="	https://weima.com/wp-content/uploads/2020/09/Tischlerin_Fr%C3%A4sen.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info12 info">
+                        <div class="content">
+                            <div class="info11-video image">
+                                <img src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
+                                    data-src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
+                                    alt="">
+                            </div>
+                            <div class="number-block">
+                                <div class="number">12</div>
+                                <div class="inner">
+                                    <h3>See for yourself</h3>
+                                    <p>
+                                        The WEIMA show room is equipped with shredding and briquetting machines of all
+                                        sizes
+                                        and technologies.
+                                        This enables us to simulate your application as realistically as possible. You
+                                        have
+                                        the possibility to
+                                        send us your material or visit us directly in Ilsfeld. From our gallery you have
+                                        the
+                                        best view
+                                        directly into the cutting chamber. So you can observe the shredding process
+                                        live.
+                                    </p>
+                                    <p>Request an appointment now</p>
+                                    <br>
+                                    <a class="send_email"
+                                        href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
+                                        class="cta contact"> <span class="button primary">Send eMail</span> </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+
     </div>
 </body>
 
-<script  src="script/jquery.js"></script>
-<script  src="script/wood.js"></script>
+<script src="../translate.js"></script>
+<script src="script/jquery.js"></script>
+<script src="script/wood.js"></script>
 
 </html>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/powerline1500.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerLine 1500</title>
-   
+    <link rel="stylesheet" href="../styles/translate.css">
 </head>
 
 <body>
@@ -38,42 +38,21 @@
                                 <a href="../paper/paper.html">paper</a>
                                 <a href="../metal/metal.html">Metal</a>
                             </div>
-
-                            <!-- <div class="compressing items">
-                                <h1>compressing</h1>
-                                <p>Make a quick selection of our shredding material options or see all of our
-                                    machinery
-                                    overview.</p>
-                                <a href="#"> View all hydraulic presses</a>
-                                <h2> Briquetting</h2>
-                                <a href="#">Wood</a>
-                                <a href="#">Paper</a>
-                                <a href="#">Metal</a>
-                                <a href="#">Biomass</a>
-                                <h2> Compacting & draining</h2>
-                                <a href="#">Swarf</a>
-                                <a href="#">Sluge</a>
-                                <a href="#">Plastic rejects|fines</a>
-                                <a href="#">Packaging|empty</a>
-                                <a href="#">Packaging|filled</a>
-                                <a href="#">Labels</a>
-                            </div>
-
-                            <div class="service items">
-                                <h1>Service</h1>
-                                <p>Need support? We will find a solution.</p>
-                                <a href="#">Services we offer</a>
-                                <a href="#">ServiceBot</a>
-                                <a href="#">Contact</a>
-                            </div> -->
-
-
                         </div>
                     </div>
 
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
                 </li>
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -94,7 +73,7 @@
                 alt="" srcset="">
         </div>
     </div>
-    <div class="about-powerline1500">
+    <div id="textToTranslate" class="about-powerline1500">
         <p class="text">Performance you can count on! The PowerLine takes on any form of waste, including dirty
             materials. It is ideal as a secondary shredder in multi-stage systems: after sorting the material out that
             is not ideal for the production of RDF, the valuable material remains and is ready for further size
@@ -334,8 +313,7 @@
         <div class="info13 info">
             <div class="content">
                 <div class="image">
-                    <img
-                        src="https://weima.com/wp-content/uploads/2017/07/PowerLine-6-e1503772665764-768x512.jpg">
+                    <img src="https://weima.com/wp-content/uploads/2017/07/PowerLine-6-e1503772665764-768x512.jpg">
                 </div>
                 <div class="number-block">
                     <div class="number">13</div>
@@ -358,13 +336,14 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://weima.com/wp-content/uploads/2021/11/W8.30-up-mit-Brandschutzsystem_web.jpg" alt="Third Image" />
+                    <img src="https://weima.com/wp-content/uploads/2021/11/W8.30-up-mit-Brandschutzsystem_web.jpg"
+                        alt="Third Image" />
                 </div>
-                
+
                 <div class="swiper-slide">
                     <img src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg" alt="fourth Image" />
                 </div>
-            
+
                 <div class="swiper-slide">
                     <img src="	https://weima.com/wp-content/uploads/2020/11/Ecocycle-4_web-2048x1339.jpg"
                         alt="Third Image" />
@@ -485,36 +464,37 @@
                     *4 dependent on machine configuration</td>
             </tr>
         </table>
-        
+
     </div>
 
 </body>
+<script src="../translate.js"></script>
 <script>
 
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-  
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  } 
-  
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
     var mySwiper = new Swiper(".swiper-container", {
-    navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev"
-},
-direction: "horizontal",
-loop: true,
-speed: 1200,
-parallax: false,
-autoplay: false,
-effect: "slide",
-mousewheelControl: 1,
-slidesPerView: 1,
-slidesPerGroup: 1
-});
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        direction: "horizontal",
+        loop: true,
+        speed: 1200,
+        parallax: false,
+        autoplay: false,
+        effect: "slide",
+        mousewheelControl: 1,
+        slidesPerView: 1,
+        slidesPerGroup: 1
+    });
 </script>
 
 </html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles/wl600.css">
+    <link rel="stylesheet" href="../styles/translate.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
@@ -44,6 +45,15 @@
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
                 </li>
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -63,7 +73,7 @@
             <img src="pics/WL600_Rendering.webp" alt="" srcset="">
         </div>
     </div>
-    <div class="about-wl600">
+    <div id="textToTranslate" class="about-wl600">
         <p class="text">The robust WL 600 shredder is perfect for small- to middle-sized wood shops for the purpose of
             shredding all kinds of wood like particle board scrap, MDF, solid wood, and other wood scrap.</p>
 
@@ -373,4 +383,5 @@
 </body>
 
 </html>
+<script src="../translate.js"></script>
 <script src="script/wood.js"></script>

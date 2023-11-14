@@ -1,282 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/paper.css" />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/paper.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="../styles/translate.css">
+  <title>Paper</title>
+</head>
 
-    <title>Paper</title>
-  </head>
+<body>
+  <div class="wrapper">
+    <div class="page1">
+      <div class="navbar">
+        <div class="nav-items">
+          <div class="logo">
+            <a href="../home.html"><img src="../pics/Logo_2-300x53.png" alt="" /></a>
+          </div>
+          <ul>
+            <li><button onclick="window.location.href = '../contact.html';" class="contact">contacts</button></li>
+            <li>
+              <div id="myNav" class="overlay">
+                <!-- close btn -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  <body>
-    <div class="wrapper">
-      <div class="page1">
-        <div class="navbar">
-          <div class="nav-items">
-            <div class="logo">
-              <a href="../home.html"
-                ><img src="../pics/Logo_2-300x53.png" alt=""
-              /></a>
-            </div>
-            <ul>
-              <li><button onclick="window.location.href = '../contact.html';" class="contact">contacts</button></li>
-              <li><div id="myid">Choose Language</div></li>
-              <!-- full screen navigation -->
-
-              <li>
-                <div id="myNav" class="overlay">
-                  <!-- close btn -->
-                  <a
-                    href="javascript:void(0)"
-                    class="closebtn"
-                    onclick="closeNav()"
-                    >&times;</a
-                  >
-
-                  <!-- inside content -->
-                  <div class="overlay-content">
-                    <div class="shredding items">
-                      <h1>Shredding</h1>
-                      <p>
-                        Make a quick selection of our shredding material options
-                        or see all of our machinery overview.
-                      </p>
-                      <a href="../plastic.html">Plastic</a>
-                      <a href="../wood/wood.html">Wood</a>
-                      <a href="../waste/waste.html">Waste</a>
-                      <a href="paper.html">paper</a>
-                      <a href="../metal/metal.html">Metal</a>
-                    </div>
-
-                    <!-- <div class="compressing items">
-                                        <h1>compressing</h1>
-                                        <p>Make a quick selection of our shredding material options or see all of our
-                                            machinery
-                                            overview.</p>
-                                        <a href="#"> View all hydraulic presses</a>
-                                        <h2> Briquetting</h2>
-                                        <a href="#">Wood</a>
-                                        <a href="#">Paper</a>
-                                        <a href="#">Metal</a>
-                                        <a href="#">Biomass</a>
-                                        <h2> Compacting & draining</h2>
-                                        <a href="#">Swarf</a>
-                                        <a href="#">Sluge</a>
-                                        <a href="#">Plastic rejects|fines</a>
-                                        <a href="#">Packaging|empty</a>
-                                        <a href="#">Packaging|filled</a>
-                                        <a href="#">Labels</a>
-                                    </div>
-
-                                    <div class="service items">
-                                        <h1>Service</h1>
-                                        <p>Need support? We will find a solution.</p>
-                                        <a href="#">Services we offer</a>
-                                        <a href="#">ServiceBot</a>
-                                        <a href="#">Contact</a>
-                                    </div>
- -->
+                <!-- inside content -->
+                <div class="overlay-content">
+                  <div class="shredding items">
+                    <h1>Shredding</h1>
+                    <p>
+                      Make a quick selection of our shredding material options
+                      or see all of our machinery overview.
+                    </p>
+                    <a href="../plastic.html">Plastic</a>
+                    <a href="../wood/wood.html">Wood</a>
+                    <a href="../waste/waste.html">Waste</a>
+                    <a href="paper.html">paper</a>
+                    <a href="../metal/metal.html">Metal</a>
                   </div>
                 </div>
+              </div>
 
-                <!-- menu button -->
-                <span onclick="openNav()"
-                  ><button class="menu">menu</button></span
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="links">
-          <a href="../home.html">Home</a>
-          <span>|</span>
-          <strong>Recycling and Shredding of Paper and Cardboard</strong>
-        </div>
-      </div>
-      <div class="page2">
-        <div class="content">
-          <h1>Recycling and Shredding of Paper and Cardboard</h1>
-          <p>
-            Pulp is the pioneer of recycling. The recycling of paper and
-            cardboard is of the greatest economic and ecological importance –
-            because the more paper is recycled, the less newly cut wood is
-            needed for paper production.
-            <br /><br />
-            WEIMA shredders make a great contribution to the economical
-            shredding of paper and corrugated cardboard. Strong, robust drives
-            and rotors specially designed for shredding paper or cardboard also
-            make it possible to process material that is difficult to shred. Our
-            machines can handle all throughput requirements for post-consumer
-            applications such as waste paper, cartons, files and documents,
-            shipping packaging, and industrial production waste. This includes
-            cardboard tubes, paper webs, paper rolls, edge trims, printing waste
-            or paper bales.
-          </p>
-          <button>About waste shredding</button>
-        </div>
+              <!-- menu button -->
+              <span onclick="openNav()"><button class="menu">menu</button></span>
+            </li>
+            <br>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Language</a>
+              <div class="dropdown-content">
+                <button id="translateEnglish">🇺🇸 English</button>
+                <button id="translateAmharic">🇪🇹 Amharic</button>
+              </div>
+            </li>
 
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="https://weima.com/wp-content/uploads/2017/07/WPL-2500-200kW-Hydro-40mm-screen-50-1024x683.jpg"
-                alt="First Image"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://weima.com/wp-content/uploads/2017/05/DSC_7311-1024x684.jpg"
-                alt="Second Image"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://weima.com/wp-content/uploads/2020/08/2x-W8web.jpg"
-                alt="Third Image"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg"
-                alt="fourth Image"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="	https://weima.com/wp-content/uploads/2020/08/W8.25-up-und-W8web.jpg"
-                alt="Third Image"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://weima.com/wp-content/uploads/2020/08/Inspektionsklappe_web.jpg"
-                alt="Third Image"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://weima.com/wp-content/uploads/2020/08/PowerLine_Rotor_web.jpg"
-                alt="Third Image"
-              />
-            </div>
 
-            <!-- Add more slides as needed -->
-          </div>
-          <div class="sliders">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
+          </ul>
         </div>
       </div>
-      <div class="page3">
-        <div class="info">
-          <h2>We have the perfect paper shredder for you!</h2>
-          <p>Make your selection using individual filter options.</p>
+      <div class="links">
+        <a href="../home.html">Home</a>
+        <span>|</span>
+        <strong>Recycling and Shredding of Paper and Cardboard</strong>
+      </div>
+    </div>
+    <div class="page2">
+      <div class="content">
+        <h1>Recycling and Shredding of Paper and Cardboard</h1>
+        <p>
+          Pulp is the pioneer of recycling. The recycling of paper and
+          cardboard is of the greatest economic and ecological importance –
+          because the more paper is recycled, the less newly cut wood is
+          needed for paper production.
+          <br /><br />
+          WEIMA shredders make a great contribution to the economical
+          shredding of paper and corrugated cardboard. Strong, robust drives
+          and rotors specially designed for shredding paper or cardboard also
+          make it possible to process material that is difficult to shred. Our
+          machines can handle all throughput requirements for post-consumer
+          applications such as waste paper, cartons, files and documents,
+          shipping packaging, and industrial production waste. This includes
+          cardboard tubes, paper webs, paper rolls, edge trims, printing waste
+          or paper bales.
+        </p>
+        <button>About waste shredding</button>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://weima.com/wp-content/uploads/2017/07/WPL-2500-200kW-Hydro-40mm-screen-50-1024x683.jpg"
+              alt="First Image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://weima.com/wp-content/uploads/2017/05/DSC_7311-1024x684.jpg" alt="Second Image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://weima.com/wp-content/uploads/2020/08/2x-W8web.jpg" alt="Third Image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://weima.com/wp-content/uploads/2020/08/W8web.jpg" alt="fourth Image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="	https://weima.com/wp-content/uploads/2020/08/W8.25-up-und-W8web.jpg" alt="Third Image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://weima.com/wp-content/uploads/2020/08/Inspektionsklappe_web.jpg" alt="Third Image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://weima.com/wp-content/uploads/2020/08/PowerLine_Rotor_web.jpg" alt="Third Image" />
+          </div>
+
+          <!-- Add more slides as needed -->
         </div>
-        <div class="filter-collection">
-          <div class="type filter">
-            <div class="filter-title">
-              <h5>Filter by type</h5>
-            </div>
-            <div class="filters">
-              <button
-                class="filter-btn"
-                data-type="kind"
-                data-toggle="[data-kind~=single-shaft]"
-              >
-                Single-shaft shredder
-              </button>
-              <button
-                class="filter-btn"
-                data-type="kind"
-                data-toggle="[data-kind~=multi-shaft]"
-              >
-                Multi shaft
-              </button>
-            </div>
+        <div class="sliders">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page3">
+      <div class="info">
+        <h2>We have the perfect paper shredder for you!</h2>
+        <p>Make your selection using individual filter options.</p>
+      </div>
+      <div class="filter-collection">
+        <div class="type filter">
+          <div class="filter-title">
+            <h5>Filter by type</h5>
           </div>
-
-          <div class="rotor-diameter filter">
-            <div class="filter-title">
-              <h5>Filter by rotor diameter</h5>
-            </div>
-            <div class="filters">
-              <button
-                class="filter-btn"
-                data-type="rotor"
-                data-toggle="[data-rotor~=d800mm]"
-              >
-                ø 800 mm
-              </button>
-            </div>
+          <div class="filters">
+            <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=single-shaft]">
+              Single-shaft shredder
+            </button>
+            <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=multi-shaft]">
+              Multi shaft
+            </button>
           </div>
+        </div>
 
-          <div class="ram-design filter">
-            <div class="filter-title">
-              <h5>Filter by ram design</h5>
-            </div>
-            <div class="filters">
-              <button
-                class="filter-btn"
-                data-type="ramtype"
-                data-toggle="[data-ramtype~=swing-ram]"
-              >
-                Swing ram
-              </button>
-            </div>
+        <div class="rotor-diameter filter">
+          <div class="filter-title">
+            <h5>Filter by rotor diameter</h5>
           </div>
+          <div class="filters">
+            <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d800mm]">
+              ø 800 mm
+            </button>
+          </div>
+        </div>
 
-          <div class="screen-design filter">
-            <div class="filter-title">
-              <h5>Filter by screen design</h5>
-            </div>
-            <div class="filters">
-              <button
-                class="filter-btn"
-                data-type="screen"
-                data-toggle="[data-screen~=bolted]"
-              >
-                Bolted
-              </button>
-              <button
-                class="filter-btn"
-                data-type="screen"
-                data-toggle="[data-screen~=lift-up]"
-              >
-                Lift-up
-              </button>
-            </div>
+        <div class="ram-design filter">
+          <div class="filter-title">
+            <h5>Filter by ram design</h5>
+          </div>
+          <div class="filters">
+            <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=swing-ram]">
+              Swing ram
+            </button>
+          </div>
+        </div>
+
+        <div class="screen-design filter">
+          <div class="filter-title">
+            <h5>Filter by screen design</h5>
+          </div>
+          <div class="filters">
+            <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=bolted]">
+              Bolted
+            </button>
+            <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=lift-up]">
+              Lift-up
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
+    <div id="textToTranslate">
       <div class="page4">
         <div class="machines">
-          <div
-            class="precut2000 machine"
-            onclick="window.location.href = 'wl4.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="bolted"
-          >
+          <div class="precut2000 machine" onclick="window.location.href = 'wl4.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
             <h3>WL 4</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/WL4_Rendering-1-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/05/WL4_Rendering-1-300x200.jpg" alt="" />
               </div>
             </div>
 
@@ -287,22 +201,13 @@
             <a href="./wl4.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="powerline1500 machine"
-            onclick="window.location.href = 'wl6s.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
+          <div class="powerline1500 machine" onclick="window.location.href = 'wl6s.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
             <h3>WL 6 S</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/02/WL6_Rendering-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2021/02/WL6_Rendering-300x200.jpg" alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -312,22 +217,13 @@
             <a href="./wl6s.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="finecut1500 machine"
-            onclick="window.location.href = 'wl8.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
+          <div class="finecut1500 machine" onclick="window.location.href = 'wl8.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
             <h3>WL 8</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="	https://weima.com/wp-content/uploads/2020/08/WL8_Rendering.jpg"
-                  alt=""
-                />
+                <img src="	https://weima.com/wp-content/uploads/2020/08/WL8_Rendering.jpg" alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -337,22 +233,15 @@
             <a href="./wl8.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="m8.28 machine"
-            onclick="window.location.href = 'wlk6s.html';"
-            data-kind="multi-shaft"
-            data-rotor
-            data-ramtype
-            data-screen
-          >
+          <div class="m8.28 machine" onclick="window.location.href = 'wlk6s.html';" data-kind="multi-shaft" data-rotor
+            data-ramtype data-screen>
             <h3>WLK 6 S</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
                 <img
                   src="https://weima.com/wp-content/uploads/2021/02/25_3D-Still_WLK6S_Zerkleinerer_REPRO_V03-2._Rendering-300x200.jpg"
-                  alt=""
-                />
+                  alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -362,22 +251,13 @@
             <a href="./wlk6s.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="precut2000 machine"
-            onclick="window.location.href = 'wlk1000.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="bolted"
-          >
+          <div class="precut2000 machine" onclick="window.location.href = 'wlk1000.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
             <h3>WLK 1000</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/02/WLK1000_Rendering-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2021/02/WLK1000_Rendering-300x200.jpg" alt="" />
               </div>
             </div>
 
@@ -388,22 +268,13 @@
             <a href="./wlk1000.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="powerline1500 machine"
-            onclick="window.location.href = '../s5-15iftup.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
+          <div class="powerline1500 machine" onclick="window.location.href = '../s5-15iftup.html';"
+            data-kind="single-shaft" data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
             <h3>S5.15 lift-up</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg" alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -413,22 +284,13 @@
             <a href="../s5-15iftup.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="finecut1500 machine"
-            onclick="window.location.href = 'finecut1500.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
+          <div class="finecut1500 machine" onclick="window.location.href = 'finecut1500.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
             <h3>WLK 20 SJ</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-300x200.jpg" alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -438,22 +300,13 @@
             <a href="./wlk 20 sj.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="m8.28 machine"
-            onclick="window.location.href = 'm8-28.html';"
-            data-kind="multi-shaft"
-            data-rotor
-            data-ramtype
-            data-screen
-          >
+          <div class="m8.28 machine" onclick="window.location.href = 'm8-28.html';" data-kind="multi-shaft" data-rotor
+            data-ramtype data-screen>
             <h3>WLK 30 SJ</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-300x200.jpg" alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -463,22 +316,14 @@
             <a href="../waste/M8-28.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="precut2000 machine"
-            onclick="window.location.href = 'zm30.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="bolted"
-          >
+          <div class="precut2000 machine" onclick="window.location.href = 'zm30.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="bolted">
             <h3>ZM 30</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt="" />
               </div>
             </div>
 
@@ -489,22 +334,14 @@
             <a href="./zm30.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="powerline1500 machine"
-            onclick="window.location.href = 'zm50.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
+          <div class="powerline1500 machine" onclick="window.location.href = 'zm50.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
             <h3>ZM 50</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -514,22 +351,14 @@
             <a href="./zm50.html">Explore Machine ></a>
           </div>
 
-          <div
-            class="finecut1500 machine"
-            onclick="window.location.href = 'zm60.html';"
-            data-kind="single-shaft"
-            data-rotor="d800mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
+          <div class="finecut1500 machine" onclick="window.location.href = 'zm60.html';" data-kind="single-shaft"
+            data-rotor="d800mm" data-ramtype="swing-ram" data-screen="lift-up">
             <h3>ZM 60</h3>
             <div class="photo">
               <div class="line"></div>
               <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/05/ZM40_Rendering-e1588748873761-300x200.jpg"
+                  alt="" />
               </div>
             </div>
             <div class="machine-info">
@@ -562,12 +391,9 @@
                 </div>
               </div>
               <div class="info1-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/1fAnK0FhVMA"
-                  frameborder="0"
+                <iframe src="https://www.youtube.com/embed/1fAnK0FhVMA" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                  allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -606,12 +432,9 @@
                 </div>
               </div>
               <div class="info4-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/Q6M90u4RZ1A"
-                  frameborder="0"
+                <iframe src="https://www.youtube.com/embed/Q6M90u4RZ1A" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                  allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -645,12 +468,9 @@
                 </div>
               </div>
               <div class="info4-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/QEMxmAXcnag"
-                  frameborder="0"
+                <iframe src="https://www.youtube.com/embed/QEMxmAXcnag" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                  allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -658,12 +478,9 @@
           <div class="info5 info">
             <div class="content">
               <div class="info4-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/FvDeaHnQO9Y"
-                  frameborder="0"
+                <iframe src="https://www.youtube.com/embed/FvDeaHnQO9Y" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                  allowfullscreen></iframe>
               </div>
               <div class="number-block">
                 <div class="number">05</div>
@@ -712,10 +529,7 @@
           <div class="info14 info">
             <div class="content">
               <div class="info11-video image">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                  alt=""
-                />
+                <img src="https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg" alt="" />
               </div>
               <div class="number-block">
                 <div class="number">07</div>
@@ -732,11 +546,9 @@
                   </p>
                   <p>Request an appointment now</p>
                   <br />
-                  <a
-                    class="send_email"
+                  <a class="send_email"
                     href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                    class="cta contact"
-                  >
+                    class="cta contact">
                     <span class="button primary">Send eMail</span>
                   </a>
                 </div>
@@ -746,8 +558,12 @@
         </div>
       </div>
     </div>
-  </body>
 
-  <script src="script/jquery.js"></script>
-  <script src="script/paper.js"></script>
+
+  </div>
+</body>
+
+<script src="script/jquery.js"></script>
+<script src="script/paper.js"></script>
+
 </html>

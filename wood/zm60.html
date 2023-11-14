@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/zm60.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZM 60</title>
+    <link rel="stylesheet" href="../styles/translate.css">
 </head>
 
 <body>
@@ -42,6 +43,15 @@
                     <!-- menu button -->
                     <span onclick="openNav()"><button class="menu">menu</button></span>
                 </li>
+                <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -98,7 +108,8 @@
             </div>
         </div>
     </div>
-    <div class="about-zm60">
+    <div   id="textToTranslate"
+     class="about-zm60">
         <div class="info1 info">
             <div class="content">
                 <div class="image">
@@ -531,6 +542,8 @@
     </div>
 
 </body>
+
+<script src="../translate.js"></script>
 <script src="script/wood.js"></script>
 
 <script>

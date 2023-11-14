@@ -527,6 +527,25 @@ table td:nth-child(2) {
   background-color: #414141;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #f5b033;
+  color: #fff;
+}
+.footer .links {
+  font-size: 14px;
+}
+.footer .links a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 /* ----------------- RESPONSIVENESS ----------------- */
 @media (max-width: 1140px) {
   table td:not(:first-child) {

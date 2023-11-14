@@ -5,33 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/plastic.css" />
-    <title>Document</title>
-    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-    <script>
-      function loadGoogleTranslate() {
-        new google.translate.TranslateElement(
-          {
-            defaultLanguage: "en",
-            includedLanguages: "es",
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
-            gaTrack: true,
-            gaId: "UA-12345678-1",
-            multilanguagePage: true,
-            includedLanguages: "en,am",
-            languageDisplayNames: {
-              en: "English",
-              am: "Amharic",
-            },
-          },
-          "myid"
-        );
-      }
-    </script>
-    <script>
-      // Call the function to load Google Translate after the script is loaded
-      loadGoogleTranslate();
-    </script>
+    <title>Plastic</title>
+    <link rel="stylesheet" href="styles/translate.css">
   </head>
 
   <body>
@@ -46,10 +21,7 @@
             </div>
             <ul>
               <li><button class="contact">contacts</button></li>
-              <li><div id="myid">Choose Language</div></li>
-              <!-- full screen navigation -->
-
-              <li>
+            <li>
                 <div id="myNav" class="overlay">
                   <!-- close btn -->
                   <a
@@ -108,6 +80,15 @@
                   ><button class="menu">menu</button></span
                 >
               </li>
+              <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
             </ul>
           </div>
         </div>
@@ -136,105 +117,6 @@
             such as rubber, fibers and films, aramid, Kevlar or carbon.
           </p>
 
-<<<<<<< HEAD
-              </div>
-            </div>
-
-            <!-- menu button -->
-            <span onclick="openNav()"><button class="menu">menu</button></span>
-            </li>
-            <br>
-            <li class="dropdown">
-              <a href="#" class="dropbtn">Language</a>
-              <div class="dropdown-content">
-                <button id="translateEnglish">🇺🇸 English</button>
-                <button id="translateAmharic">🇪🇹 Amharic</button>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="links">
-        <a href="index.html">home</a>
-        <span>|</span>
-        <a href="#">
-          In-house Recycling and Post Consumer Plastics Shredding</a>
-      </div>
-    </div>
-    <div id="textToTranslate">
-      <div class="page2">
-        <div class="content">
-          <h1>In-house Recycling and Post Consumer Plastics Shredding</h1>
-          <p>
-            Plastic is a versatile material. Its properties range from tough
-            polymer structures to highly rigid high-tech products. Efficient
-            shredding requires a great deal of experience and know-how.
-          </p>
-          <p>
-            With many thousands of plastic shredders delivered, there are hardly
-            any applications that we have not already implemented. These include
-            classic items such as start-up lumps, crates, pallets, pipes,
-            containers, moulded parts and post-consumer waste such as PET
-            bottles or packaging. But also particularly tear-resistant materials
-            such as rubber, fibers and films, aramid, Kevlar or carbon.
-          </p>
-
-          <button onclick="window.location.href = '#about-plastics';">About plastic shredding</button>
-        </div>
-        <div class="imgcontainer">
-          <img src="https://weima.com/wp-content/uploads/2017/05/Plastic_Shredder_WEIMA.jpg" alt="" />
-        </div>
-      </div>
-      <div class="page3">
-        <div class="info">
-          <h2>We have the perfect plastic shredder for you!</h2>
-          <p>Make your selection using individual filter options.</p>
-        </div>
-        <div class="filter-collection">
-          <div class="type filter">
-            <div class="filter-title">
-              <h5>Filter by type</h5>
-            </div>
-            <div class="filters">
-              <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=single-shaft]">Single-shaft
-                shredder</button>
-              <button class="filter-btn" data-type="kind" data-toggle="[data-kind~=granulator]">Granulator</button>
-            </div>
-          </div>
-
-          <div class="rotor-diameter filter">
-            <div class="filter-title">
-              <h5>Filter by rotor diameter</h5>
-            </div>
-            <div class="filters">
-              <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d300mm]">ø 300 mm</button>
-              <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d400mm]">ø 400 mm</button>
-              <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d500mm]">ø 500 mm</button>
-              <button class="filter-btn" data-type="rotor" data-toggle="[data-rotor~=d700mm]">ø 700 mm</button>
-            </div>
-          </div>
-
-          <div class="ram-design filter">
-            <div class="filter-title">
-              <h5>Filter by ram design</h5>
-            </div>
-            <div class="filters">
-              <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=horizontal-ram]">Horizontal
-                ram</button>
-              <button class="filter-btn" data-type="ramtype" data-toggle="[data-ramtype~=swing-ram]">Swing ram</button>
-            </div>
-          </div>
-
-          <div class="screen-design filter">
-            <div class="filter-title">
-              <h5>Filter by screen design</h5>
-            </div>
-            <div class="filters">
-              <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=bolted]">Bolted</button>
-              <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=lift-up]">Lift-up</button>
-              <button class="filter-btn" data-type="screen" data-toggle="[data-screen~=drop-down]">Drop-down</button>
-=======
           <button onclick="window.location.href = '#about-plastics';">
             About plastic shredding
           </button>
@@ -362,1079 +244,609 @@
           </div>
         </div>
       </div>
-
-      <div class="page4">
-        <div class="machines">
-          <div
-            class="wlk4 machine"
-            onclick="window.location.href = 'wlk4.html';"
-            data-kind="single-shaft"
-            data-rotor="d300mm"
-            data-ramtype="horizontal-ram"
-            data-screen="bolted"
-          >
-            <h3>WLK 4</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="pics/WLK4_Zerkleinerer_Rendering-2048x1436.webp"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>The compact classic with conveyor belt cut-out</p>
-            </div>
-            <a href="./wlk4.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wlk10 machine"
-            onclick="window.location.href = 'wlk10.html';"
-            data-kind="single-shaft"
-            data-rotor="d400mm"
-            data-ramtype="horizontal-ram"
-            data-screen="lift-up"
-          >
-            <h3>WLK 10</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK10_Rendering-768x512.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>With lift-up screen basket</p>
-            </div>
-            <a href="./wlk10.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wlk1000 machine"
-            onclick="window.location.href = 'wlk1000.html';"
-            data-kind="single-shaft"
-            data-rotor="d400mm"
-            data-ramtype="horizontal-ram"
-            data-screen="drop-down"
-          >
-            <h3>WLK 1000</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK1000_Rendering-300x200.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Economical compact machine with 1,000 working width</p>
-            </div>
-            <a href="./wlk1000.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wlk20 machine"
-            onclick="window.location.href = 'wlk20.html';"
-            data-kind="single-shaft"
-            data-rotor="d400mm"
-            data-ramtype="horizontal-ram"
-            data-screen="lift-up"
-          >
-            <h3>WLK 20</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="pics/WEIMA_WLK_20_shredder_web-2048x1427.webp"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>
-                The allrounder with lift-up screen and 2,000 mm rotor length
-              </p>
-            </div>
-            <a href="./wlk20.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="w5.22 machine"
-            onclick="window.location.href = 'w5.22.html';"
-            data-kind="single-shaft"
-            data-rotor="d500mm"
-            data-ramtype="swing-ram"
-            data-screen="lift-up"
-          >
-            <h3>W5.22</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/WKS1800Rendering-300x200.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Maintenance-friendly all-rounder with swing ram</p>
-            </div>
-            <a href="./w5.22.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wlk15j machine"
-            onclick="window.location.href = 's5-15iftup.html';"
-            data-kind="single-shaft"
-            data-rotor="d500mm"
-            data-ramtype="horizontal-ram"
-            data-screen="lift-up"
-          >
-            <h3>WLK 15 J</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with big 500 mm rotor diameter</p>
-            </div>
-            <a href="./s5-15iftup.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="s5.20liftup machine"
-            onclick="window.location.href = 's5-20liftup.html';"
-            data-kind="single-shaft"
-            data-rotor="d500mm"
-            data-ramtype="horizontal-ram"
-            data-screen="lift-up"
-          >
-            <h3>S5.20 Lift-up</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK25SJ_Rendering-768x512.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with big 500 mm rotor diameter</p>
-            </div>
-            <a href="./s5-20liftup.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wlk20sj machine"
-            onclick="window.location.href = 'wlk20sj.html';"
-            data-kind="single-shaft"
-            data-rotor="d700mm"
-            data-ramtype="horizontal-ram"
-            data-screen="lift-up"
-          >
-            <h3>WLK 20 SJ</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-768x512.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with extra-big 700 mm rotor diameter</p>
-            </div>
-            <a href="./wlk30sj.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wlk30sj machine"
-            onclick="window.location.href = 'wlk30sj.html';"
-            data-kind="single-shaft"
-            data-rotor="d700mm"
-            data-ramtype="horizontal-ram"
-            data-screen="lift-up"
-          >
-            <h3>WLK 30 SJ</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK30SJ_Rendering.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with extra-big 700 mm rotor diameter</p>
-            </div>
-            <a href="./wlk30sj.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wsm500/700 machine"
-            onclick="window.location.href = 'wsm500-700.html';"
-            data-kind="granulator"
-            data-rotor=""
-            data-ramtype=""
-            data-screen="bolted"
-          >
-            <h3>WSM 500/700</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/02/WSM800_Rendering-300x200.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Granulator</p>
-              <p>High-capacity secondary shredder with 700 mm rotor length</p>
-            </div>
-            <a href="./wsm500-700.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wnz310/600 machine"
-            onclick="window.location.href = 'WNZ310_600.html';"
-            data-kind="granulator"
-            data-rotor=""
-            data-ramtype=""
-            data-screen="bolted"
-          >
-            <h3>WNZ 310/600</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WNZ310600_Rendering-300x200.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Granulator</p>
-              <p>
-                Sturdy secondary shredder with 600 mm working width and bigger
-                rotor
-              </p>
-            </div>
-            <a href="./WNZ310_600.html">Explore Machine ></a>
-          </div>
-
-          <div
-            class="wnz310/800 machine"
-            onclick="window.location.href = 'wnz310_800.html';"
-            data-kind="granulator"
-            data-rotor=""
-            data-ramtype=""
-            data-screen="bolted"
-          >
-            <h3>WNZ 310/800</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img
-                  src="	https://weima.com/wp-content/uploads/2020/05/WNZ310600_Rendering-300x200.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Granulator</p>
-              <p>
-                Sturdy secondary shredder with 800 mm working width and bigger
-                rotor
-              </p>
-            </div>
-            <a href="./wnz310_800.html">Explore Machine ></a>
-          </div>
-        </div>
-      </div>
-      <div class="more-abt-plastics" id="about-plastics">
-        <div class="title">
-          <h1>Learn more about plastics and plastic recycling</h1>
-          <div class="subtitle">When waste becomes raw material</div>
-        </div>
-        <div class="info-collection">
-          <div class="info1 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">01</div>
-                <div class="inner">
-                  <h3>The Circular Economy starts with us</h3>
-                  <p>
-                    ReduceAll plastic shredders are extremely flexible and offer
-                    different rotor types, rotor geometries and cutting tools,
-                    whereby they can shred a wide range of thermoplastics such
-                    as PE, PP, PVC, PS, PU and PET, as well as various
-                    thermosets and elastomers.
-                  </p>
-
-                  <p>
-                    Even large-volume hollow bodies, long pipes and profiles,
-                    massive start-up lumps and other production waste, as well
-                    as PET bottles, textile fibers, foils, insulating materials,
-                    floor coverings, crates and containers master industrial
-                    ReduceAll shredders effortlessly thanks to 40 years of
-                    experience in the plastics industry.
-                  </p>
+      <div id="textToTranslate">
+        <div class="page4">
+          <div class="machines">
+            <div
+              class="wlk4 machine"
+              onclick="window.location.href = 'wlk4.html';"
+              data-kind="single-shaft"
+              data-rotor="d300mm"
+              data-ramtype="horizontal-ram"
+              data-screen="bolted"
+            >
+              <h3>WLK 4</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="pics/WLK4_Zerkleinerer_Rendering-2048x1436.webp"
+                    alt=""
+                  />
                 </div>
               </div>
-              <div class="info1-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/9xU1oTQuvtc"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+  
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>The compact classic with conveyor belt cut-out</p>
               </div>
+              <a href="./wlk4.html">Explore Machine ></a>
             </div>
-          </div>
-          <div class="info2 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">02</div>
-                <div class="inner">
-                  <h1>
-                    "With the high volumes of plastic waste in the world,
-                    sustainable disposal concepts are particularly needed. And
-                    shredding is the basis for this."
-                  </h1>
-                  <p>Gunter Schippers</p>
-                  <p>Business Development | Plastics at ReduceAll</p>
+  
+            <div
+              class="wlk10 machine"
+              onclick="window.location.href = 'wlk10.html';"
+              data-kind="single-shaft"
+              data-rotor="d400mm"
+              data-ramtype="horizontal-ram"
+              data-screen="lift-up"
+            >
+              <h3>WLK 10</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img src="pics/WLK10_Rendering-768x512.webp" alt="" />
                 </div>
               </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>With lift-up screen basket</p>
+              </div>
+              <a href="./wlk10.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info3 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">03</div>
-                <div class="inner">
-                  <h2>
-                    Customer applications and sample materials from the plastics
-                    industry
-                  </h2>
+  
+            <div
+              class="wlk1000 machine"
+              onclick="window.location.href = 'wlk1000.html';"
+              data-kind="single-shaft"
+              data-rotor="d400mm"
+              data-ramtype="horizontal-ram"
+              data-screen="drop-down"
+            >
+              <h3>WLK 1000</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img src="pics/WLK1000_Rendering-300x200.webp" alt="" />
                 </div>
               </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>Economical compact machine with 1,000 working width</p>
+              </div>
+              <a href="./wlk1000.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <h2 style="font-weight: 600">
-            In-house recycling and post industrial plastics processing <br />
-            as part of the Circular Economy
-          </h2>
-
-          <div class="info4 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">04</div>
-                <div class="inner">
-                  <h3>Direct return to the production line</h3>
-                  <p>
-                    Plastic waste generated during production is becoming
-                    increasingly valuable. As a secondary raw material, it can
-                    be returned directly to the production cycle. The first step
-                    in this process is the shredding of production waste such as
-                    start-up lumps or reject parts. ReduceAll works closely with
-                    customers in order to find a suitable solution for the most
-                    diverse plastics. This way we ensure that even materials
-                    that are difficult to process are shredded into high-quality
-                    regrind.
-                  </p>
+  
+            <div
+              class="wlk20 machine"
+              onclick="window.location.href = 'wlk20.html';"
+              data-kind="single-shaft"
+              data-rotor="d400mm"
+              data-ramtype="horizontal-ram"
+              data-screen="lift-up"
+            >
+              <h3>WLK 20</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="pics/WEIMA_WLK_20_shredder_web-2048x1427.webp"
+                    alt=""
+                  />
                 </div>
               </div>
-              <div class="info4-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/rhzXWziy7SI"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>
+                  The allrounder with lift-up screen and 2,000 mm rotor length
+                </p>
               </div>
+              <a href="./wlk20.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info5 info">
-            <div class="content">
-              <div class="info4-video image">
-                <img
-                  src="	https://weima.com/wp-content/uploads/2020/08/DSC_5879web.jpg"
-                  data-src="https://weima.com/wp-content/uploads/2020/08/DSC_5879web.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="number-block">
-                <div class="number">05</div>
-                <div class="inner">
-                  <h3>
-                    In-house recycling saves money and protects the environment
-                  </h3>
-                  <p>
-                    With the right technologies, production waste can be
-                    reprocessed into new raw material. Thus you save high raw
-                    material costs, reduce long delivery times, avoid expensive
-                    disposal in external recycling plants and avoid the use of
-                    primary resources in the long term.
-                  </p>
+  
+            <div
+              class="w5.22 machine"
+              onclick="window.location.href = 'w5.22.html';"
+              data-kind="single-shaft"
+              data-rotor="d500mm"
+              data-ramtype="swing-ram"
+              data-screen="lift-up"
+            >
+              <h3>W5.22</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="https://weima.com/wp-content/uploads/2020/05/WKS1800Rendering-300x200.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>Maintenance-friendly all-rounder with swing ram</p>
+              </div>
+              <a href="./w5.22.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info6 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">06</div>
-                <div class="inner">
-                  <h1>Did you know?</h1>
-                  <h2>
-                    Approximately 40% of the end consumer plastic waste is
-                    recycled in Germany.
-                  </h2>
-                  <p>Source: PlasticsEurope Germany</p>
+  
+            <div
+              class="wlk15j machine"
+              onclick="window.location.href = 's5-15iftup.html';"
+              data-kind="single-shaft"
+              data-rotor="d500mm"
+              data-ramtype="horizontal-ram"
+              data-screen="lift-up"
+            >
+              <h3>WLK 15 J</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>Highly productive with big 500 mm rotor diameter</p>
+              </div>
+              <a href="./s5-15iftup.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info7 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">07</div>
-                <div class="inner">
-                  <h3>Post-Consumer Plastic Recycling</h3>
-                  <p>
-                    Post-consumer waste means plastic waste from private use.
-                    This includes packaging such as yoghurt pots, PET bottles,
-                    bags, films, containers, tubes as well as toys, labels,
-                    fibers and textiles. Due to the increase in global
-                    consumption, the amount of plastic waste is also increasing.
-                    Instead of disposing of it in our oceans or landfills,
-                    ReduceAll shredders contribute to the promotion of
-                    alternative solutions. Together with our partners we develop
-                    single or multi-stage processing concepts in order to
-                    optimize the plastic lifecycle in the long term.
-                  </p>
+  
+            <div
+              class="s5.20liftup machine"
+              onclick="window.location.href = 's5-20liftup.html';"
+              data-kind="single-shaft"
+              data-rotor="d500mm"
+              data-ramtype="horizontal-ram"
+              data-screen="lift-up"
+            >
+              <h3>S5.20 Lift-up</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img src="pics/WLK25SJ_Rendering-768x512.webp" alt="" />
                 </div>
               </div>
-              <div class="info7-video image">
-                <iframe
-                  src="https://www.youtube.com/embed/0z9WvqPzH4c"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>Highly productive with big 500 mm rotor diameter</p>
               </div>
+              <a href="./s5-20liftup.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info8 info">
-            <div class="content">
-              <div class="info8-video image">
-                <img
-                  src="	https://weima.com/wp-content/uploads/2020/08/upcycling_weima_plastic.jpg"
-                  data-src="https://weima.com/wp-content/uploads/2020/08/upcycling_weima_plastic.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="number-block">
-                <div class="number">08</div>
-                <div class="inner">
-                  <h3>Recycling or upcycling? It' s in your hand</h3>
-                  <p>
-                    Both concepts have the same goal: to extend the plastic life
-                    cycle. In recycling, plastic waste is usually shredded and
-                    transformed into regranulate by extrusion, e.g. to produce
-                    new PET bottles from old PET bottles. In upcycling, on the
-                    other hand, one tries to give supposedly useless plastics a
-                    new, higher-quality sense, either alone or in combination
-                    with others, e.g. bags made of packaging strings.
-                  </p>
+  
+            <div
+              class="wlk20sj machine"
+              onclick="window.location.href = 'wlk20sj.html';"
+              data-kind="single-shaft"
+              data-rotor="d700mm"
+              data-ramtype="horizontal-ram"
+              data-screen="lift-up"
+            >
+              <h3>WLK 20 SJ</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-768x512.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>Highly productive with extra-big 700 mm rotor diameter</p>
+              </div>
+              <a href="./wlk30sj.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info9 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">09</div>
-                <div class="inner">
-                  <h3>What is Design for Recycling?</h3>
-                  <p>
-                    In order to ensure the recyclability of plastic products,
-                    disposal or recycling must be considered even before
-                    production begins. The term Design for Recycling (D4R), or
-                    recycling-friendly design, refers to the holistic conception
-                    and design of products that can be optimally returned to the
-                    recycling loop after their use. In this context, plastics in
-                    products should be combined in such a way that a clear
-                    separation of the different types is possible at the end of
-                    their life. This is the only way to keep waste streams pure
-                    and ensure their recyclability and thus their reuse as
-                    secondary raw materials.
-                  </p>
+  
+            <div
+              class="wlk30sj machine"
+              onclick="window.location.href = 'wlk30sj.html';"
+              data-kind="single-shaft"
+              data-rotor="d700mm"
+              data-ramtype="horizontal-ram"
+              data-screen="lift-up"
+            >
+              <h3>WLK 30 SJ</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img src="pics/WLK30SJ_Rendering.webp" alt="" />
                 </div>
               </div>
-              <div class="info9-video image">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/07/Design_For_Recycling-2-768x562.png"
-                  data-src="https://weima.com/wp-content/uploads/2021/07/Design_For_Recycling-2-768x562.png"
-                  alt=""
-                />
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Single-shaft shredder</p>
+                <p>Highly productive with extra-big 700 mm rotor diameter</p>
               </div>
+              <a href="./wlk30sj.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info10 info">
-            <div class="content">
-              <div class="info10-video image">
-                <img
-                  src="https://weima.com/wp-content/uploads/2021/07/Standbeutel_Verpackung_Recycling-1024x1024.jpg"
-                  data-src="https://weima.com/wp-content/uploads/2021/07/Standbeutel_Verpackung_Recycling-1024x1024.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="number-block">
-                <div class="number">10</div>
-                <div class="inner">
-                  <p>
-                    For example, a German cleaning product manufacturer fills
-                    detergents in environmentally friendly refill bags. These
-                    are made of 100 percent polyethylene (PE) and contain
-                    neither adhesives nor bonding agents. The printed band can
-                    be separated from the packaging, making the bag 100 percent
-                    recyclable. Another feature is that the packaging is made
-                    entirely from recycled plastic.
-                  </p>
+  
+            <div
+              class="wsm500/700 machine"
+              onclick="window.location.href = 'wsm500-700.html';"
+              data-kind="granulator"
+              data-rotor=""
+              data-ramtype=""
+              data-screen="bolted"
+            >
+              <h3>WSM 500/700</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="https://weima.com/wp-content/uploads/2021/02/WSM800_Rendering-300x200.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Granulator</p>
+                <p>High-capacity secondary shredder with 700 mm rotor length</p>
+              </div>
+              <a href="./wsm500-700.html">Explore Machine ></a>
             </div>
-          </div>
-
-          <div class="info11 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">11</div>
-                <div class="inner">
-                  <h3>See for yourself</h3>
-                  <p>
-                    The ReduceAll show room is equipped with shredding and
-                    briquetting machines of all sizes and technologies. This
-                    enables us to simulate your application as realistically as
-                    possible. You have the possibility to send us your material
-                    or visit us directly in Ilsfeld. From our gallery you have
-                    the best view directly into the cutting chamber. So you can
-                    observe the shredding process live.
-                  </p>
-                  <p>Request an appointment now</p>
-                  <br />
-                  <a
-                    class="send_email"
-                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                    class="cta contact"
-                  >
-                    <span class="button primary">Send eMail</span>
-                  </a>
+  
+            <div
+              class="wnz310/600 machine"
+              onclick="window.location.href = 'WNZ310_600.html';"
+              data-kind="granulator"
+              data-rotor=""
+              data-ramtype=""
+              data-screen="bolted"
+            >
+              <h3>WNZ 310/600</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img src="pics/WNZ310600_Rendering-300x200.webp" alt="" />
                 </div>
               </div>
-              <div class="info11-video image">
-                <img
-                  src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                  data-src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                  alt=""
-                />
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Granulator</p>
+                <p>
+                  Sturdy secondary shredder with 600 mm working width and bigger
+                  rotor
+                </p>
               </div>
->>>>>>> 3b9eda96d697d1ef0aa14677e86f3d55e23b897b
+              <a href="./WNZ310_600.html">Explore Machine ></a>
+            </div>
+  
+            <div
+              class="wnz310/800 machine"
+              onclick="window.location.href = 'wnz310_800.html';"
+              data-kind="granulator"
+              data-rotor=""
+              data-ramtype=""
+              data-screen="bolted"
+            >
+              <h3>WNZ 310/800</h3>
+              <div class="photo">
+                <div class="line"></div>
+                <div class="machine-pic">
+                  <img
+                    src="	https://weima.com/wp-content/uploads/2020/05/WNZ310600_Rendering-300x200.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="machine-info">
+                <p style="color: #4a4a4a">Granulator</p>
+                <p>
+                  Sturdy secondary shredder with 800 mm working width and bigger
+                  rotor
+                </p>
+              </div>
+              <a href="./wnz310_800.html">Explore Machine ></a>
             </div>
           </div>
         </div>
-      </div>
-<<<<<<< HEAD
-
-      <div class="page4">
-        <div class="machines">
-          <div class="wlk4 machine" onclick="window.location.href = 'wlk4.html';" data-kind="single-shaft"
-            data-rotor="d300mm" data-ramtype="horizontal-ram" data-screen="bolted">
-            <h3>WLK 4</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK4_Zerkleinerer_Rendering-2048x1436.webp" alt="" />
-              </div>
-            </div>
-
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>The compact classic with conveyor belt cut-out</p>
-            </div>
-            <a href="wlk4.html">Explore Machine ></a>
+        <div class="more-abt-plastics" id="about-plastics">
+          <div class="title">
+            <h1>Learn more about plastics and plastic recycling</h1>
+            <div class="subtitle">When waste becomes raw material</div>
           </div>
-
-          <div class="wlk10 machine" onclick="window.location.href = 'wlk10.html';" data-kind="single-shaft"
-            data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="lift-up">
-            <h3>WLK 10</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK10_Rendering-768x512.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>With lift-up screen basket</p>
-            </div>
-            <a href="wlk10.html">Explore Machine ></a>
-          </div>
-
-          <div class="wlk1000 machine" onclick="window.location.href = 'wlk1000.html';" data-kind="single-shaft"
-            data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="drop-down">
-            <h3>WLK 1000</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK1000_Rendering-300x200.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Economical compact machine with 1,000 working width</p>
-            </div>
-            <a href="wlk1000.html">Explore Machine ></a>
-          </div>
-
-          <div class="wlk20 machine" onclick="window.location.href = 'wlk20.html';" data-kind="single-shaft"
-            data-rotor="d400mm" data-ramtype="horizontal-ram" data-screen="lift-up">
-            <h3>WLK 20</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WEIMA_WLK_20_shredder_web-2048x1427.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>
-                The allrounder with lift-up screen and 2,000 mm rotor length
-              </p>
-            </div>
-            <a href="wlk20.html">Explore Machine ></a>
-          </div>
-
-          <div class="w5.22 machine" onclick="window.location.href = 'w5.22.html';" data-kind="single-shaft"
-            data-rotor="d500mm" data-ramtype="swing-ram" data-screen="lift-up">
-            <h3>W5.22</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="https://weima.com/wp-content/uploads/2020/05/WKS1800Rendering-300x200.jpg" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Maintenance-friendly all-rounder with swing ram</p>
-            </div>
-            <a href="w5.22.html">Explore Machine ></a>
-          </div>
-
-          <div class="wlk15j machine" onclick="window.location.href = 's5-15iftup.html';" data-kind="single-shaft"
-            data-rotor="d500mm" data-ramtype="horizontal-ram" data-screen="lift-up">
-            <h3>WLK 15 J</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="https://weima.com/wp-content/uploads/2021/02/WLK20J_Rendering-300x200.jpg" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with big 500 mm rotor diameter</p>
-            </div>
-            <a href="s5-15iftup.html">Explore Machine ></a>
-          </div>
-
-          <div class="s5.20liftup machine" onclick="window.location.href = 's5-20liftup.html';" data-kind="single-shaft"
-            data-rotor="d500mm" data-ramtype="horizontal-ram" data-screen="lift-up">
-            <h3>S5.20 Lift-up</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK25SJ_Rendering-768x512.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with big 500 mm rotor diameter</p>
-            </div>
-            <a href="s5-20liftup.html">Explore Machine ></a>
-          </div>
-
-          <div class="wlk20sj machine" onclick="window.location.href = 'wlk30sj.html';" data-kind="single-shaft"
-            data-rotor="d700mm" data-ramtype="horizontal-ram" data-screen="lift-up">
-            <h3>WLK 20 SJ</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="https://weima.com/wp-content/uploads/2020/05/WLK25SJ_Rendering-768x512.jpg" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with extra-big 700 mm rotor diameter</p>
-            </div>
-            <a href="wlk30sj.html">Explore Machine ></a>
-          </div>
-
-          <div class="wlk30sj machine" onclick="window.location.href = 'wlk30sj.html';" data-kind="single-shaft"
-            data-rotor="d700mm" data-ramtype="horizontal-ram" data-screen="lift-up">
-            <h3>WLK 30 SJ</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WLK30SJ_Rendering.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Single-shaft shredder</p>
-              <p>Highly productive with extra-big 700 mm rotor diameter</p>
-            </div>
-            <a href="wlk30sj.html">Explore Machine ></a>
-          </div>
-
-          <div class="wsm500/700 machine" onclick="window.location.href = 'wsm500-700.html';" data-kind="granulator"
-            data-rotor="" data-ramtype="" data-screen="bolted">
-            <h3>WSM 500/700</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="https://weima.com/wp-content/uploads/2021/02/WSM800_Rendering-300x200.jpg" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Granulator</p>
-              <p>High-capacity secondary shredder with 700 mm rotor length</p>
-            </div>
-            <a href="wsm500-700.html">Explore Machine ></a>
-          </div>
-
-          <div class="wnz310/600 machine" onclick="window.location.href = 'WNZ310_600.html';" data-kind="granulator"
-            data-rotor="" data-ramtype="" data-screen="bolted">
-            <h3>WNZ 310/600</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="pics/WNZ310600_Rendering-300x200.webp" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Granulator</p>
-              <p>
-                Sturdy secondary shredder with 600 mm working width and bigger
-                rotor
-              </p>
-            </div>
-            <a href="WNZ310_600.html">Explore Machine ></a>
-          </div>
-
-          <div class="wnz310/800 machine" onclick="window.location.href = 'wnz310_800.html';" data-kind="granulator"
-            data-rotor="" data-ramtype="" data-screen="bolted">
-            <h3>WNZ 310/800</h3>
-            <div class="photo">
-              <div class="line"></div>
-              <div class="machine-pic">
-                <img src="	https://weima.com/wp-content/uploads/2020/05/WNZ310600_Rendering-300x200.jpg" alt="" />
-              </div>
-            </div>
-            <div class="machine-info">
-              <p style="color: #4a4a4a">Granulator</p>
-              <p>
-                Sturdy secondary shredder with 800 mm working width and bigger
-                rotor
-              </p>
-            </div>
-            <a href="wnz310_800.html">Explore Machine ></a>
-          </div>
-        </div>
-      </div>
-      <div class="more-abt-plastics" id="about-plastics">
-        <div class="title">
-          <h1>Learn more about plastics and plastic recycling</h1>
-          <div class="subtitle">When waste becomes raw material</div>
-        </div>
-        <div class="info-collection">
-          <div class="info1 info">
-            <div class="content">
-
-              <div class="number-block">
-                <div class="number">01</div>
-                <div class="inner">
-                  <h3>The Circular Economy starts with us</h3>
-                  <p>
-                    ReduceAll plastic shredders are extremely flexible and offer
-                    different rotor types, rotor geometries and cutting tools,
-                    whereby they can shred a wide range of thermoplastics such as
-                    PE, PP, PVC, PS, PU and PET, as well as various thermosets and
-                    elastomers.
-                  </p>
-
-                  <p>
-                    Even large-volume hollow bodies, long pipes and profiles,
-                    massive start-up lumps and other production waste, as well as
-                    PET bottles, textile fibers, foils, insulating materials,
-                    floor coverings, crates and containers master industrial ReduceAll
-                    shredders effortlessly thanks to 40 years of experience in the
-                    plastics industry.
-                  </p>
+          <div class="info-collection">
+            <div class="info1 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">01</div>
+                  <div class="inner">
+                    <h3>The Circular Economy starts with us</h3>
+                    <p>
+                      ReduceAll plastic shredders are extremely flexible and offer
+                      different rotor types, rotor geometries and cutting tools,
+                      whereby they can shred a wide range of thermoplastics such
+                      as PE, PP, PVC, PS, PU and PET, as well as various
+                      thermosets and elastomers.
+                    </p>
+  
+                    <p>
+                      Even large-volume hollow bodies, long pipes and profiles,
+                      massive start-up lumps and other production waste, as well
+                      as PET bottles, textile fibers, foils, insulating materials,
+                      floor coverings, crates and containers master industrial
+                      ReduceAll shredders effortlessly thanks to 40 years of
+                      experience in the plastics industry.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="info1-video image">
-                <iframe src="https://www.youtube.com/embed/9xU1oTQuvtc" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-
-            </div>
-          </div>
-          <div class="info2 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">02</div>
-                <div class="inner">
-                  <h1>
-                    "With the high volumes of plastic waste in the world,
-                    sustainable disposal concepts are particularly needed. And
-                    shredding is the basis for this."
-                  </h1>
-                  <p>Gunter Schippers</p>
-                  <p>Business Development | Plastics at ReduceAll</p>
+                <div class="info1-video image">
+                  <iframe
+                    src="https://www.youtube.com/embed/9xU1oTQuvtc"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="info3 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">03</div>
-                <div class="inner">
-                  <h2>
-                    Customer applications and sample materials from the plastics
-                    industry
-                  </h2>
+            <div class="info2 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">02</div>
+                  <div class="inner">
+                    <h1>
+                      "With the high volumes of plastic waste in the world,
+                      sustainable disposal concepts are particularly needed. And
+                      shredding is the basis for this."
+                    </h1>
+                    <p>Gunter Schippers</p>
+                    <p>Business Development | Plastics at ReduceAll</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <h2 style="font-weight: 600;">In-house recycling and post industrial plastics processing <br>
-            as part of the Circular Economy</h2>
-
-          <div class="info4 info">
-            <div class="content">
-
-              <div class="number-block">
-                <div class="number">04</div>
-                <div class="inner">
-                  <h3>Direct return to the production line</h3>
-                  <p>
-                    Plastic waste generated during production is becoming increasingly valuable. As a secondary raw
-                    material, it can be returned directly to the production cycle. The first step in this process is the
-                    shredding of production waste such as start-up lumps or reject parts. ReduceAll works closely with
-                    customers in order to find a suitable solution for the most diverse plastics. This way we ensure
-                    that
-                    even materials that are difficult to process are shredded into high-quality regrind.
-                  </p>
-                </div>
-              </div>
-              <div class="info4-video image">
-                <iframe src="https://www.youtube.com/embed/rhzXWziy7SI" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="info5 info">
-            <div class="content">
-              <div class="info4-video image">
-                <img src="	https://weima.com/wp-content/uploads/2020/08/DSC_5879web.jpg"
-                  data-src="https://weima.com/wp-content/uploads/2020/08/DSC_5879web.jpg" alt="">
-              </div>
-              <div class="number-block">
-                <div class="number">05</div>
-                <div class="inner">
-                  <h3>In-house recycling saves money and protects the environment</h3>
-                  <p>
-                    With the right technologies, production waste can be reprocessed into new raw material. Thus you
-                    save
-                    high raw material costs, reduce long delivery times, avoid expensive disposal in external recycling
-                    plants and avoid the use of primary resources in the long term.
-                  </p>
+  
+            <div class="info3 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">03</div>
+                  <div class="inner">
+                    <h2>
+                      Customer applications and sample materials from the plastics
+                      industry
+                    </h2>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="info6 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">06</div>
-                <div class="inner">
-                  <h1>
-                    Did you know?
-                  </h1>
-                  <h2>Approximately 40% of the end consumer plastic waste is recycled in Germany.</h2>
-                  <p>Source: PlasticsEurope Germany</p>
+  
+            <h2 style="font-weight: 600">
+              In-house recycling and post industrial plastics processing <br />
+              as part of the Circular Economy
+            </h2>
+  
+            <div class="info4 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">04</div>
+                  <div class="inner">
+                    <h3>Direct return to the production line</h3>
+                    <p>
+                      Plastic waste generated during production is becoming
+                      increasingly valuable. As a secondary raw material, it can
+                      be returned directly to the production cycle. The first step
+                      in this process is the shredding of production waste such as
+                      start-up lumps or reject parts. ReduceAll works closely with
+                      customers in order to find a suitable solution for the most
+                      diverse plastics. This way we ensure that even materials
+                      that are difficult to process are shredded into high-quality
+                      regrind.
+                    </p>
+                  </div>
+                </div>
+                <div class="info4-video image">
+                  <iframe
+                    src="https://www.youtube.com/embed/rhzXWziy7SI"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="info7 info">
-            <div class="content">
-
-              <div class="number-block">
-                <div class="number">07</div>
-                <div class="inner">
-                  <h3>Post-Consumer Plastic Recycling</h3>
-                  <p>
-                    Post-consumer waste means plastic waste from private use. This includes packaging such as yoghurt
-                    pots, PET bottles, bags, films, containers, tubes as well as toys, labels, fibers and textiles. Due
-                    to
-                    the increase in global consumption, the amount of plastic waste is also increasing. Instead of
-                    disposing of it in our oceans or landfills, ReduceAll shredders contribute to the promotion of
-                    alternative
-                    solutions. Together with our partners we develop single or multi-stage processing concepts in order
-                    to
-                    optimize the plastic lifecycle in the long term.
-                  </p>
+  
+            <div class="info5 info">
+              <div class="content">
+                <div class="info4-video image">
+                  <img
+                    src="	https://weima.com/wp-content/uploads/2020/08/DSC_5879web.jpg"
+                    data-src="https://weima.com/wp-content/uploads/2020/08/DSC_5879web.jpg"
+                    alt=""
+                  />
                 </div>
-              </div>
-              <div class="info7-video image">
-                <iframe src="https://www.youtube.com/embed/0z9WvqPzH4c" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="info8 info">
-            <div class="content">
-              <div class="info8-video image">
-                <img src="	https://weima.com/wp-content/uploads/2020/08/upcycling_weima_plastic.jpg"
-                  data-src="https://weima.com/wp-content/uploads/2020/08/upcycling_weima_plastic.jpg" alt="">
-              </div>
-              <div class="number-block">
-                <div class="number">08</div>
-                <div class="inner">
-                  <h3> Recycling or upcycling? It' s in your hand</h3>
-                  <p>
-                    Both concepts have the same goal: to extend the plastic life cycle. In recycling, plastic waste is
-                    usually shredded and transformed into regranulate by extrusion, e.g. to produce new PET bottles from
-                    old PET bottles. In upcycling, on the other hand, one tries to give supposedly useless plastics a
-                    new,
-                    higher-quality sense, either alone or in combination with others, e.g. bags made of packaging
-                    strings.
-                  </p>
+                <div class="number-block">
+                  <div class="number">05</div>
+                  <div class="inner">
+                    <h3>
+                      In-house recycling saves money and protects the environment
+                    </h3>
+                    <p>
+                      With the right technologies, production waste can be
+                      reprocessed into new raw material. Thus you save high raw
+                      material costs, reduce long delivery times, avoid expensive
+                      disposal in external recycling plants and avoid the use of
+                      primary resources in the long term.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="info9 info">
-            <div class="content">
-
-              <div class="number-block">
-                <div class="number">09</div>
-                <div class="inner">
-                  <h3>What is Design for Recycling?</h3>
-                  <p>
-                    In order to ensure the recyclability of plastic products, disposal or recycling must be considered
-                    even before production begins. The term Design for Recycling (D4R), or recycling-friendly design,
-                    refers to the holistic conception and design of products that can be optimally returned to the
-                    recycling loop after their use. In this context, plastics in products should be combined in such a
-                    way
-                    that a clear separation of the different types is possible at the end of their life. This is the
-                    only
-                    way to keep waste streams pure and ensure their recyclability and thus their reuse as secondary raw
-                    materials.
-                  </p>
-                </div>
-              </div>
-              <div class="info9-video image">
-                <img src="https://weima.com/wp-content/uploads/2021/07/Design_For_Recycling-2-768x562.png"
-                  data-src="https://weima.com/wp-content/uploads/2021/07/Design_For_Recycling-2-768x562.png" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="info10 info">
-            <div class="content">
-              <div class="info10-video image">
-                <img src="https://weima.com/wp-content/uploads/2021/07/Standbeutel_Verpackung_Recycling-1024x1024.jpg"
-                  data-src="https://weima.com/wp-content/uploads/2021/07/Standbeutel_Verpackung_Recycling-1024x1024.jpg"
-                  alt="">
-              </div>
-              <div class="number-block">
-                <div class="number">10</div>
-                <div class="inner">
-                  <p>
-                    For example, a German cleaning product manufacturer fills detergents in environmentally friendly
-                    refill bags. These are made of 100 percent polyethylene (PE) and contain neither adhesives nor
-                    bonding
-                    agents. The printed band can be separated from the packaging, making the bag 100 percent recyclable.
-                    Another feature is that the packaging is made entirely from recycled plastic.
-                  </p>
+  
+            <div class="info6 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">06</div>
+                  <div class="inner">
+                    <h1>Did you know?</h1>
+                    <h2>
+                      Approximately 40% of the end consumer plastic waste is
+                      recycled in Germany.
+                    </h2>
+                    <p>Source: PlasticsEurope Germany</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="info11 info">
-            <div class="content">
-              <div class="number-block">
-                <div class="number">11</div>
-                <div class="inner">
-                  <h3>See for yourself</h3>
-                  <p>
-                    The ReduceAll show room is equipped with shredding and briquetting machines of all sizes and
-                    technologies.
-                    This enables us to simulate your application as realistically as possible. You have the possibility
-                    to
-                    send us your material or visit us directly in Ilsfeld. From our gallery you have the best view
-                    directly into the cutting chamber. So you can observe the shredding process live.
-                  </p>
-                  <p>Request an appointment now</p>
-                  <br>
-                  <a class="send_email"
-                    href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
-                    class="cta contact"> <span class="button primary">Send eMail</span> </a>
-
+  
+            <div class="info7 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">07</div>
+                  <div class="inner">
+                    <h3>Post-Consumer Plastic Recycling</h3>
+                    <p>
+                      Post-consumer waste means plastic waste from private use.
+                      This includes packaging such as yoghurt pots, PET bottles,
+                      bags, films, containers, tubes as well as toys, labels,
+                      fibers and textiles. Due to the increase in global
+                      consumption, the amount of plastic waste is also increasing.
+                      Instead of disposing of it in our oceans or landfills,
+                      ReduceAll shredders contribute to the promotion of
+                      alternative solutions. Together with our partners we develop
+                      single or multi-stage processing concepts in order to
+                      optimize the plastic lifecycle in the long term.
+                    </p>
+                  </div>
+                </div>
+                <div class="info7-video image">
+                  <iframe
+                    src="https://www.youtube.com/embed/0z9WvqPzH4c"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
-              <div class="info11-video image">
-                <img src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
-                  data-src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg" alt="">
+            </div>
+  
+            <div class="info8 info">
+              <div class="content">
+                <div class="info8-video image">
+                  <img
+                    src="	https://weima.com/wp-content/uploads/2020/08/upcycling_weima_plastic.jpg"
+                    data-src="https://weima.com/wp-content/uploads/2020/08/upcycling_weima_plastic.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="number-block">
+                  <div class="number">08</div>
+                  <div class="inner">
+                    <h3>Recycling or upcycling? It' s in your hand</h3>
+                    <p>
+                      Both concepts have the same goal: to extend the plastic life
+                      cycle. In recycling, plastic waste is usually shredded and
+                      transformed into regranulate by extrusion, e.g. to produce
+                      new PET bottles from old PET bottles. In upcycling, on the
+                      other hand, one tries to give supposedly useless plastics a
+                      new, higher-quality sense, either alone or in combination
+                      with others, e.g. bags made of packaging strings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="info9 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">09</div>
+                  <div class="inner">
+                    <h3>What is Design for Recycling?</h3>
+                    <p>
+                      In order to ensure the recyclability of plastic products,
+                      disposal or recycling must be considered even before
+                      production begins. The term Design for Recycling (D4R), or
+                      recycling-friendly design, refers to the holistic conception
+                      and design of products that can be optimally returned to the
+                      recycling loop after their use. In this context, plastics in
+                      products should be combined in such a way that a clear
+                      separation of the different types is possible at the end of
+                      their life. This is the only way to keep waste streams pure
+                      and ensure their recyclability and thus their reuse as
+                      secondary raw materials.
+                    </p>
+                  </div>
+                </div>
+                <div class="info9-video image">
+                  <img
+                    src="https://weima.com/wp-content/uploads/2021/07/Design_For_Recycling-2-768x562.png"
+                    data-src="https://weima.com/wp-content/uploads/2021/07/Design_For_Recycling-2-768x562.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+  
+            <div class="info10 info">
+              <div class="content">
+                <div class="info10-video image">
+                  <img
+                    src="https://weima.com/wp-content/uploads/2021/07/Standbeutel_Verpackung_Recycling-1024x1024.jpg"
+                    data-src="https://weima.com/wp-content/uploads/2021/07/Standbeutel_Verpackung_Recycling-1024x1024.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="number-block">
+                  <div class="number">10</div>
+                  <div class="inner">
+                    <p>
+                      For example, a German cleaning product manufacturer fills
+                      detergents in environmentally friendly refill bags. These
+                      are made of 100 percent polyethylene (PE) and contain
+                      neither adhesives nor bonding agents. The printed band can
+                      be separated from the packaging, making the bag 100 percent
+                      recyclable. Another feature is that the packaging is made
+                      entirely from recycled plastic.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="info11 info">
+              <div class="content">
+                <div class="number-block">
+                  <div class="number">11</div>
+                  <div class="inner">
+                    <h3>See for yourself</h3>
+                    <p>
+                      The ReduceAll show room is equipped with shredding and
+                      briquetting machines of all sizes and technologies. This
+                      enables us to simulate your application as realistically as
+                      possible. You have the possibility to send us your material
+                      or visit us directly in Ilsfeld. From our gallery you have
+                      the best view directly into the cutting chamber. So you can
+                      observe the shredding process live.
+                    </p>
+                    <p>Request an appointment now</p>
+                    <br />
+                    <a
+                      class="send_email"
+                      href="mailto:info@weima.com?subject=Appointment Inquiry Technikum | Plastics&amp;body=Please describe your application as well as the material you want to shred."
+                      class="cta contact"
+                    >
+                      <span class="button primary">Send eMail</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="info11-video image">
+                  <img
+                    src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
+                    data-src="	https://weima.com/wp-content/uploads/2020/08/V-Rotor_hochkant_web-scaled.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      
+
+      
 </body>
 
 <script src="script/jquery.js"></script>
@@ -1442,11 +854,3 @@
 <script src="script/plastic.js"></script>
 
 </html>
-=======
-    </div>
-  </body>
-
-  <script src="script/jquery.js"></script>
-  <script src="script/plastic.js"></script>
-</html>
->>>>>>> 3b9eda96d697d1ef0aa14677e86f3d55e23b897b

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/wl20.css" />
-
+    <link rel="stylesheet" href="../styles/translate.css">
     <title>Shredder for wood waste - the WL 20 by WEIMA Maschinenbau</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
           /></a>
         </div>
         <ul>
-          <li><button class="contact">contacts</button></li>
+          <li><button onclick="window.location.href = '../contact.html';" class="contact">contacts</button></li>
           <!-- full screen navigation -->
 
           <li>
@@ -46,6 +46,15 @@
             <!-- menu button -->
             <span onclick="openNav()"><button class="menu">menu</button></span>
           </li>
+          <br>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Language</a>
+                    <div class="dropdown-content">
+                        <button id="translateEnglish">🇺🇸 English</button>
+                        <button id="translateAmharic">🇪🇹 Amharic</button>
+                    </div>
+                </li>
+
         </ul>
       </div>
     </div>
@@ -72,7 +81,7 @@
       </div>
     </div>
 
-    <div class="about-wl20">
+    <div id="textToTranslate" class="about-wl20">
       <p class="text">
         Shredding technology for waste made of wood, plastic or paper. The WL 10
         single-shaft shredders have proven themselves to be the classic
@@ -532,4 +541,5 @@
     </div>
   </body>
 </html>
+<script src="../translate.js"></script>
 <script src="script/home.js"></script>
